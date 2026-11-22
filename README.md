@@ -1,59 +1,214 @@
-> Configure project :fabric
-Fabric Loom: 1.17.13
+Initialized native services in: C:\Users\User\.gradle\native
+Initialized jansi services in: C:\Users\User\.gradle\native
+The client will now receive all logging from the daemon (pid: 25480). The daemon log file: C:\Users\User\.gradle\daemon\9.5.1\daemon-25480.out.log
+Starting 3rd build in daemon [uptime: 1 hrs 26 mins 50.913 secs, performance: 100%, GC rate: 0.00/s, heap usage: 0% of 2 GiB]
+Using 12 worker leases.
+Operational build model parameters: {cachingModelBuilding=false, configurationCache=false, configurationCacheDisabledReason=null, configurationCacheParallelLoad=false, configurationCacheParallelStore=false, configureOnDemand=false, invalidateCoupledProjects=false, isolatedProjects=false, modelAsProjectDependency=false, modelBuilding=false, parallelModelBuilding=false, parallelProjectConfiguration=false, parallelProjectExecution=false, resilientModelBuilding=false}
+Now considering [D:\?뺤듅??寃뚯엫\留덉씤?щ옒?꾪듃\紐⑤뱶\lod-server-support-support-mc1.21.1] as hierarchies to watch
+Watching the file system is configured to be enabled if available
+File system watching is active
+[Starting Build
+Settings evaluated using settings file 'D:\?뺤듅??寃뚯엫\留덉씤?щ옒?꾪듃\紐⑤뱶\lod-server-support-support-mc1.21.1\settings.gradle'.
+Projects loaded. Root project using build file 'D:\?뺤듅??寃뚯엫\留덉씤?щ옒?꾪듃\紐⑤뱶\lod-server-support-support-mc1.21.1\build.gradle'.
+Included projects: [root project 'lod-server-support-support-mc1.21.1', project ':common', project ':fabric', project ':neoforge', project ':paper', project ':sponge']
 
-> Configure project :sponge
-SpongePowered Plugin 'GRADLE' Toolset Version '2.3.0'
-Targeting Minecraft '1.21.1' on a 'SERVER' platform
+> Configure project :
+Evaluating root project 'lod-server-support-support-mc1.21.1' using build file 'D:\?뺤듅??寃뚯엫\留덉씤?щ옒?꾪듃\紐⑤뱶\lod-server-support-support-mc1.21.1\build.gradle'.
 
-> Task :paper:compileJava
-Note: Some input files use or override a deprecated API.
-Note: Recompile with -Xlint:deprecation for details.
-
-> Task :common:compileTestJava
-Note: D:\?뺤듅??寃뚯엫\留덉씤?щ옒?꾪듃\紐⑤뱶\lod-server-support-support-mc1.21.1\common\src\test\java\dev\vox\lss\common\wire\IdentityCodecTest.java uses unchecked or unsafe operations.
-Note: Recompile with -Xlint:unchecked for details.
+> Configure project :common
+Evaluating project ':common' using build file 'D:\?뺤듅??寃뚯엫\留덉씤?щ옒?꾪듃\紐⑤뱶\lod-server-support-support-mc1.21.1\common\build.gradle'.
+Resolved plugin [id: 'java-library']
+Resolved plugin [id: 'java-test-fixtures']
+Resolved plugin [id: 'com.gradleup.shadow', version: '9.4.2']
+Skipping Develocity integration for Shadow plugin.
+Setting org.gradle.jvm.version attribute for shadowRuntimeElements configuration.
+Setting target JVM version to 21 for shadowRuntimeElements configuration.
+Adding shadowRuntimeElements variant to Java component.
 [
-> Task :neoforge:test FAILED
+> Configure project :fabric
+Evaluating project ':fabric' using build file 'D:\?뺤듅??寃뚯엫\留덉씤?щ옒?꾪듃\紐⑤뱶\lod-server-support-support-mc1.21.1\fabric\build.gradle'.
+Resolved plugin [id: 'net.fabricmc.fabric-loom-remap', version: '1.17.13']
+Fabric Loom: 1.17.13
+(kotlin.metadata.jvm.KotlinClassMetadata) with version (2.3.20-release-208) was loaded from (/C:/Users/User/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-metadata-jvm/2.3.20/4b6dc7915d060ec8c619f4be820e85fa69d738d1/kotlin-metadata-jvm-2.3.20.jar)
+(org.objectweb.asm.ClassVisitor) with version (9.10.1) was loaded from (/C:/Users/User/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm/9.10.1/ada2141c0cc52ee8f5c48cd5fa4ce0e794f22236/asm-9.10.1.jar)
+(org.objectweb.asm.tree.analysis.Analyzer) with version (9.10.1) was loaded from (/C:/Users/User/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-analysis/9.10.1/8d49f14d51f632cb1d87c88d1ceaf50db0d8af1b/asm-analysis-9.10.1.jar)
+(org.objectweb.asm.commons.ClassRemapper) with version (9.10.1) was loaded from (/C:/Users/User/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-commons/9.10.1/4229e4c55fd8e01c23f9fe9884075cc628aacc50/asm-commons-9.10.1.jar)
+(org.objectweb.asm.tree.ClassNode) with version (9.10.1) was loaded from (/C:/Users/User/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-tree/9.10.1/e244332a17564c1d1572449399a8499a842de35881be2/asm-tree-9.10.1.jar)
+(org.objectweb.asm.util.ASMifier) with version (9.10.1) was loaded from (/C:/Users/User/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-util/9.10.1/7bb9d450e8d4cbf9f9e04096c44bbfe7fba80b15/asm-util-9.10.1.jar)
+(com.google.gson.Gson) with version (null) was loaded from (/C:/Users/User/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.14.0/efc0e34ede4e3204eaefb84a00e55e8c86634382/gson-2.14.0.jar)
+Using cached Minecraft jars
+:Extracting server jar from bootstrap
+Evaluating layer mapping: loom:mappings:layered+hash.2198
+Mod dependency options: {"__inlineRefmap__":false,"__mappings__":"loom.mappings.1_21_1.layered+hash.2198-v2"}
+Applying installer data from C:\Users\User\.gradle\caches\modules-2\files-2.1\net.fabricmc\fabric-loader\0.19.3\354dfaa02d0552e11867f85dff7cdbfaf813ba3e\fabric-loader-0.19.3.jar
+Found another installer JSON in (C:\Users\User\.gradle\caches\modules-2\files-2.1\net.fabricmc\fabric-loader\0.19.3\354dfaa02d0552e11867f85dff7cdbfaf813ba3e\fabric-loader-0.19.3.jar), ignoring
+sourcesJar task was not found, not remapping sources
+
+> Configure project :neoforge
+Evaluating project ':neoforge' using build file 'D:\?뺤듅??寃뚯엫\留덉씤?щ옒?꾪듃\紐⑤뱶\lod-server-support-support-mc1.21.1\neoforge\build.gradle'.
+Resolved plugin [id: 'java']
+Resolved plugin [id: 'net.neoforged.moddev', version: '2.0.144']
+Resolved plugin [id: 'com.gradleup.shadow', version: '9.4.2']
+Skipping Develocity integration for Shadow plugin.
+Setting org.gradle.jvm.version attribute for shadowRuntimeElements configuration.
+Setting target JVM version to 21 for shadowRuntimeElements configuration.
+Adding shadowRuntimeElements variant to Java component.
+[
+> Configure project :paper
+Evaluating project ':paper' using build file 'D:\?뺤듅??寃뚯엫\留덉씤?щ옒?꾪듃\紐⑤뱶\lod-server-support-support-mc1.21.1\paper\build.gradle'.
+Resolved plugin [id: 'java']
+Resolved plugin [id: 'io.papermc.paperweight.userdev', version: '2.0.0-beta.21']
+Resolved plugin [id: 'com.gradleup.shadow', version: '9.4.2']
+Resolved plugin [id: 'xyz.jpenilla.run-paper', version: '3.0.2']
+Skipping Develocity integration for Shadow plugin.
+Setting org.gradle.jvm.version attribute for shadowRuntimeElements configuration.
+Setting target JVM version to 21 for shadowRuntimeElements configuration.
+Adding shadowRuntimeElements variant to Java component.
+[
+> Configure project :sponge
+Evaluating project ':sponge' using build file 'D:\?뺤듅??寃뚯엫\留덉씤?щ옒?꾪듃\紐⑤뱶\lod-server-support-support-mc1.21.1\sponge\build.gradle'.
+Resolved plugin [id: 'java']
+Resolved plugin [id: 'org.spongepowered.gradle.plugin', version: '2.3.0']
+Resolved plugin [id: 'org.spongepowered.gradle.vanilla', version: '0.2.2']
+Resolved plugin [id: 'com.gradleup.shadow', version: '9.4.2']
+SpongePowered Plugin 'GRADLE' Toolset Version '2.3.0'
+Skipping Develocity integration for Shadow plugin.
+VanillaGradle: Creating minecraft provider service
+Targeting Minecraft '1.21.1' on a 'SERVER' platform
+Setting org.gradle.jvm.version attribute for shadowRuntimeElements configuration.
+Setting target JVM version to 21 for shadowRuntimeElements configuration.
+Adding shadowRuntimeElements variant to Java component.
+All projects evaluated.
+Task path ':common:test' matched project ':common'
+Task name matched 'test'
+Selected primary task 'test' from project :common
+[Tasks to be executed: [task ':common:compileJava', task ':common:compileSqliteBridgeJava', task ':common:generateSqliteRuntime', task ':common:processResources', task ':common:classes', task ':common:shadowJar', task ':common:compileTestFixturesJava', task ':common:processTestFixturesResources', task ':common:testFixturesClasses', task ':common:testFixturesJar', task ':common:compileTestJava', task ':common:processTestResources', task ':common:testClasses', task ':common:test']
+Tasks that were excluded: []
+Resolve mutations for :common:compileJava (Thread[#824,Execution worker,5,main]) started.
+:common:compileJava (Thread[#827,Execution worker Thread 4,5,main]) started.
+
+> Task :common:compileJava UP-TO-DATE
+Caching disabled for task ':common:compileJava' because:
+  Build cache is disabled
+Skipping task ':common:compileJava' as it is up-to-date.
+No compile result for :common:compileJava
+No compile result for :common:compileJava
+work action resolve main (project :common) (Thread[#827,Execution worker Thread 4,5,main]) started.
+Resolve mutations for :common:compileSqliteBridgeJava (Thread[#827,Execution worker Thread 4,5,main]) started.
+:common:compileSqliteBridgeJava (Thread[#827,Execution worker Thread 4,5,main]) started.
+
+> Task :common:compileSqliteBridgeJava UP-TO-DATE
+Caching disabled for task ':common:compileSqliteBridgeJava' because:
+  Build cache is disabled
+Skipping task ':common:compileSqliteBridgeJava' as it is up-to-date.
+No compile result for :common:compileSqliteBridgeJava
+No compile result for :common:compileSqliteBridgeJava
+Resolve mutations for :common:generateSqliteRuntime (Thread[#832,Execution worker Thread 9,5,main]) started.
+:common:generateSqliteRuntime (Thread[#832,Execution worker Thread 9,5,main]) started.
+
+> Task :common:generateSqliteRuntime UP-TO-DATE
+Custom actions are attached to task ':common:generateSqliteRuntime'.
+Caching disabled for task ':common:generateSqliteRuntime' because:
+  Build cache is disabled
+  Gradle would require more information to cache this task
+Skipping task ':common:generateSqliteRuntime' as it is up-to-date.
+Resolve mutations for :common:processResources (Thread[#832,Execution worker Thread 9,5,main]) started.
+:common:processResources (Thread[#825,Execution worker Thread 2,5,main]) started.
+
+> Task :common:processResources UP-TO-DATE
+Caching disabled for task ':common:processResources' because:
+  Build cache is disabled
+  Not worth caching
+Skipping task ':common:processResources' as it is up-to-date.
+Resolve mutations for :common:classes (Thread[#825,Execution worker Thread 2,5,main]) started.
+:common:classes (Thread[#825,Execution worker Thread 2,5,main]) started.
+
+> Task :common:classes UP-TO-DATE
+Skipping task ':common:classes' as it has no actions.
+Resolve mutations for :common:shadowJar (Thread[#825,Execution worker Thread 2,5,main]) started.
+:common:shadowJar (Thread[#825,Execution worker Thread 2,5,main]) started.
+
+> Task :common:shadowJar UP-TO-DATE
+Caching disabled for task ':common:shadowJar' because:
+  Build cache is disabled
+Skipping task ':common:shadowJar' as it is up-to-date.
+work action resolve common-0.23.0.jar (project :common) (Thread[#825,Execution worker Thread 2,5,main]) started.
+Resolve mutations for :common:compileTestFixturesJava (Thread[#825,Execution worker Thread 2,5,main]) started.
+:common:compileTestFixturesJava (Thread[#825,Execution worker Thread 2,5,main]) started.
+
+> Task :common:compileTestFixturesJava UP-TO-DATE
+Caching disabled for task ':common:compileTestFixturesJava' because:
+  Build cache is disabled
+Skipping task ':common:compileTestFixturesJava' as it is up-to-date.
+No compile result for :common:compileTestFixturesJava
+No compile result for :common:compileTestFixturesJava
+work action resolve testFixtures (project :common) (Thread[#825,Execution worker Thread 2,5,main]) started.
+Resolve mutations for :common:processTestFixturesResources (Thread[#825,Execution worker Thread 2,5,main]) started.
+:common:processTestFixturesResources (Thread[#825,Execution worker Thread 2,5,main]) started.
+
+> Task :common:processTestFixturesResources UP-TO-DATE
+Caching disabled for task ':common:processTestFixturesResources' because:
+  Build cache is disabled
+  Not worth caching
+Skipping task ':common:processTestFixturesResources' as it is up-to-date.
+Resolve mutations for :common:testFixturesClasses (Thread[#825,Execution worker Thread 2,5,main]) started.
+:common:testFixturesClasses (Thread[#825,Execution worker Thread 2,5,main]) started.
+
+> Task :common:testFixturesClasses UP-TO-DATE
+Skipping task ':common:testFixturesClasses' as it has no actions.
+Resolve mutations for :common:testFixturesJar (Thread[#825,Execution worker Thread 2,5,main]) started.
+:common:testFixturesJar (Thread[#825,Execution worker Thread 2,5,main]) started.
+
+> Task :common:testFixturesJar UP-TO-DATE
+Caching disabled for task ':common:testFixturesJar' because:
+  Build cache is disabled
+  Not worth caching
+Skipping task ':common:testFixturesJar' as it is up-to-date.
+work action resolve common-0.23.0-test-fixtures.jar (project :common) (Thread[#825,Execution worker Thread 2,5,main]) started.
+Resolve mutations for :common:compileTestJava (Thread[#825,Execution worker Thread 2,5,main]) started.
+:common:compileTestJava (Thread[#825,Execution worker Thread 2,5,main]) started.
+
+> Task :common:compileTestJava UP-TO-DATE
+Caching disabled for task ':common:compileTestJava' because:
+  Build cache is disabled
+Skipping task ':common:compileTestJava' as it is up-to-date.
+No compile result for :common:compileTestJava
+No compile result for :common:compileTestJava
+Resolve mutations for :common:processTestResources (Thread[#825,Execution worker Thread 2,5,main]) started.
+:common:processTestResources (Thread[#825,Execution worker Thread 2,5,main]) started.
+
+> Task :common:processTestResources UP-TO-DATE
+Caching disabled for task ':common:processTestResources' because:
+  Build cache is disabled
+  Not worth caching
+Skipping task ':common:processTestResources' as it is up-to-date.
+Resolve mutations for :common:testClasses (Thread[#825,Execution worker Thread 2,5,main]) started.
+:common:testClasses (Thread[#825,Execution worker Thread 2,5,main]) started.
+
+> Task :common:testClasses UP-TO-DATE
+Skipping task ':common:testClasses' as it has no actions.
+Resolve mutations for :common:test (Thread[#825,Execution worker Thread 2,5,main]) started.
+:common:test (Thread[#825,Execution worker Thread 2,5,main]) started.
+Gradle Test Executor 4 started executing tests.
+Gradle Test Executor 4 finished executing tests.
+
 > Task :common:test FAILED
+Custom actions are attached to task ':common:test'.
+Caching disabled for task ':common:test' because:
+  Build cache is disabled
+Task ':common:test' is not up-to-date because:
+  Task has failed previously.
+Starting process 'Gradle Test Executor 4'. Working directory: D:\?뺤듅??寃뚯엫\留덉씤?щ옒?꾪듃\紐⑤뱶\lod-server-support-support-mc1.21.1\fabric Command: C:\Users\User\AppData\Local\Programs\Eclipse Adoptium\jdk-21.0.12.101-hotspot\bin\java.exe -Dlss.test.ambientSqlite=C:\Users\User\.gradle\caches\modules-2\files-2.1\org.xerial\sqlite-jdbc\3.49.1.0\145d3a6819b86f3618728273329392269104c8c7\sqlite-jdbc-3.49.1.0.jar -Dorg.gradle.internal.worker.tmpdir=D:\?뺤듅??寃뚯엫\留덉씤?щ옒?꾪듃\紐⑤뱶\lod-server-support-support-mc1.21.1\common\build\tmp\test\work @C:\Users\User\.gradle\.tmp\gradle-worker-classpath463815178632965729txt -Xmx512m -Dfile.encoding=UTF-8 -Duser.country=KR -Duser.language=ko -Duser.variant -ea worker.org.gradle.process.internal.worker.GradleWorkerMain 'Gradle Test Executor 4'
+Successfully started process 'Gradle Test Executor 4'
+Generating HTML test report...
+Finished generating test html results (0.05 secs) into: D:\?뺤듅??寃뚯엫\留덉씤?щ옒?꾪듃\紐⑤뱶\lod-server-support-support-mc1.21.1\common\build\reports\tests\test
+Finished generating test XML results (0.0 secs) into: D:\?뺤듅??寃뚯엫\留덉씤?щ옒?꾪듃\紐⑤뱶\lod-server-support-support-mc1.21.1\common\build\test-results\test
+[#paperweight-userdev: Acquired cache maintenance lock in 3ms
+paperweight-userdev: Finished cache maintenance in 11ms
+VanillaGradle: Shutting down MinecraftProviderService
 
-[Incubating] Problems report is available at: file:///D:/%EC%A0%95%EC%8A%B9%EC%9B%90/%EA%B2%8C%EC%9E%84/%EB%A7%88%EC%9D%B8%ED%81%AC%EB%9E%98%ED%94%84%ED%8A%B8/%EB%AA%A8%EB%93%9C/lod-server-support-support-mc1.21.1/build/reports/problems/problems-report.html
+FAILURE: Build failed with an exception.
 
-FAILURE: Build completed with 2 failures.
-
-1: Task failed with an exception.
------------
-* What went wrong:
-Execution failed for task ':neoforge:test' (registered by plugin 'org.gradle.jvm-test-suite').
-> Test process encountered an unexpected problem.
-   > Could not execute test class 'dev.vox.lss.neoforge.ClassfileSurface$Member'.
-      > java.lang.ClassNotFoundException: dev.vox.lss.neoforge.ClassfileSurface$Member
-   > Could not execute test class 'dev.vox.lss.neoforge.ClassfileSurface$Surface'.
-      > java.lang.ClassNotFoundException: dev.vox.lss.neoforge.ClassfileSurface$Surface
-   > Could not execute test class 'dev.vox.lss.neoforge.ClassfileSurface'.
-      > java.lang.ClassNotFoundException: dev.vox.lss.neoforge.ClassfileSurface
-   > Could not execute test class 'dev.vox.lss.neoforge.LSSNeoPermissionsContractTest'.
-      > java.lang.ClassNotFoundException: dev.vox.lss.neoforge.LSSNeoPermissionsContractTest
-   > Could not execute test class 'dev.vox.lss.neoforge.NeoForgeFarPlaneHookContractTest'.
-      > java.lang.ClassNotFoundException: dev.vox.lss.neoforge.NeoForgeFarPlaneHookContractTest
-   > Could not execute test class 'dev.vox.lss.neoforge.NeoForgeLoaderSeamContractTest'.
-      > java.lang.ClassNotFoundException: dev.vox.lss.neoforge.NeoForgeLoaderSeamContractTest
-   > Could not execute test class 'dev.vox.lss.neoforge.NeoForgeModuleContractTest'.
-      > java.lang.ClassNotFoundException: dev.vox.lss.neoforge.NeoForgeModuleContractTest
-   > Could not execute test class 'dev.vox.lss.neoforge.SodiumConfigApiContractTest'.
-      > java.lang.ClassNotFoundException: dev.vox.lss.neoforge.SodiumConfigApiContractTest
-   > Could not execute test class 'dev.vox.lss.neoforge.SodiumNeoGoldenParityTest'.
-      > java.lang.ClassNotFoundException: dev.vox.lss.neoforge.SodiumNeoGoldenParityTest
-
-* Try:
-> Check common problems https://docs.gradle.org/9.5.1/userguide/java_testing.html#sec:java_testing_troubleshooting.
-> Run with --stacktrace option to get the stack trace.
-> Run with --info or --debug option to get more log output.
-> Run with --scan to get full insights from a Build Scan (powered by Develocity).
-> Get more help at https://help.gradle.org.
-==============================================================================
-
-2: Task failed with an exception.
------------
 * What went wrong:
 Execution failed for task ':common:test' (registered by plugin 'org.gradle.jvm-test-suite').
 > Test process encountered an unexpected problem.
@@ -535,16 +690,10 @@ Execution failed for task ':common:test' (registered by plugin 'org.gradle.jvm-t
 * Try:
 > Check common problems https://docs.gradle.org/9.5.1/userguide/java_testing.html#sec:java_testing_troubleshooting.
 > Run with --stacktrace option to get the stack trace.
-> Run with --info or --debug option to get more log output.
+> Run with --debug option to get more log output.
 > Run with --scan to get full insights from a Build Scan (powered by Develocity).
 > Get more help at https://help.gradle.org.
-==============================================================================
 
-Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
-
-You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
-
-For more on this, please refer to https://docs.gradle.org/9.5.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
-
-BUILD FAILED in 29s
-37 actionable tasks: 25 executed, 12 up-to-date
+BUILD FAILED in 5s
+11 actionable tasks: 1 executed, 10 up-to-date
+Watched directory hierarchies: [D:\?뺤듅??寃뚯엫\留덉씤?щ옒?꾪듃\紐⑤뱶\lod-server-support-support-mc1.21.1]
