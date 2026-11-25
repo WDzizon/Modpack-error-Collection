@@ -1,114 +1,114 @@
-[25Nov2026 02:50:17.214] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeserverdev, --gameDir, ., --fml.fmlVersion, 4.0.45, --fml.mcVersion, 1.21.1, --fml.neoForgeVersion, 21.1.267, --fml.neoFormVersion, 20240808.144430]
-[25Nov2026 02:50:17.219] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Ubuntu OpenJDK 64-Bit Server VM 21.0.13.1+2-1-24.04.1-Ubuntu
-[25Nov2026 02:50:17.221] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 11.0.5+main.901c6ea8 starting: java version 21.0.13.1 by Ubuntu; OS Linux arch amd64 version 6.18.40.1-microsoft-standard-WSL2
-[25Nov2026 02:50:17.350] [main/INFO] [net.neoforged.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgeserverdev
-[25Nov2026 02:50:17.410] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=union:/home/wdzizon/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.16.4+mixin.0.8.7/26d01f0567ab46e9ca0d2ed89d0ecc11aadbd433/sponge-mixin-0.16.4+mixin.0.8.7.jar%2398!/ Service=ModLauncher Env=SERVER
-[25Nov2026 02:50:17.924] [main/INFO] [net.neoforged.fml.loading.moddiscovery.locators.JarInJarDependencyLocator/]: Found 2 dependencies adding them to mods collection
-[25Nov2026 02:50:17.926] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/]: 
-     Mod List:
-		Name Version (Mod Id)
-
-		LOD Server Support 0.23.0 (lss)
-		LSS NeoForge GameTests 1.0.0 (lsstest)
-		Minecraft 1.21.1 (minecraft)
-		NeoForge 21.1.267 (neoforge)
-[25Nov2026 02:50:18.745] [main/INFO] [mixin/]: Compatibility level set to JAVA_21
-[25Nov2026 02:50:18.754] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeserverdev' with arguments [--gameDir, .]
-[25Nov2026 02:50:20.249] [main/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.5).
-[25Nov2026 02:50:27.268] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[25Nov2026 02:50:27.271] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
-[25Nov2026 02:50:27.276] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[25Nov2026 02:50:27.278] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[25Nov2026 02:50:27.281] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[25Nov2026 02:50:27.372] [modloading-worker-0/INFO] [net.neoforged.neoforge.common.NeoForgeMod/NEOFORGE-MOD]: NeoForge mod loading, version 21.1.267, for MC 1.21.1
-[25Nov2026 02:50:27.687] [modloading-sync-worker/WARN] [net.neoforged.fml.config.ConfigTracker/CONFIG]: Configuration file /home/wdzizon/lod-server-support-lod-only/neoforge/run/config/neoforge-common.toml is not correct. Correcting
-[25Nov2026 02:50:27.835] [main/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[25Nov2026 02:50:27.952] [main/WARN] [net.neoforged.neoforge.common.CommonHooks/WP]: The following mods have version differences that were not resolved:
-neoforge (version 21.1.248 -> 21.1.267)
-Things may not work well.
-[25Nov2026 02:50:27.971] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/home/wdzizon/lod-server-support-lod-only/neoforge/build/moddev/artifacts/neoforge-21.1.267.jar%23132!/assets/.mcassetsroot' uses unexpected schema
-[25Nov2026 02:50:27.972] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/home/wdzizon/lod-server-support-lod-only/neoforge/build/moddev/artifacts/neoforge-21.1.267.jar%23132!/data/.mcassetsroot' uses unexpected schema
-[25Nov2026 02:50:27.982] [main/INFO] [net.neoforged.neoforge.gametest.GameTestHooks/]: Enabled Gametest Namespaces: [lsstest]
-[25Nov2026 02:50:29.312] [main/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 1291 recipes
-[25Nov2026 02:50:29.574] [main/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 1400 advancements
-[25Nov2026 02:50:30.722] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
-[25Nov2026 02:50:30.804] [worldgen/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 2%
-[25Nov2026 02:50:30.948] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 224 ms
-[25Nov2026 02:50:30.966] [Server thread/INFO] [net.minecraft.gametest.framework.GameTestServer/]: Started game test server
-[25Nov2026 02:50:30.989] [Server thread/INFO] [net.neoforged.neoforge.server.permission.PermissionAPI/]: Successfully initialized permission handler neoforge:default_handler
-[25Nov2026 02:50:31.352] [Server thread/INFO] [LSS/]: LOD-only durable archive ready: LOD-only archive: state=ready schema=2 queue=0/4096 visit_history=positive-only absence=unknown invalidations_pending=0 egress_invalidation_blocked=false egress_visit_publication_blocked=false archive_untrusted=false session_visits=0 session_visit_overflow=false session_invalidations=0 session_invalidation_overflow=false tracking_started_ms=1795496799715
-[25Nov2026 02:50:31.353] [Server thread/INFO] [LSS/]: Starting LSS LOD request processing service
-[25Nov2026 02:50:31.580] [Server thread/INFO] [LSS/]: LOD store active (driver=private/3.49.1.0). It stores served LOD bytes under <world>/lss-lod/ and, once fully warmed, occupies roughly as much space as the region files themselves. It is DERIVED data — deleting lss-lod/ is always safe. Set storage.lod_store.enabled to false and restart to disable; storage.lod_store.max_size_mib bounds its size after reload.
-[25Nov2026 02:50:31.587] [Server thread/INFO] [LSS/]: Effective config: useNbtTranscode=true, diskReaderThreads=3, useCompressedColumns=true, useBackgroundReadSplit=true, useSelectiveNbtParse=true, maxConcurrentDiskReads=2
-[25Nov2026 02:50:31.590] [LSS LOD Store SQLite/INFO] [LSS/]: LOD store sweep [minecraft:overworld]: 2 changed region(s), dropped 0 stale + 0 vanished-region row(s)
-[25Nov2026 02:50:31.601] [LSS Store Backfill/INFO] [LSS/]: Store backfill: 30 region(s) to process, estimated ~17 MB of new deposits (uncapped)
-[25Nov2026 02:50:31.797] [Server thread/INFO] [LSS/]: Dirty content filter: seeded 49 already-loaded chunk(s)
-[25Nov2026 02:50:31.886] [Server thread/INFO] [net.minecraft.gametest.framework.GameTestServer/]: 12 tests are now running at position -3844522, -59, 14408324!
-[25Nov2026 02:50:32.425] [Server thread/INFO] [net.minecraft.gametest.framework.GameTestRunner/]: Running test batch 'lodOnlyArchiveLifecycle:0' (1 tests)...
-[25Nov2026 02:50:32.611] [Server thread/INFO] [net.minecraft.gametest.framework.GameTestServer/]: [            ]
-[25Nov2026 02:50:32.650] [Server thread/INFO] [net.minecraft.gametest.framework.GameTestServer/]: [            ]
-[25Nov2026 02:50:32.722] [Server thread/INFO] [net.minecraft.gametest.framework.GameTestServer/]: [            ]
-[25Nov2026 02:50:32.936] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: test-mock-player[embedded] logged in with entity id 1 at (9.5, -60.0, -1.5)
-[25Nov2026 02:50:33.206] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: test-mock-player joined the game
-[25Nov2026 02:50:33.248] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: test-mock-player[embedded] logged in with entity id 2 at (-9.5, -60.0, -0.5)
-[25Nov2026 02:50:33.254] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: test-mock-player joined the game
-[25Nov2026 02:50:33.363] [Server thread/INFO] [net.minecraft.gametest.framework.GameTestRunner/]: Running test batch 'defaultBatch:0' (11 tests)...
-[25Nov2026 02:50:33.499] [Server thread/INFO] [net.minecraft.gametest.framework.GameTestServer/]: [+           ]
-[25Nov2026 02:50:33.579] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: test-mock-player[embedded] logged in with entity id 3 at (-0.5, -60.0, -4.5)
-[25Nov2026 02:50:33.583] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: test-mock-player joined the game
-[25Nov2026 02:50:33.594] [Server thread/INFO] [LSS/]: LSS handshake received from test-mock-player (protocol v9999, capabilities=1)
-[25Nov2026 02:50:33.599] [Server thread/WARN] [LSS/]: Player test-mock-player has incompatible LSS protocol version 9999 (server: 20), skipping LOD distribution
-[25Nov2026 02:50:33.647] [Server thread/WARN] [LSS/]: Auxiliary snapshot eligibility inspection failed; normal LOD delivery continues without archiving
-java.lang.IllegalStateException: synthetic metadata observer failure
-	at TRANSFORMER/lsstest@1.0.0/dev.vox.lss.neoforge.gametest.LSSNeoGameTests.lambda$generationObserverFailurePreservesNormalResult$7(LSSNeoGameTests.java:338) ~[%23134!/:?]
-	at TRANSFORMER/lss@0.23.0/dev.vox.lss.networking.server.ChunkGenerationService.tick(ChunkGenerationService.java:245) ~[%23135!/:?]
-	at TRANSFORMER/lsstest@1.0.0/dev.vox.lss.neoforge.gametest.LSSNeoGameTests.generationObserverFailurePreservesNormalResult(LSSNeoGameTests.java:346) ~[%23134!/:?]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.gametest.framework.GameTestRegistry.lambda$turnMethodIntoConsumer$5(GameTestRegistry.java:157) ~[neoforge-21.1.267.jar%23132!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.gametest.framework.TestFunction.run(TestFunction.java:40) ~[neoforge-21.1.267.jar%23132!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.gametest.framework.GameTestInfo.startTest(GameTestInfo.java:162) ~[neoforge-21.1.267.jar%23132!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.gametest.framework.GameTestInfo.tickInternal(GameTestInfo.java:124) ~[neoforge-21.1.267.jar%23132!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.gametest.framework.GameTestInfo.tick(GameTestInfo.java:107) ~[neoforge-21.1.267.jar%23132!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.gametest.framework.GameTestTicker.lambda$tick$0(GameTestTicker.java:39) ~[neoforge-21.1.267.jar%23132!/:?]
-	at java.base/java.util.concurrent.CopyOnWriteArrayList.forEach(CopyOnWriteArrayList.java:891) ~[?:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.gametest.framework.GameTestTicker.tick(GameTestTicker.java:39) ~[neoforge-21.1.267.jar%23132!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1055) ~[neoforge-21.1.267.jar%23132!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:917) ~[neoforge-21.1.267.jar%23132!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.gametest.framework.GameTestServer.tickServer(GameTestServer.java:168) ~[neoforge-21.1.267.jar%23132!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:707) ~[neoforge-21.1.267.jar%23132!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:267) ~[neoforge-21.1.267.jar%23132!/:?]
-	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
-[25Nov2026 02:50:33.679] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: test-mock-player[embedded] logged in with entity id 4 at (9.5, -60.0, 4.5)
-[25Nov2026 02:50:33.683] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: test-mock-player joined the game
-[25Nov2026 02:50:33.687] [Server thread/INFO] [LSS/]: LSS handshake received from test-mock-player (protocol v20, capabilities=0)
-[25Nov2026 02:50:33.690] [Server thread/INFO] [LSS/]: Player test-mock-player has no LOD consumer (caps=0), skipping LOD registration
-[25Nov2026 02:50:33.929] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: test-mock-player[embedded] logged in with entity id 5 at (-3.5, -60.0, -5.5)
-[25Nov2026 02:50:33.933] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: test-mock-player joined the game
-[25Nov2026 02:50:33.938] [Server thread/INFO] [LSS/]: LSS handshake received from test-mock-player (protocol v20, capabilities=1)
-[25Nov2026 02:50:33.946] [Server thread/INFO] [LSS/]: Player test-mock-player registered for LSS LOD request processing (caps=1)
-[25Nov2026 02:50:34.026] [Server thread/INFO] [net.minecraft.gametest.framework.GameTestServer/]: [++++++++++_+]
-[25Nov2026 02:50:36.388] [Server thread/INFO] [net.minecraft.gametest.framework.GameTestServer/]: [++++++++++++]
-[25Nov2026 02:50:36.391] [Server thread/INFO] [net.minecraft.gametest.framework.GameTestServer/]: ========= 12 GAME TESTS COMPLETE IN 5.527 s ======================
-[25Nov2026 02:50:36.392] [Server thread/INFO] [net.minecraft.gametest.framework.GameTestServer/]: All 12 required tests passed :)
-[25Nov2026 02:50:36.393] [Server thread/INFO] [net.minecraft.gametest.framework.GameTestServer/]: ====================================================
-[25Nov2026 02:50:36.413] [Server thread/INFO] [LSS/]: Preparing LSS LOD generation tickets for final world save
-[25Nov2026 02:50:36.416] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
-[25Nov2026 02:50:36.416] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
-[25Nov2026 02:50:36.489] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: test-mock-player lost connection: Server closed
-[25Nov2026 02:50:36.490] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: test-mock-player left the game
-[25Nov2026 02:50:36.510] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: test-mock-player lost connection: Server closed
-[25Nov2026 02:50:36.510] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: test-mock-player left the game
-[25Nov2026 02:50:36.522] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: test-mock-player lost connection: Server closed
-[25Nov2026 02:50:36.522] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: test-mock-player left the game
-[25Nov2026 02:50:36.533] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
-[25Nov2026 02:50:36.983] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Test Level]'/minecraft:overworld
-[25Nov2026 02:50:40.944] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Test Level]'/minecraft:the_end
-[25Nov2026 02:50:40.951] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Test Level]'/minecraft:the_nether
-[25Nov2026 02:50:40.986] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[25Nov2026 02:50:40.986] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[25Nov2026 02:50:40.986] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[25Nov2026 02:50:40.986] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
-[25Nov2026 02:50:41.037] [Server thread/INFO] [LSS/]: Stopping LSS LOD request processing service
-[25Nov2026 02:50:41.039] [LSS Store Backfill/INFO] [LSS/]: Store backfill stopped (shutdown): 1 regions, 40 deposited, 722 skipped, 0 errors
-[25Nov2026 02:50:41.058] [Server thread/INFO] [net.minecraft.gametest.framework.GameTestServer/]: Game test server shutting down
+wdzizon@DESKTOP-LS6DH9N:~$ jcmd 8184 Thread.print > /tmp/lss-common-test-threads.txt && grep -n -A60 -B3 -E '"main"|Test worker|LodOnlyArchiveStoreTest|LodOnlyArchiveCrashChild|sqlite' /tmp/lss-common-test-threads.txt
+11-0x0000736d8058d890, 0x0000736d807bbc90, 0x0000736d807beed0, 0x0000736cf0000fe0
+12-}
+13-
+14:"Test worker" #1 [8187] prio=5 os_prio=0 cpu=1052.25ms elapsed=1847.48s tid=0x0000736d8001b850 nid=8187 waiting for monitor entry  [0x0000736d855fb000]
+15-   java.lang.Thread.State: BLOCKED (on object monitor)
+16-     at dev.vox.lss.common.lodonly.LodOnlyArchiveStore.statusLine(LodOnlyArchiveStore.java:1534)
+17-     - waiting to lock <0x00000000ee937c70> (a java.lang.Object)
+18:     at dev.vox.lss.common.lodonly.LodOnlyArchiveStoreTest.sendPermitSerializesOffThreadVisitAndEditPublication(LodOnlyArchiveStoreTest.java:667)
+19-     at java.lang.invoke.LambdaForm$DMH/0x0000736d0c154400.invokeVirtual(java.base@21.0.13.1/LambdaForm$DMH)
+20-     at java.lang.invoke.LambdaForm$MH/0x0000736d0c0a4800.invoke(java.base@21.0.13.1/LambdaForm$MH)
+21-     at java.lang.invoke.Invokers$Holder.invokeExact_MT(java.base@21.0.13.1/Invokers$Holder)
+22-     at jdk.internal.reflect.DirectMethodHandleAccessor.invokeImpl(java.base@21.0.13.1/DirectMethodHandleAccessor.java:153)
+23-     at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(java.base@21.0.13.1/DirectMethodHandleAccessor.java:103)
+24-     at java.lang.reflect.Method.invoke(java.base@21.0.13.1/Method.java:580)
+25-     at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:767)
+26-     at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+27-     at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+28-     at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+29-     at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+30-     at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+31-     at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor$$Lambda/0x0000736d0c119a08.apply(Unknown Source)
+32-     at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+33-     at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall$$Lambda/0x0000736d0c119e28.apply(Unknown Source)
+34-     at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+35-     at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$$Lambda/0x0000736d0c14a200.apply(Unknown Source)
+36-     at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+37-     at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+38-     at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+39-     at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+40-     at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+41-     at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+42-     at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$8(TestMethodTestDescriptor.java:217)
+43-     at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor$$Lambda/0x0000736d0c151400.execute(Unknown Source)
+44-     at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+45-     at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:213)
+46-     at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138)
+47-     at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68)
+48-     at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156)
+49-     at org.junit.platform.engine.support.hierarchical.NodeTestTask$$Lambda/0x0000736d0c13c000.execute(Unknown Source)
+50-     at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+51-     at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+52-     at org.junit.platform.engine.support.hierarchical.NodeTestTask$$Lambda/0x0000736d0c137d18.invoke(Unknown Source)
+53-     at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+54-     at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+55-     at org.junit.platform.engine.support.hierarchical.NodeTestTask$$Lambda/0x0000736d0c1378f0.execute(Unknown Source)
+56-     at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+57-     at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+58-     at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+59-     at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService$$Lambda/0x0000736d0c13cb18.accept(Unknown Source)
+60-     at java.util.ArrayList.forEach(java.base@21.0.13.1/ArrayList.java:1596)
+61-     at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+62-     at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+63-     at org.junit.platform.engine.support.hierarchical.NodeTestTask$$Lambda/0x0000736d0c13c000.execute(Unknown Source)
+64-     at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+65-     at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+66-     at org.junit.platform.engine.support.hierarchical.NodeTestTask$$Lambda/0x0000736d0c137d18.invoke(Unknown Source)
+67-     at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+68-     at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+69-     at org.junit.platform.engine.support.hierarchical.NodeTestTask$$Lambda/0x0000736d0c1378f0.execute(Unknown Source)
+70-     at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+71-     at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+72-     at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+73-     at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService$$Lambda/0x0000736d0c13cb18.accept(Unknown Source)
+74-     at java.util.ArrayList.forEach(java.base@21.0.13.1/ArrayList.java:1596)
+75-     at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+76-     at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+77-     at org.junit.platform.engine.support.hierarchical.NodeTestTask$$Lambda/0x0000736d0c13c000.execute(Unknown Source)
+78-     at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+--
+261-    at java.util.concurrent.locks.ReentrantReadWriteLock$WriteLock.lock(java.base@21.0.13.1/ReentrantReadWriteLock.java:959)
+262-    at dev.vox.lss.common.lodonly.LodOnlyArchiveStore.markVisited(LodOnlyArchiveStore.java:554)
+263-    - locked <0x00000000ee937c70> (a java.lang.Object)
+264:    at dev.vox.lss.common.lodonly.LodOnlyArchiveStoreTest.lambda$sendPermitSerializesOffThreadVisitAndEditPublication$14(LodOnlyArchiveStoreTest.java:663)
+265:    at dev.vox.lss.common.lodonly.LodOnlyArchiveStoreTest$$Lambda/0x0000736d0c194aa8.call(Unknown Source)
+266-    at java.util.concurrent.FutureTask.run(java.base@21.0.13.1/FutureTask.java:317)
+267-    at java.util.concurrent.ThreadPoolExecutor.runWorker(java.base@21.0.13.1/ThreadPoolExecutor.java:1144)
+268-    at java.util.concurrent.ThreadPoolExecutor$Worker.run(java.base@21.0.13.1/ThreadPoolExecutor.java:642)
+269-    at java.lang.Thread.runWith(java.base@21.0.13.1/Thread.java:1596)
+270-    at java.lang.Thread.run(java.base@21.0.13.1/Thread.java:1583)
+271-
+272-"Attach Listener" #37 [8324] daemon prio=9 os_prio=0 cpu=0.66ms elapsed=0.10s tid=0x0000736cf0000fe0 nid=8324 waiting on condition  [0x0000000000000000]
+273-   java.lang.Thread.State: RUNNABLE
+274-
+275-"GC Thread#7" os_prio=0 cpu=3.07ms elapsed=1846.62s tid=0x0000736d0000d500 nid=8221 runnable
+276-
+277-"GC Thread#6" os_prio=0 cpu=0.79ms elapsed=1846.62s tid=0x0000736d0000c5e0 nid=8220 runnable
+278-
+279-"GC Thread#5" os_prio=0 cpu=2.59ms elapsed=1846.62s tid=0x0000736d0000b6c0 nid=8219 runnable
+280-
+281-"GC Thread#4" os_prio=0 cpu=3.62ms elapsed=1846.62s tid=0x0000736d0000a7d0 nid=8218 runnable
+282-
+283-"GC Thread#3" os_prio=0 cpu=2.77ms elapsed=1846.62s tid=0x0000736d000098e0 nid=8217 runnable
+284-
+285-"GC Thread#2" os_prio=0 cpu=3.64ms elapsed=1846.62s tid=0x0000736d00008de0 nid=8216 runnable
+286-
+287-"GC Thread#1" os_prio=0 cpu=3.11ms elapsed=1846.62s tid=0x0000736d000082e0 nid=8215 runnable
+288-
+289-"VM Thread" os_prio=0 cpu=56.87ms elapsed=1847.44s tid=0x0000736d80188a70 nid=8197 runnable
+290-
+291-"VM Periodic Task Thread" os_prio=0 cpu=1057.92ms elapsed=1847.44s tid=0x0000736d80176c30 nid=8196 waiting on condition
+292-
+293-"G1 Service" os_prio=0 cpu=56.84ms elapsed=1847.47s tid=0x0000736d8015df90 nid=8195 runnable
+294-
+295-"G1 Refine#0" os_prio=0 cpu=0.16ms elapsed=1847.47s tid=0x0000736d8015cfc0 nid=8194 runnable
+296-
+297-"G1 Conc#0" os_prio=0 cpu=0.11ms elapsed=1847.47s tid=0x0000736d8004f7f0 nid=8193 runnable
+298-
+299-"G1 Main Marker" os_prio=0 cpu=0.37ms elapsed=1847.47s tid=0x0000736d8004e840 nid=8192 runnable
+300-
+301-"GC Thread#0" os_prio=0 cpu=4.72ms elapsed=1847.47s tid=0x0000736d80049200 nid=8191 runnable
+302-
+303-JNI global refs: 15, weak refs: 10
+304-
