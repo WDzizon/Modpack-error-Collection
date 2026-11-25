@@ -1,114 +1,97 @@
-wdzizon@DESKTOP-LS6DH9N:~$ jcmd 8184 Thread.print > /tmp/lss-common-test-threads.txt && grep -n -A60 -B3 -E '"main"|Test worker|LodOnlyArchiveStoreTest|LodOnlyArchiveCrashChild|sqlite' /tmp/lss-common-test-threads.txt
-11-0x0000736d8058d890, 0x0000736d807bbc90, 0x0000736d807beed0, 0x0000736cf0000fe0
-12-}
-13-
-14:"Test worker" #1 [8187] prio=5 os_prio=0 cpu=1052.25ms elapsed=1847.48s tid=0x0000736d8001b850 nid=8187 waiting for monitor entry  [0x0000736d855fb000]
-15-   java.lang.Thread.State: BLOCKED (on object monitor)
-16-     at dev.vox.lss.common.lodonly.LodOnlyArchiveStore.statusLine(LodOnlyArchiveStore.java:1534)
-17-     - waiting to lock <0x00000000ee937c70> (a java.lang.Object)
-18:     at dev.vox.lss.common.lodonly.LodOnlyArchiveStoreTest.sendPermitSerializesOffThreadVisitAndEditPublication(LodOnlyArchiveStoreTest.java:667)
-19-     at java.lang.invoke.LambdaForm$DMH/0x0000736d0c154400.invokeVirtual(java.base@21.0.13.1/LambdaForm$DMH)
-20-     at java.lang.invoke.LambdaForm$MH/0x0000736d0c0a4800.invoke(java.base@21.0.13.1/LambdaForm$MH)
-21-     at java.lang.invoke.Invokers$Holder.invokeExact_MT(java.base@21.0.13.1/Invokers$Holder)
-22-     at jdk.internal.reflect.DirectMethodHandleAccessor.invokeImpl(java.base@21.0.13.1/DirectMethodHandleAccessor.java:153)
-23-     at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(java.base@21.0.13.1/DirectMethodHandleAccessor.java:103)
-24-     at java.lang.reflect.Method.invoke(java.base@21.0.13.1/Method.java:580)
-25-     at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:767)
-26-     at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
-27-     at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
-28-     at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
-29-     at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
-30-     at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
-31-     at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor$$Lambda/0x0000736d0c119a08.apply(Unknown Source)
-32-     at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
-33-     at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall$$Lambda/0x0000736d0c119e28.apply(Unknown Source)
-34-     at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
-35-     at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$$Lambda/0x0000736d0c14a200.apply(Unknown Source)
-36-     at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
-37-     at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
-38-     at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
-39-     at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
-40-     at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
-41-     at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
-42-     at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$8(TestMethodTestDescriptor.java:217)
-43-     at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor$$Lambda/0x0000736d0c151400.execute(Unknown Source)
-44-     at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-45-     at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:213)
-46-     at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138)
-47-     at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68)
-48-     at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156)
-49-     at org.junit.platform.engine.support.hierarchical.NodeTestTask$$Lambda/0x0000736d0c13c000.execute(Unknown Source)
-50-     at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-51-     at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
-52-     at org.junit.platform.engine.support.hierarchical.NodeTestTask$$Lambda/0x0000736d0c137d18.invoke(Unknown Source)
-53-     at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-54-     at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
-55-     at org.junit.platform.engine.support.hierarchical.NodeTestTask$$Lambda/0x0000736d0c1378f0.execute(Unknown Source)
-56-     at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-57-     at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
-58-     at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
-59-     at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService$$Lambda/0x0000736d0c13cb18.accept(Unknown Source)
-60-     at java.util.ArrayList.forEach(java.base@21.0.13.1/ArrayList.java:1596)
-61-     at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-62-     at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
-63-     at org.junit.platform.engine.support.hierarchical.NodeTestTask$$Lambda/0x0000736d0c13c000.execute(Unknown Source)
-64-     at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-65-     at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
-66-     at org.junit.platform.engine.support.hierarchical.NodeTestTask$$Lambda/0x0000736d0c137d18.invoke(Unknown Source)
-67-     at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-68-     at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
-69-     at org.junit.platform.engine.support.hierarchical.NodeTestTask$$Lambda/0x0000736d0c1378f0.execute(Unknown Source)
-70-     at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-71-     at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
-72-     at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
-73-     at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService$$Lambda/0x0000736d0c13cb18.accept(Unknown Source)
-74-     at java.util.ArrayList.forEach(java.base@21.0.13.1/ArrayList.java:1596)
-75-     at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-76-     at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
-77-     at org.junit.platform.engine.support.hierarchical.NodeTestTask$$Lambda/0x0000736d0c13c000.execute(Unknown Source)
-78-     at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
---
-261-    at java.util.concurrent.locks.ReentrantReadWriteLock$WriteLock.lock(java.base@21.0.13.1/ReentrantReadWriteLock.java:959)
-262-    at dev.vox.lss.common.lodonly.LodOnlyArchiveStore.markVisited(LodOnlyArchiveStore.java:554)
-263-    - locked <0x00000000ee937c70> (a java.lang.Object)
-264:    at dev.vox.lss.common.lodonly.LodOnlyArchiveStoreTest.lambda$sendPermitSerializesOffThreadVisitAndEditPublication$14(LodOnlyArchiveStoreTest.java:663)
-265:    at dev.vox.lss.common.lodonly.LodOnlyArchiveStoreTest$$Lambda/0x0000736d0c194aa8.call(Unknown Source)
-266-    at java.util.concurrent.FutureTask.run(java.base@21.0.13.1/FutureTask.java:317)
-267-    at java.util.concurrent.ThreadPoolExecutor.runWorker(java.base@21.0.13.1/ThreadPoolExecutor.java:1144)
-268-    at java.util.concurrent.ThreadPoolExecutor$Worker.run(java.base@21.0.13.1/ThreadPoolExecutor.java:642)
-269-    at java.lang.Thread.runWith(java.base@21.0.13.1/Thread.java:1596)
-270-    at java.lang.Thread.run(java.base@21.0.13.1/Thread.java:1583)
-271-
-272-"Attach Listener" #37 [8324] daemon prio=9 os_prio=0 cpu=0.66ms elapsed=0.10s tid=0x0000736cf0000fe0 nid=8324 waiting on condition  [0x0000000000000000]
-273-   java.lang.Thread.State: RUNNABLE
-274-
-275-"GC Thread#7" os_prio=0 cpu=3.07ms elapsed=1846.62s tid=0x0000736d0000d500 nid=8221 runnable
-276-
-277-"GC Thread#6" os_prio=0 cpu=0.79ms elapsed=1846.62s tid=0x0000736d0000c5e0 nid=8220 runnable
-278-
-279-"GC Thread#5" os_prio=0 cpu=2.59ms elapsed=1846.62s tid=0x0000736d0000b6c0 nid=8219 runnable
-280-
-281-"GC Thread#4" os_prio=0 cpu=3.62ms elapsed=1846.62s tid=0x0000736d0000a7d0 nid=8218 runnable
-282-
-283-"GC Thread#3" os_prio=0 cpu=2.77ms elapsed=1846.62s tid=0x0000736d000098e0 nid=8217 runnable
-284-
-285-"GC Thread#2" os_prio=0 cpu=3.64ms elapsed=1846.62s tid=0x0000736d00008de0 nid=8216 runnable
-286-
-287-"GC Thread#1" os_prio=0 cpu=3.11ms elapsed=1846.62s tid=0x0000736d000082e0 nid=8215 runnable
-288-
-289-"VM Thread" os_prio=0 cpu=56.87ms elapsed=1847.44s tid=0x0000736d80188a70 nid=8197 runnable
-290-
-291-"VM Periodic Task Thread" os_prio=0 cpu=1057.92ms elapsed=1847.44s tid=0x0000736d80176c30 nid=8196 waiting on condition
-292-
-293-"G1 Service" os_prio=0 cpu=56.84ms elapsed=1847.47s tid=0x0000736d8015df90 nid=8195 runnable
-294-
-295-"G1 Refine#0" os_prio=0 cpu=0.16ms elapsed=1847.47s tid=0x0000736d8015cfc0 nid=8194 runnable
-296-
-297-"G1 Conc#0" os_prio=0 cpu=0.11ms elapsed=1847.47s tid=0x0000736d8004f7f0 nid=8193 runnable
-298-
-299-"G1 Main Marker" os_prio=0 cpu=0.37ms elapsed=1847.47s tid=0x0000736d8004e840 nid=8192 runnable
-300-
-301-"GC Thread#0" os_prio=0 cpu=4.72ms elapsed=1847.47s tid=0x0000736d80049200 nid=8191 runnable
-302-
-303-JNI global refs: 15, weak refs: 10
-304-
+[2511월2026 22:55:50.270] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeserver, --fml.neoForgeVersion, 21.1.267, --fml.fmlVersion, 4.0.45, --fml.mcVersion, 1.21.1, --fml.neoFormVersion, 20240808.144430]
+[2511월2026 22:55:50.295] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Eclipse Adoptium OpenJDK 64-Bit Server VM 25.0.2+10-LTS
+[2511월2026 22:55:50.298] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 11.0.5+main.901c6ea8 starting: java version 25.0.2 by Eclipse Adoptium; OS Windows 10 arch amd64 version 10.0
+[2511월2026 22:55:50.481] [main/INFO] [net.neoforged.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgeserver
+[2511월2026 22:55:50.540] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=union:/D:/정승원/게임/마인크래프트/서버/1.21.1%20vss%20modifying%20test/libraries/net/fabricmc/sponge-mixin/0.16.4+mixin.0.8.7/sponge-mixin-0.16.4+mixin.0.8.7.jar%2373!/ Service=ModLauncher Env=SERVER
+[2511월2026 22:55:50.948] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "server-1.21.1-20240808.144430-srg.jar" [locator: production server provider +net.neoforged:neoforge:21.1.267:server]
+[2511월2026 22:55:51.008] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "neoforge-21.1.267-universal.jar" [locator: PathBasedLocator[name=neoforge, paths=[libraries\net\neoforged\neoforge\21.1.267\neoforge-21.1.267-universal.jar]], reader: mod manifest]
+[2511월2026 22:55:51.022] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "lod-server-support-neoforge.jar" [locator: {mods folder locator at D:\정승원\게임\마인크래프트\서버\1.21.1 vss modifying test\mods}, reader: mod manifest]
+[2511월2026 22:55:51.266] [main/INFO] [net.neoforged.fml.loading.moddiscovery.locators.JarInJarDependencyLocator/]: Found 3 dependencies adding them to mods collection
+[2511월2026 22:55:51.267] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found gamelibrary file "mixinextras-neoforge-0.5.5.jar" [parent: neoforge-21.1.267-universal.jar, locator: jarinjar, reader: mod manifest]
+[2511월2026 22:55:51.268] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found library file "zstd-jni-1.5.7-3.jar" [parent: lod-server-support-neoforge.jar, locator: jarinjar]
+[2511월2026 22:55:51.269] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found library file "net.neoforged.neoforge-coremods-21.1.267.jar" [parent: neoforge-21.1.267-universal.jar, locator: jarinjar, reader: mod manifest]
+[2511월2026 22:55:51.272] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/]: 
+     Mod List:
+		Name Version (Mod Id)
+
+		LOD Server Support 0.23.0 (lss)
+		Minecraft 1.21.1 (minecraft)
+		NeoForge 21.1.267 (neoforge)
+[2511월2026 22:55:51.678] [main/INFO] [mixin/]: Compatibility level set to JAVA_21
+[2511월2026 22:55:51.691] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeserver' with arguments []
+[2511월2026 22:55:53.450] [main/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.5).
+[2511월2026 22:55:59.604] [modloading-worker-0/INFO] [net.neoforged.neoforge.common.NeoForgeMod/NEOFORGE-MOD]: NeoForge mod loading, version 21.1.267, for MC 1.21.1
+[2511월2026 22:56:00.188] [main/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[2511월2026 22:56:00.316] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/D:/정승원/게임/마인크래프트/서버/1.21.1%20vss%20modifying%20test/libraries/net/minecraft/server/1.21.1-20240808.144430/server-1.21.1-20240808.144430-srg.jar%23118!/assets/.mcassetsroot' uses unexpected schema
+[2511월2026 22:56:00.318] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/D:/정승원/게임/마인크래프트/서버/1.21.1%20vss%20modifying%20test/libraries/net/minecraft/server/1.21.1-20240808.144430/server-1.21.1-20240808.144430-srg.jar%23118!/data/.mcassetsroot' uses unexpected schema
+[2511월2026 22:56:01.960] [main/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 1290 recipes
+[2511월2026 22:56:02.164] [main/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 1399 advancements
+[2511월2026 22:56:03.751] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting minecraft server version 1.21.1
+[2511월2026 22:56:03.751] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Loading properties
+[2511월2026 22:56:03.753] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Default game type: SURVIVAL
+[2511월2026 22:56:03.754] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[2511월2026 22:56:03.876] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting Minecraft server on *:25565
+[2511월2026 22:56:03.964] [Server thread/INFO] [net.minecraft.server.network.ServerConnectionListener/]: Using default channel type
+[2511월2026 22:56:04.044] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Preparing level "world"
+[2511월2026 22:56:05.466] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[2511월2026 22:56:05.939] [Worker-Main-3/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[2511월2026 22:56:05.967] [Worker-Main-1/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[2511월2026 22:56:06.183] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 718 ms
+[2511월2026 22:56:06.184] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Done (2.168s)! For help, type "help"
+[2511월2026 22:56:06.228] [Server thread/INFO] [net.neoforged.neoforge.server.permission.PermissionAPI/]: Successfully initialized permission handler neoforge:default_handler
+[2511월2026 22:56:06.990] [Server thread/INFO] [LSS/]: LOD-only durable archive ready: LOD-only archive: state=ready schema=2 queue=0/4096 visit_history=positive-only absence=unknown invalidations_pending=0 invalidation_jobs=0/0/0 invalidation_active=false invalidation_last_started_age_ms=-1 invalidation_last_completed_age_ms=-1 egress_invalidation_blocked=false egress_visit_publication_blocked=false archive_untrusted=false session_visits=0 session_visit_overflow=false session_invalidations=0 session_invalidation_overflow=false tracking_started_ms=1795596825561
+[2511월2026 22:56:06.990] [Server thread/INFO] [LSS/]: Starting LSS LOD request processing service
+[2511월2026 22:56:07.032] [Server thread/INFO] [LSS/]: Loaded 14484 timestamp cache entries from world\data\lss-timestamps.bin
+[2511월2026 22:56:07.492] [Server thread/INFO] [LSS/]: LOD store active (driver=private/3.49.1.0). It stores served LOD bytes under <world>/lss-lod/ and, once fully warmed, occupies roughly as much space as the region files themselves. It is DERIVED data — deleting lss-lod/ is always safe. Set storage.lod_store.enabled to false and restart to disable; storage.lod_store.max_size_mib bounds its size after reload.
+[2511월2026 22:56:07.499] [Server thread/INFO] [LSS/]: Effective config: useNbtTranscode=true, diskReaderThreads=3, useCompressedColumns=true, useBackgroundReadSplit=true, useSelectiveNbtParse=true, maxConcurrentDiskReads=2
+[2511월2026 22:56:07.653] [LSS LOD Store SQLite/INFO] [LSS/]: LOD store sweep [minecraft:overworld]: 17 changed region(s), dropped 1033 stale + 0 vanished-region row(s)
+[2511월2026 22:56:07.669] [LSS Store Backfill/INFO] [LSS/]: Store backfill: 5 region(s) to process, estimated ~1 MB of new deposits (uncapped)
+[2511월2026 22:56:07.701] [Server thread/INFO] [LSS/]: Dirty content filter: seeded 49 already-loaded chunk(s)
+[2511월2026 22:56:08.086] [LSS Store Backfill/INFO] [LSS/]: Store backfill complete: 5 regions, 0 deposited, 369 skipped, 0 errors, 0 pauses
+[2511월2026 23:00:07.173] [User Authenticator #1/INFO] [net.minecraft.server.network.ServerLoginPacketListenerImpl/]: UUID of player WDzizon is ea04c93a-d122-4b7b-baee-1c53d5ae535e
+[2511월2026 23:00:08.527] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: WDzizon[/[::1]:5269] logged in with entity id 5 at (8143.994356991676, 131.07105534694526, 84.19506364582145)
+[2511월2026 23:00:08.609] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: WDzizon joined the game
+[2511월2026 23:00:09.219] [Server thread/INFO] [LSS/]: LSS handshake received from WDzizon (protocol v20, capabilities=15)
+[2511월2026 23:00:09.229] [Server thread/INFO] [LSS/]: Player WDzizon registered for LSS LOD request processing (caps=15)
+[2511월2026 23:00:21.470] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: === LSS LOD Diagnostics ===
+[2511월2026 23:00:21.471] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Config: enabled=true, lodDist=512, bw/player=25.0 MB/s, bw/global=75.0 MB/s
+[2511월2026 23:00:21.473] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Throughput: sent=1 (46.0 KB), rate=0 sections/s (185 B/s), uptime=4m 14s
+[2511월2026 23:00:21.473] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Sources (total): in_mem=1, disk=0, up_to_date=531, gen=0, re_resolved=0, grace_skipped=0
+[2511월2026 23:00:21.474] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Sources (tick): sent=0, disk=0/0, utd=0, gen=0, in_mem=0, skipped=0, bytes=0 B, qpeak=0/1024
+[2511월2026 23:00:21.475] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: DiskReader: submitted=0, completed=0, not_found=0, all_air=0, errors=0, saturated=0, header_hits=0, avg_read=0.0ms, pending=0, read_gate=0/2, gate_parked=0, gate_stops=0, gated=0, read_path=bg-split, raw_serves=369, sel=on, sel_fallbacks=0, direct_v20=0, memo_hits=0, store=full h=0 m=0 dep=0 drop=0 err=0 q=0 avg_read=0us
+[2511월2026 23:00:21.475] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generation: submitted=0, completed=0, active=0, timeouts=0, removed=0, order_gated=0, inversions=0
+[2511월2026 23:00:21.476] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dialects: v20=1, v19=0, v18=0, v16=0, started=1/0/0/0, ended=0/0/0/0 in 4m
+[2511월2026 23:00:21.476] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Xray: active=off, masked_sections=0
+[2511월2026 23:00:21.476] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Yield: armed=true, ticks_total=0, bytes_withheld=0 B
+[2511월2026 23:00:21.477] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: FarPlayers: subs=1, rosters=1, updates=0, entries=0, suppressed=0, bytes=4
+[2511월2026 23:00:21.477] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Summary: reqs=1, frames=1, tiles known=41 never_clean=0 no_region=1184, range_filtered=0, bytes=1341, refresh_ms_max=1959, stamps=531/34
+[2511월2026 23:00:21.479] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dirty: marked=0, suppressed=677, seeded_load=674, entries=674
+[2511월2026 23:00:21.481] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Bandwidth: 0 B/s / 75.0 MB/s global (46.1 KB total, 7.1 KB wire, cols zstd=1 raw=0)
+[2511월2026 23:00:21.482] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]:   WDzizon: sq=0/1024, psync=0, pgen=0, sent=1 (46.0 KB), rate=0/s, obuf=2.9 KB/29.4 KB, pingf=1.00, yielded=0, paced=0
+[2511월2026 23:00:21.485] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: LOD-only preservation: inspected=0 candidates_at_generation=0 snapshot_candidates_at_generation=0 protected_area=0 player_watched_before_generation=0 uncertain_player_access=0 structure_starts=0 structure_references=0 uncertain=0 watch_index=count=313,supported=true,overflow=false,archive=ready,visit_write_failed=false,history=positive-only,scope=session-only structure_inspection_failed=false deletion=DISABLED | LOD-only archive: state=ready schema=2 queue=0/4096 visit_history=positive-only absence=unknown invalidations_pending=0 invalidation_jobs=0/0/0 invalidation_active=false invalidation_last_started_age_ms=-1 invalidation_last_completed_age_ms=-1 egress_invalidation_blocked=false egress_visit_publication_blocked=false archive_untrusted=false session_visits=313 session_visit_overflow=false session_invalidations=0 session_invalidation_overflow=false tracking_started_ms=1795596825561 durable_visit_write_failed=false | LOD-only snapshot writes: attempts=0 committed=0 protected_noop=0 failures=0
+[2511월2026 23:00:21.490] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: LOD-only archive reads: requests=0 started=0 hits=0 misses=0 failures=0 queue_rejected=0 shutdown_rejected=0 hit_bytes=0 may_send_denied=0 egress_permits=0 permit_releases=0 | archive_lookup_reasons: requests=0 selected_rows=0 global_blocked=0 session_visit_blocked=0 session_invalidation_blocked=0 row_missing=0 row_invalidated=0 durable_visited_row=0 unexpected_filtered=0 post_select_blocked=0 | archive_lookup_dimensions: []
+[2511월2026 23:00:21.518] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: LOD-only archive rows: total=2156 valid=1794 invalidated=362 valid_unvisited=1794 valid_with_visit_marker=0 durable_visited_total=1697 | archive_row_dimensions: [minecraft:overworld{total=2156,valid=1794,invalidated=362,valid_unvisited=1794,valid_with_visit_marker=0,durable_visited_total=1697}]
+[2511월2026 23:00:37.356] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: LOD-only archive probe started: it checks one persisted eligible row through the real read adapter and final send-permit guard; no packet is sent and no world chunk is changed.
+[2511월2026 23:00:38.456] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: LOD-only archive probe: lookup=HIT dimension=minecraft:overworld chunk_x=480 chunk_z=56 payload_bytes=37289 timestamp=1795615237 final_permit=GRANTED_AND_RELEASED (no packet sent)
+[2511월2026 23:00:58.257] [LSS Processing Thread/WARN] [LSS/]: Disk reads are concurrency-gated under sustained load (read_gate=2/2, park full): the request router is deferring cold-region reads to the next client declaration (running total: gate_stops= in /lsslod diag). This is the gate working; raise storage.disk.max_concurrent_reads in lss-server-config.yaml and reload if server CPU headroom allows and you want faster cold backfill. (Logged once per session.)
+[2511월2026 23:00:58.650] [LSS Disk Reader #2/WARN] [LSS/]: Disk read timed out (>10s) at 479, 57 — triaged as not-found (counted disk.errors; self-heals by re-declaration on gen-enabled servers) (+1 more since last report)
+[2511월2026 23:02:08.221] [LSS Disk Reader #1/WARN] [LSS/]: Disk read timed out (>10s) at 561, -13 — triaged as not-found (counted disk.errors; self-heals by re-declaration on gen-enabled servers) (+6 more since last report)
+[2511월2026 23:03:18.209] [LSS Disk Reader #1/WARN] [LSS/]: Disk read timed out (>10s) at 562, 46 — triaged as not-found (counted disk.errors; self-heals by re-declaration on gen-enabled servers) (+9 more since last report)
+[2511월2026 23:03:34.307] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: LOD-only archive probe started: it checks one persisted eligible row through the real read adapter and final send-permit guard; no packet is sent and no world chunk is changed.
+[2511월2026 23:03:34.388] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: LOD-only archive probe: lookup=HIT dimension=minecraft:overworld chunk_x=503 chunk_z=-50 payload_bytes=38811 timestamp=1795615405 final_permit=GRANTED_AND_RELEASED (no packet sent)
+[2511월2026 23:04:43.874] [LSS Disk Reader #3/WARN] [LSS/]: Disk read timed out (>10s) at 468, 61 — triaged as not-found (counted disk.errors; self-heals by re-declaration on gen-enabled servers) (+9 more since last report)
+[2511월2026 23:05:59.209] [LSS Disk Reader #3/WARN] [LSS/]: Disk read timed out (>10s) at 498, -53 — triaged as not-found (counted disk.errors; self-heals by re-declaration on gen-enabled servers) (+9 more since last report)
+[2511월2026 23:07:00.510] [LSS Disk Reader #1/WARN] [LSS/]: Disk read timed out (>10s) at 450, -39 — triaged as not-found (counted disk.errors; self-heals by re-declaration on gen-enabled servers) (+7 more since last report)
+[2511월2026 23:07:22.356] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping the server
+[2511월2026 23:07:22.402] [Server thread/INFO] [LSS/]: Preparing LSS LOD generation tickets for final world save
+[2511월2026 23:07:22.402] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[2511월2026 23:07:22.405] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[2511월2026 23:07:22.562] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[2511월2026 23:07:22.665] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[2511월2026 23:07:52.455] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[2511월2026 23:07:52.488] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[2511월2026 23:07:52.542] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[2511월2026 23:07:52.543] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[2511월2026 23:07:52.544] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[2511월2026 23:07:52.544] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
+[2511월2026 23:07:54.724] [Server thread/INFO] [LSS/]: Stopping LSS LOD request processing service
