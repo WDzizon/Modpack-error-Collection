@@ -1,121 +1,263 @@
-  [2611??026 13:50:18.694] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Done (1.907s)! For h
-elp, type "help"
-  [2611??026 13:50:18.732] [Server thread/INFO] [net.neoforged.neoforge.server.permission.PermissionAPI/]: Successfully
- initialized permission handler neoforge:default_handler
-> [2611??026 13:50:18.765] [Server thread/WARN] [LSS/]: LOD-only archive unavailable; historical player-visit state is
-uncertain and chunk deletion remains disabled | LOD-only recovery inspection: mode=filesystem-only auto_recovery=disabl
-ed directory=directory session_marker=regular(63B) invalidation_marker=missing archive_db=regular(182325248B) wal=regul
-ar(4165352B) shm=regular(32768B) journal=missing lock_file=regular(0B) operator_review=required
-> java.io.IOException: LOD-only archive has an unclean previous session marker; preserving the database and refusing to
- serve archived LOD
-        at TRANSFORMER/lss@0.23.0/dev.vox.lss.common.lodonly.LodOnlyArchiveStore.<init>(LodOnlyArchiveStore.java:319) ~[lod-
-server-support-neoforge.jar%23120!/:?]
-        at TRANSFORMER/lss@0.23.0/dev.vox.lss.common.lodonly.LodOnlyArchiveStore.open(LodOnlyArchiveStore.java:272) ~[lod-se
-rver-support-neoforge.jar%23120!/:?]
-        at TRANSFORMER/lss@0.23.0/dev.vox.lss.common.lodonly.LodOnlyArchiveStore.open(LodOnlyArchiveStore.java:268) ~[lod-se
-rver-support-neoforge.jar%23120!/:?]
-        at TRANSFORMER/lss@0.23.0/dev.vox.lss.networking.server.LSSServerNetworking.openLodOnlyArchive(LSSServerNetworking.j
-ava:72) ~[lod-server-support-neoforge.jar%23120!/:?]
-  [2611??026 13:50:19.374] [Server thread/INFO] [LSS/]: Effective config: useNbtTranscode=true, diskReaderThreads=3, us
-eCompressedColumns=true, useBackgroundReadSplit=true, useSelectiveNbtParse=true, maxConcurrentDiskReads=2
-  [2611??026 13:50:19.585] [Server thread/INFO] [LSS/]: Dirty content filter: seeded 49 already-loaded chunk(s)
-> [2611??026 13:50:24.345] [LSS LOD Store SQLite/INFO] [LSS/]: LOD store sweep [minecraft:overworld]: 26 changed region
-(s), dropped 5196 stale + 0 vanished-region row(s)
-  [2611??026 13:50:24.357] [LSS Store Backfill/INFO] [LSS/]: Store backfill: 15 region(s) to process, estimated ~33 MB
-of new deposits (uncapped)
-  [2611??026 13:50:35.535] [LSS Store Backfill/INFO] [LSS/]: Store backfill complete: 15 regions, 2151 deposited, 3517
-skipped, 0 errors, 0 pauses
-  [2611??026 13:50:42.645] [User Authenticator #1/INFO] [net.minecraft.server.network.ServerLoginPacketListenerImpl/]:
-UUID of player WDzizon is ea04c93a-d122-4b7b-baee-1c53d5ae535e
-  [2611??026 13:50:44.035] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: WDzizon[/[::1]:7737] logged
- in with entity id 5 at (9403.770578746604, 75.0, -757.349223386137)
-  [2611??026 13:50:44.137] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: WDzizon joined the game
-> [2611??026 13:50:44.440] [Server thread/WARN] [LSS/]: LOD-only durable player-visit recording failed; visit history i
-s untrusted and the affected world data must be preserved
-  java.lang.IllegalStateException: LOD-only durable visit archive is unavailable
-        at TRANSFORMER/lss@0.23.0/dev.vox.lss.networking.server.ServerReceiverGlue.markPlayerWatched(ServerReceiverGlue.java
-:120) ~[lod-server-support-neoforge.jar%23120!/:?]
-        at TRANSFORMER/lss@0.23.0/dev.vox.lss.networking.server.LSSServerNetworking.onChunkWatch(LSSServerNetworking.java:18
-2) ~[lod-server-support-neoforge.jar%23120!/:?]
-        at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.ConsumerEventHandler.invoke(ConsumerEventHandler.java:27) ~[bus-
-8.0.5.jar%2362!/:?]
-  [2611??026 13:52:05.424] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Bandwidth: 891.7 KB/s / 75.0 M
-B/s global (48.9 MB total, 8.5 MB wire, cols zstd=1519 raw=0)
-  [2611??026 13:52:05.424] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]:   WDzizon: sq=0/1024, psync=98
-, pgen=0, sent=1519 (48.9 MB), rate=14/s, obuf=0 B/93.6 KB, pingf=1.00, yielded=0, paced=13
-> [2611??026 13:52:05.436] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: LOD-only preservation: inspect
-ed=757 candidates_at_generation=0 snapshot_candidates_at_generation=0 protected_area=0 player_watched_before_generation
-=5 uncertain_player_access=539 structure_starts=9 structure_references=204 uncertain=0 watch_index=count=1554,supported
-=true,overflow=false,archive=unavailable,visit_write_failed=true,history=positive-only,scope=session-only structure_ins
-pection_failed=false deletion=DISABLED | LOD-only archive: state=unavailable attached=false durable_visit_write_failed=
-true | LOD-only recovery inspection: mode=filesystem-only auto_recovery=disabled directory=directory session_marker=reg
-ular(63B) invalidation_marker=missing archive_db=regular(182325248B) wal=regular(4165352B) shm=regular(32768B) journal=
-missing lock_file=regular(0B) operator_review=required | LOD-only snapshot writes: attempts=0 committed=0 protected_noo
-p=0 failures=0
-  [2611??026 13:52:05.845] [LSS Processing Thread/WARN] [LSS/]: Disk reads are concurrency-gated under sustained load (
-read_gate=2/2, park full): the request router is deferring cold-region reads to the next client declaration (running to
-tal: gate_stops= in /lsslod diag). This is the gate working; raise storage.disk.max_concurrent_reads in lss-server-conf
-ig.yaml and reload if server CPU headroom allows and you want faster cold backfill. (Logged once per session.)
-  [2611??026 13:54:20.160] [LSS Disk Reader #1/WARN] [LSS/]: Disk read timed out (>10s) at 535, -109 ??triaged as not-f
-ound (counted disk.errors; self-heals by re-declaration on gen-enabled servers)
-  [2611??026 13:54:30.591] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping the server
-  [2611??026 13:54:30.592] [Server thread/INFO] [LSS/]: Preparing LSS LOD generation tickets for final world save
+========== latest.log ==========
+
+  [2611??026 13:52:05.436] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: LOD-only preservation: inspected=757 candidates_at_generation=0 snapshot_candidates_at_generation=0 protected_area=0 player_watched_before_generation=5 uncertain_player_acces
+s=539 structure_starts=9 structure_references=204 uncertain=0 watch_index=count=1554,supported=true,overflow=false,archive=unavailable,visit_write_failed=true,history=positive-only,scope=session-only structure_inspection_failed=false deletion=DISABLED | LOD-only
+archive: state=unavailable attached=false durable_visit_write_failed=true | LOD-only recovery inspection: mode=filesystem-only auto_recovery=disabled directory=directory session_marker=regular(63B) invalidation_marker=missing archive_db=regular(182325248B) wal=re
+gular(4165352B) shm=regular(32768B) journal=missing lock_file=regular(0B) operator_review=required | LOD-only snapshot writes: attempts=0 committed=0 protected_noop=0 failures=0
+  [2611??026 13:52:05.845] [LSS Processing Thread/WARN] [LSS/]: Disk reads are concurrency-gated under sustained load (read_gate=2/2, park full): the request router is deferring cold-region reads to the next client declaration (running total: gate_stops= in /lssl
+od diag). This is the gate working; raise storage.disk.max_concurrent_reads in lss-server-config.yaml and reload if server CPU headroom allows and you want faster cold backfill. (Logged once per session.)
+  [2611??026 13:54:20.160] [LSS Disk Reader #1/WARN] [LSS/]: Disk read timed out (>10s) at 535, -109 ??triaged as not-found (counted disk.errors; self-heals by re-declaration on gen-enabled servers)
+> [2611??026 13:54:30.591] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping the server
+> [2611??026 13:54:30.592] [Server thread/INFO] [LSS/]: Preparing LSS LOD generation tickets for final world save
+  [2611??026 13:54:30.594] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+  [2611??026 13:54:30.595] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+  [2611??026 13:54:30.930] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+  [2611??026 13:54:31.845] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+  [2611??026 13:54:50.270] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+  [2611??026 13:54:50.303] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+  [2611??026 13:54:50.365] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+  [2611??026 13:54:50.365] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+  [2611??026 13:54:50.366] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
+> [2611??026 13:54:52.698] [Server thread/INFO] [LSS/]: Stopping LSS LOD request processing service
 
 ========== debug-3.log.gz ==========
-  [2611월2026 13:25:26.567] [Server thread/DEBUG] [net.neoforged.neoforge.server.LanguageHook/]: Loaded 4 language file
-s for en_us
-  [2611월2026 13:25:26.579] [Server thread/INFO] [net.neoforged.neoforge.server.permission.PermissionAPI/]: Successfull
-y initialized permission handler neoforge:default_handler
-> [2611월2026 13:25:27.363] [Server thread/INFO] [LSS/]: LOD-only durable archive ready: LOD-only archive: state=ready
-schema=2 queue=0/4096 visit_history=positive-only absence=unknown invalidations_pending=0 invalidation_jobs=0/0/0 inval
-idation_batches=0 archive_write_batches=0 invalidation_active=false invalidation_last_started_age_ms=-1 invalidation_la
-st_completed_age_ms=-1 egress_invalidation_blocked=false egress_visit_publication_blocked=false archive_untrusted=false
- session_visits=0 session_visit_overflow=false session_invalidations=0 session_invalidation_overflow=false tracking_sta
-rted_ms=1795596825561
-  [2611월2026 13:25:27.364] [Server thread/INFO] [LSS/]: Starting LSS LOD request processing service
-  [2611월2026 13:25:27.417] [Server thread/INFO] [LSS/]: Loaded 19546 timestamp cache entries from world\data\lss-times
-tamps.bin
-  [2611월2026 13:25:28.003] [Server thread/INFO] [LSS/]: LOD store active (driver=private/3.49.1.0). It stores served L
-OD bytes under <world>/lss-lod/ and, once fully warmed, occupies roughly as much space as the region files themselves.
-It is DERIVED data — deleting lss-lod/ is always safe. Set storage.lod_store.enabled to false and restart to disable; s
-torage.lod_store.max_size_mib bounds its size after reload.
-  [2611월2026 13:25:28.011] [Server thread/INFO] [LSS/]: Effective config: useNbtTranscode=true, diskReaderThreads=3, u
-seCompressedColumns=true, useBackgroundReadSplit=true, useSelectiveNbtParse=true, maxConcurrentDiskReads=2
-  [2611월2026 13:25:28.198] [Server thread/INFO] [LSS/]: Dirty content filter: seeded 49 already-loaded chunk(s)
-> [2611월2026 13:25:29.957] [LSS LOD Store SQLite/INFO] [LSS/]: LOD store sweep [minecraft:overworld]: 13 changed regio
-n(s), dropped 1030 stale + 0 vanished-region row(s)
-  [2611월2026 13:25:29.966] [LSS Store Backfill/INFO] [LSS/]: Store backfill: 0 region(s) to process, estimated ~0 MB o
-f new deposits (uncapped)
-  [2611월2026 13:25:29.970] [LSS Store Backfill/INFO] [LSS/]: Store backfill complete: 0 regions, 0 deposited, 0 skippe
-d, 0 errors, 0 pauses
-  [2611월2026 13:25:33.152] [Server thread/DEBUG] [LSS/]: sent=0/tick, disk=0/0, utd=0, bw=0 B/75.0 MB
-  [2611월2026 13:25:38.150] [Server thread/DEBUG] [LSS/]: sent=0/tick, disk=0/0, utd=0, bw=0 B/75.0 MB
-  [2611월2026 13:29:23.493] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Bandwidth: 757.0 KB/s / 75.0
-MB/s global (77.9 MB total, 13.1 MB wire, cols zstd=2320 raw=0)
-  [2611월2026 13:29:23.494] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]:   WDzizon: sq=0/1024, psync=9
-8, pgen=40, sent=2320 (77.9 MB), rate=10/s, obuf=1.3 KB/64.3 KB, pingf=1.00, yielded=0, paced=14
-> [2611월2026 13:29:23.508] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: LOD-only preservation: inspec
-ted=1063 candidates_at_generation=0 snapshot_candidates_at_generation=795 protected_area=0 player_watched_before_genera
-tion=0 uncertain_player_access=795 structure_starts=2 structure_references=266 uncertain=0 watch_index=count=1486,suppo
-rted=true,overflow=false,archive=ready,visit_write_failed=false,history=positive-only,scope=session-only structure_insp
-ection_failed=false deletion=DISABLED | LOD-only archive: state=ready schema=2 queue=0/4096 visit_history=positive-only
- absence=unknown invalidations_pending=0 invalidation_jobs=2222/2222/0 invalidation_batches=262 archive_write_batches=4
-00 invalidation_active=false invalidation_last_started_age_ms=304 invalidation_last_completed_age_ms=119 egress_invalid
-ation_blocked=false egress_visit_publication_blocked=false archive_untrusted=false session_visits=1486 session_visit_ov
-erflow=false session_invalidations=1398 session_invalidation_overflow=false tracking_started_ms=1795596825561 durable_v
-isit_write_failed=false | LOD-only snapshot writes: attempts=795 committed=329 protected_noop=466 failures=0
-> [2611월2026 13:29:23.518] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: LOD-only archive reads: reque
-sts=1963 started=1963 hits=0 misses=1963 failures=0 queue_rejected=0 shutdown_rejected=0 hit_bytes=0 may_send_denied=0
-egress_permits=0 permit_releases=0 | archive_lookup_reasons: requests=1963 selected_rows=0 global_blocked=32 session_vi
-sit_blocked=55 session_invalidation_blocked=99 row_missing=1776 row_invalidated=1 durable_visited_row=0 unexpected_filt
-ered=0 post_select_blocked=0 | archive_lookup_dimensions: [minecraft:overworld{requests=1963,selected=0,missing=1776,in
-validated=1,durable_visited=0,global_blocked=32,session_visit_blocked=55,session_invalidation_blocked=99,post_select_bl
-ocked=0}]
-  [2611월2026 13:29:23.628] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: LOD-only archive rows: total=
-4026 valid=3153 invalidated=873 valid_unvisited=3153 valid_with_visit_marker=0 durable_visited_total=3595 | archive_row
-_dimensions: [minecraft:overworld{total=4026,valid=3153,invalidated=873,valid_unvisited=3153,valid_with_visit_marker=0,
-durable_visited_total=3595}]
-  [2611월2026 13:29:25.007] [Server thread/DEBUG] [LSS/]: sent=0/tick, disk=0/0, utd=0, bw=342.1 KB/75.0 MB
-  [2611월2026 13:29:25.007] [Server thread/DEBUG] [LSS/]:   WDzizon: sq=0, syncSlots=98/200, genSlots=0/40
-  [2611월2026 13:29:27.009] [LSS-TimestampSave/DEBUG] [LSS/]: Saved 20599 timestamp cache entries to world\data\lss-tim
-estamps.bin
+  [2611월2026 13:44:37.663] [LSS Processing Thread/DEBUG] [LSS/]: Disk saturated/gated result dropped silently (superseded) for ea04c93a-d122-4b7b-baee-1c53d5ae535e: chunk [594, -97]
+  [2611월2026 13:44:40.184] [Server thread/DEBUG] [LSS/]: sent=0/tick, disk=0/0, utd=0, bw=301.7 KB/75.0 MB
+  [2611월2026 13:44:40.184] [Server thread/DEBUG] [LSS/]:   WDzizon: sq=0, syncSlots=42/200, genSlots=40/40
+> [2611월2026 13:44:42.260] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [WDzizon: Stopping the server]
+> [2611월2026 13:44:42.262] [Server thread/INFO] [LSS/]: Preparing LSS LOD generation tickets for final world save
+  [2611월2026 13:44:42.265] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+  [2611월2026 13:44:42.269] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+  [2611월2026 13:44:42.431] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+
+
+========== 2026-11-26-3.log.gz ==========
+  [2611월2026 13:42:18.029] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [WDzizon: Set the weather to clear]
+  [2611월2026 13:43:10.319] [LSS Disk Reader #2/WARN] [LSS/]: Disk read timed out (>10s) at 539, -61 — triaged as not-found (counted disk.errors; self-heals by re-declaration on gen-enabled servers) (+5 more since last report)
+  [2611월2026 13:44:12.124] [LSS Disk Reader #1/WARN] [LSS/]: Disk read timed out (>10s) at 637, -93 — triaged as not-found (counted disk.errors; self-heals by re-declaration on gen-enabled servers) (+8 more since last report)
+> [2611월2026 13:44:42.260] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [WDzizon: Stopping the server]
+> [2611월2026 13:44:42.262] [Server thread/INFO] [LSS/]: Preparing LSS LOD generation tickets for final world save
+  [2611월2026 13:44:42.265] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+  [2611월2026 13:44:42.269] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+  [2611월2026 13:44:42.431] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+
+
+========== debug-4.log.gz ==========
+  [2611월2026 13:22:03.639] [Server thread/DEBUG] [LSS/]:   WDzizon: sq=0, syncSlots=98/200, genSlots=0/40
+  [2611월2026 13:22:08.642] [Server thread/DEBUG] [LSS/]: sent=0/tick, disk=0/0, utd=0, bw=193.0 KB/75.0 MB
+  [2611월2026 13:22:08.642] [Server thread/DEBUG] [LSS/]:   WDzizon: sq=0, syncSlots=98/200, genSlots=0/40
+> [2611월2026 13:22:11.218] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping the server
+> [2611월2026 13:22:11.220] [Server thread/INFO] [LSS/]: Preparing LSS LOD generation tickets for final world save
+  [2611월2026 13:22:11.222] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+  [2611월2026 13:22:11.223] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+  [2611월2026 13:22:11.479] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+  [2611월2026 13:22:11.587] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+  [2611월2026 13:22:13.432] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+  [2611월2026 13:22:13.465] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+  [2611월2026 13:22:13.518] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+  [2611월2026 13:22:13.519] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+  [2611월2026 13:22:13.520] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
+> [2611월2026 13:22:14.360] [Server thread/INFO] [LSS/]: Stopping LSS LOD request processing service
+  [2611월2026 13:22:14.369] [LSS-TimestampSave/DEBUG] [LSS/]: Saved 19546 timestamp cache entries to world\data\lss-timestamps.bin
+  [2611월2026 13:22:14.742] [Server thread/DEBUG] [net.neoforged.fml.config.ConfigTracker/CONFIG]: Unloading configs type SERVER
+
+
+========== 2026-11-26-2.log.gz ==========
+  [2611월2026 13:19:02.813] [LSS Processing Thread/WARN] [LSS/]: Disk reads are concurrency-gated under sustained load (read_gate=2/2, park full): the request router is deferring cold-region reads to the next client declaration (running total: gate_stops= in /lss
+lod diag). This is the gate working; raise storage.disk.max_concurrent_reads in lss-server-config.yaml and reload if server CPU headroom allows and you want faster cold backfill. (Logged once per session.)
+  [2611월2026 13:20:00.762] [LSS Disk Reader #1/WARN] [LSS/]: Disk read timed out (>10s) at 591, 25 — triaged as not-found (counted disk.errors; self-heals by re-declaration on gen-enabled servers)
+  [2611월2026 13:21:20.308] [LSS Disk Reader #2/WARN] [LSS/]: Disk read timed out (>10s) at 594, -9 — triaged as not-found (counted disk.errors; self-heals by re-declaration on gen-enabled servers) (+5 more since last report)
+> [2611월2026 13:22:11.218] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping the server
+> [2611월2026 13:22:11.220] [Server thread/INFO] [LSS/]: Preparing LSS LOD generation tickets for final world save
+  [2611월2026 13:22:11.222] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+  [2611월2026 13:22:11.223] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+  [2611월2026 13:22:11.479] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+  [2611월2026 13:22:11.587] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+  [2611월2026 13:22:13.432] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+  [2611월2026 13:22:13.465] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+  [2611월2026 13:22:13.518] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+  [2611월2026 13:22:13.519] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+  [2611월2026 13:22:13.520] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
+> [2611월2026 13:22:14.360] [Server thread/INFO] [LSS/]: Stopping LSS LOD request processing service
+
+
+========== debug-5.log.gz ==========
+  [2611월2026 12:54:12.488] [LSS-TimestampSave/DEBUG] [LSS/]: Saved 18248 timestamp cache entries to world\data\lss-timestamps.bin
+  [2611월2026 12:54:15.617] [Server thread/DEBUG] [LSS/]: sent=0/tick, disk=0/0, utd=0, bw=306.3 KB/75.0 MB
+  [2611월2026 12:54:15.618] [Server thread/DEBUG] [LSS/]:   WDzizon: sq=0, syncSlots=4/200, genSlots=40/40
+> [2611월2026 12:54:17.784] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping the server
+> [2611월2026 12:54:17.819] [Server thread/INFO] [LSS/]: Preparing LSS LOD generation tickets for final world save
+  [2611월2026 12:54:17.820] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+  [2611월2026 12:54:17.822] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+  [2611월2026 12:54:17.968] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+  [2611월2026 12:54:18.380] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+  [2611월2026 12:54:24.604] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+  [2611월2026 12:54:24.637] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+  [2611월2026 12:54:24.690] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+  [2611월2026 12:54:24.691] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+  [2611월2026 12:54:24.692] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
+> [2611월2026 12:54:25.548] [Server thread/INFO] [LSS/]: Stopping LSS LOD request processing service
+  [2611월2026 12:54:25.553] [LSS-TimestampSave/DEBUG] [LSS/]: Saved 18304 timestamp cache entries to world\data\lss-timestamps.bin
+  [2611월2026 12:54:26.043] [Server thread/DEBUG] [net.neoforged.fml.config.ConfigTracker/CONFIG]: Unloading configs type SERVER
+
+
+========== 2026-11-26-1.log.gz ==========
+  [2611월2026 12:53:34.508] [LSS LOD Store SQLite/INFO] [LSS/]: LOD store sweep [minecraft:overworld]: 14 changed region(s), dropped 814 stale + 0 vanished-region row(s)
+  [2611월2026 12:53:34.657] [LSS Store Backfill/INFO] [LSS/]: Store backfill: 0 region(s) to process, estimated ~0 MB of new deposits (uncapped)
+  [2611월2026 12:53:34.689] [LSS Store Backfill/INFO] [LSS/]: Store backfill complete: 0 regions, 0 deposited, 0 skipped, 0 errors, 0 pauses
+> [2611월2026 12:54:17.784] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping the server
+> [2611월2026 12:54:17.819] [Server thread/INFO] [LSS/]: Preparing LSS LOD generation tickets for final world save
+  [2611월2026 12:54:17.820] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+  [2611월2026 12:54:17.822] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+  [2611월2026 12:54:17.968] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+  [2611월2026 12:54:18.380] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+  [2611월2026 12:54:24.604] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+  [2611월2026 12:54:24.637] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+  [2611월2026 12:54:24.690] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+  [2611월2026 12:54:24.691] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+  [2611월2026 12:54:24.692] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
+> [2611월2026 12:54:25.548] [Server thread/INFO] [LSS/]: Stopping LSS LOD request processing service
+
+
+========== 2026-11-25-6.log.gz ==========
+  [2511월2026 23:38:12.824] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: LOD-only archive reads: requests=102 started=7 hits=0 misses=5 failures=0 queue_rejected=64 shutdown_rejected=0 hit_bytes=0 may_send_denied=0 egress_permits=0 permit_release
+s=0 | archive_lookup_reasons: requests=7 selected_rows=0 global_blocked=4 session_visit_blocked=1 session_invalidation_blocked=0 row_missing=0 row_invalidated=0 durable_visited_row=0 unexpected_filtered=0 post_select_blocked=0 | archive_lookup_dimensions: [minecr
+aft:overworld{requests=7,selected=0,missing=0,invalidated=0,durable_visited=0,global_blocked=4,session_visit_blocked=1,session_invalidation_blocked=0,post_select_blocked=0}]
+  [2511월2026 23:38:17.775] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: LOD-only archive rows: total=2886 valid=2269 invalidated=617 valid_unvisited=2269 valid_with_visit_marker=0 durable_visited_total=2468 | archive_row_dimensions: [minecraft:o
+verworld{total=2886,valid=2269,invalidated=617,valid_unvisited=2269,valid_with_visit_marker=0,durable_visited_total=2468}]
+  [2511월2026 23:39:06.721] [LSS Disk Reader #1/WARN] [LSS/]: Disk read timed out (>10s) at 577, 31 — triaged as not-found (counted disk.errors; self-heals by re-declaration on gen-enabled servers) (+7 more since last report)
+> [2511월2026 23:40:01.792] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping the server
+> [2511월2026 23:40:01.837] [Server thread/INFO] [LSS/]: Preparing LSS LOD generation tickets for final world save
+  [2511월2026 23:40:01.837] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+  [2511월2026 23:40:01.839] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+  [2511월2026 23:40:02.038] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+  [2511월2026 23:40:02.327] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+  [2511월2026 23:40:08.050] [LSS Disk Reader #2/WARN] [LSS/]: Disk read timed out (>10s) at 583, 44 — triaged as not-found (counted disk.errors; self-heals by re-declaration on gen-enabled servers) (+3 more since last report)
+  [2511월2026 23:40:13.297] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+  [2511월2026 23:40:13.376] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+  [2511월2026 23:40:13.377] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+  [2511월2026 23:40:13.379] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
+> [2511월2026 23:40:14.318] [Server thread/INFO] [LSS/]: Stopping LSS LOD request processing service
+
+
+========== 2026-11-25-5.log.gz ==========
+  [2511월2026 23:35:37.787] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: notepad "D:\���¿�\����\����ũ����Ʈ\����\1.21.1 vss modifying test\run.bat"<--[HERE]
+  [2511월2026 23:35:42.886] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Unknown or incomplete command, see below for error
+  [2511월2026 23:35:42.886] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: stio<--[HERE]
+> [2511월2026 23:35:43.892] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping the server
+> [2511월2026 23:35:43.935] [Server thread/INFO] [LSS/]: Preparing LSS LOD generation tickets for final world save
+  [2511월2026 23:35:43.936] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+  [2511월2026 23:35:43.937] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+  [2511월2026 23:35:43.939] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+  [2511월2026 23:35:43.969] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+  [2511월2026 23:35:44.152] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+  [2511월2026 23:35:44.186] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+  [2511월2026 23:35:44.239] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+  [2511월2026 23:35:44.242] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+  [2511월2026 23:35:44.243] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
+> [2511월2026 23:35:44.339] [Server thread/INFO] [LSS/]: Stopping LSS LOD request processing service
+
+
+========== 2026-11-25-4.log.gz ==========
+  [2511월2026 23:22:23.364] [LSS LOD Store SQLite/INFO] [LSS/]: LOD store sweep [minecraft:overworld]: 21 changed region(s), dropped 2034 stale + 0 vanished-region row(s)
+  [2511월2026 23:22:23.373] [LSS Store Backfill/INFO] [LSS/]: Store backfill: 11 region(s) to process, estimated ~1 MB of new deposits (uncapped)
+  [2511월2026 23:22:24.382] [LSS Store Backfill/INFO] [LSS/]: Store backfill complete: 11 regions, 0 deposited, 518 skipped, 0 errors, 0 pauses
+> [2511월2026 23:25:34.113] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping the server
+> [2511월2026 23:25:34.156] [Server thread/INFO] [LSS/]: Preparing LSS LOD generation tickets for final world save
+  [2511월2026 23:25:34.158] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+  [2511월2026 23:25:34.159] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+  [2511월2026 23:25:34.159] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+  [2511월2026 23:25:34.186] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+  [2511월2026 23:25:34.380] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+  [2511월2026 23:25:34.414] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+  [2511월2026 23:25:34.467] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+  [2511월2026 23:25:34.470] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+  [2511월2026 23:25:34.471] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
+> [2511월2026 23:25:34.549] [Server thread/INFO] [LSS/]: Stopping LSS LOD request processing service
+
+
+========== 2026-11-25-3.log.gz ==========
+  [2511월2026 23:04:43.874] [LSS Disk Reader #3/WARN] [LSS/]: Disk read timed out (>10s) at 468, 61 — triaged as not-found (counted disk.errors; self-heals by re-declaration on gen-enabled servers) (+9 more since last report)
+  [2511월2026 23:05:59.209] [LSS Disk Reader #3/WARN] [LSS/]: Disk read timed out (>10s) at 498, -53 — triaged as not-found (counted disk.errors; self-heals by re-declaration on gen-enabled servers) (+9 more since last report)
+  [2511월2026 23:07:00.510] [LSS Disk Reader #1/WARN] [LSS/]: Disk read timed out (>10s) at 450, -39 — triaged as not-found (counted disk.errors; self-heals by re-declaration on gen-enabled servers) (+7 more since last report)
+> [2511월2026 23:07:22.356] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping the server
+> [2511월2026 23:07:22.402] [Server thread/INFO] [LSS/]: Preparing LSS LOD generation tickets for final world save
+  [2511월2026 23:07:22.402] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+  [2511월2026 23:07:22.405] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+  [2511월2026 23:07:22.562] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+  [2511월2026 23:07:22.665] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+  [2511월2026 23:07:52.455] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+  [2511월2026 23:07:52.488] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+  [2511월2026 23:07:52.543] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+  [2511월2026 23:07:52.544] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+  [2511월2026 23:07:52.544] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
+> [2511월2026 23:07:54.724] [Server thread/INFO] [LSS/]: Stopping LSS LOD request processing service
+
+
+========== 2026-11-25-2.log.gz ==========
+  [2511월2026 19:11:40.377] [LSS Disk Reader #1/WARN] [LSS/]: Disk read timed out (>10s) at 529, 54 — triaged as not-found (counted disk.errors; self-heals by re-declaration on gen-enabled servers) (+5 more since last report)
+  [2511월2026 19:12:36.877] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: WDzizon lost connection: Disconnected
+  [2511월2026 19:12:36.878] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: WDzizon left the game
+> [2511월2026 19:12:43.417] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping the server
+> [2511월2026 19:12:43.467] [Server thread/INFO] [LSS/]: Preparing LSS LOD generation tickets for final world save
+  [2511월2026 19:12:43.467] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+  [2511월2026 19:12:43.468] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+  [2511월2026 19:12:43.468] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+  [2511월2026 19:12:43.477] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+  [2511월2026 19:12:44.192] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+  [2511월2026 19:12:44.226] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+  [2511월2026 19:12:44.287] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+  [2511월2026 19:12:44.287] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+  [2511월2026 19:12:44.287] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
+> [2511월2026 19:12:45.853] [Server thread/INFO] [LSS/]: Stopping LSS LOD request processing service
+
+
+========== 2026-11-25-1.log.gz ==========
+  [2511월2026 18:46:19.741] [LSS Disk Reader #2/WARN] [LSS/]: Disk read timed out (>10s) at 443, 53 — triaged as not-found (counted disk.errors; self-heals by re-declaration on gen-enabled servers) (+4 more since last report)
+  [2511월2026 18:47:02.792] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: WDzizon lost connection: Disconnected
+  [2511월2026 18:47:02.793] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: WDzizon left the game
+> [2511월2026 18:52:38.841] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping the server
+> [2511월2026 18:52:38.890] [Server thread/INFO] [LSS/]: Preparing LSS LOD generation tickets for final world save
+  [2511월2026 18:52:38.891] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+  [2511월2026 18:52:38.892] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+  [2511월2026 18:52:38.892] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+  [2511월2026 18:52:38.901] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+  [2511월2026 18:52:39.298] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+  [2511월2026 18:52:39.332] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+  [2511월2026 18:52:39.393] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+  [2511월2026 18:52:39.393] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+  [2511월2026 18:52:39.393] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
+> [2511월2026 18:52:40.567] [Server thread/INFO] [LSS/]: Stopping LSS LOD request processing service
+
+
+========== 2026-11-24-4.log.gz ==========
+  [2411월2026 15:50:26.570] [LSS Disk Reader #1/WARN] [LSS/]: Disk read timed out (>10s) at 1819, 1906 — triaged as not-found (counted disk.errors; self-heals by re-declaration on gen-enabled servers) (+8 more since last report)
+  [2411월2026 15:51:35.552] [LSS Disk Reader #1/WARN] [LSS/]: Disk read timed out (>10s) at 1930, 1904 — triaged as not-found (counted disk.errors; self-heals by re-declaration on gen-enabled servers) (+7 more since last report)
+  [2411월2026 15:53:10.315] [LSS Disk Reader #1/WARN] [LSS/]: Disk read timed out (>10s) at 1821, 1932 — triaged as not-found (counted disk.errors; self-heals by re-declaration on gen-enabled servers) (+7 more since last report)
+> [2411월2026 15:53:20.759] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [WDzizon: Stopping the server]
+> [2411월2026 15:53:20.806] [Server thread/INFO] [LSS/]: Preparing LSS LOD generation tickets for final world save
+  [2411월2026 15:53:20.808] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+  [2411월2026 15:53:20.810] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+  [2411월2026 15:53:21.054] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+
+
+========== 2026-11-24-3.log.gz ==========
+  [2411월2026 15:21:20.517] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: LOD-only preservation: inspected=935 candidates_at_generation=0 snapshot_candidates_at_generation=121 protected_area=684 player_watched_before_generation=0 uncertain_player_
+access=121 structure_starts=1 structure_references=129 uncertain=0 watch_index=count=906,supported=true,overflow=false,archive=ready,visit_write_failed=false,history=positive-only,scope=session-only structure_inspection_failed=false deletion=DISABLED | LOD-only a
+rchive: state=ready schema=2 queue=732/4096 visit_history=positive-only absence=unknown invalidations_pending=525 egress_invalidation_blocked=true egress_visit_publication_blocked=false archive_untrusted=false session_visits=906 session_visit_overflow=false sessi
+on_invalidations=1454 session_invalidation_overflow=false tracking_started_ms=1795501102485 durable_visit_write_failed=false | LOD-only snapshot writes: attempts=121 committed=121 protected_noop=0 failures=0
+  [2411월2026 15:21:37.218] [LSS Processing Thread/WARN] [LSS/]: Disk reads are concurrency-gated under sustained load (read_gate=2/2, park full): the request router is deferring cold-region reads to the next client declaration (running total: gate_stops= in /lss
+lod diag). This is the gate working; raise storage.disk.max_concurrent_reads in lss-server-config.yaml and reload if server CPU headroom allows and you want faster cold backfill. (Logged once per session.)
+  [2411월2026 15:23:27.809] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 2106ms or 42 ticks behind
+> [2411월2026 15:25:58.970] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [WDzizon: Stopping the server]
+> [2411월2026 15:25:59.004] [Server thread/INFO] [LSS/]: Preparing LSS LOD generation tickets for final world save
+  [2411월2026 15:25:59.005] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+  [2411월2026 15:25:59.010] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+  [2411월2026 15:25:59.106] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+  [2411월2026 15:26:01.734] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+  [2411월2026 15:26:08.772] [LSS Disk Reader #2/WARN] [LSS/]: Disk read timed out (>10s) at 1879, 1848 — triaged as not-found (counted disk.errors; self-heals by re-declaration on gen-enabled servers) (+10 more since last report)
+  [2411월2026 15:26:35.406] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+  [2411월2026 15:26:35.552] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+  [2411월2026 15:26:35.553] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+  [2411월2026 15:26:35.554] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
+> [2411월2026 15:26:38.166] [Server thread/INFO] [LSS/]: Stopping LSS LOD request processing service
