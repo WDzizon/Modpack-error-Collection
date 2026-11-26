@@ -1,269 +1,638 @@
-[2611월2026 16:00:16.894] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeserver, --fml.neoForgeVersion, 21.1.267, --fml.fmlVersion, 4.0.45, --fml.mcVersion, 1.21.1, --fml.neoFormVersion, 20240808.144430]
-[2611월2026 16:00:16.899] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Eclipse Adoptium OpenJDK 64-Bit Server VM 21.0.12.1+1-LTS
-[2611월2026 16:00:16.901] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 11.0.5+main.901c6ea8 starting: java version 21.0.12.1 by Eclipse Adoptium; OS Windows 10 arch amd64 version 10.0
-[2611월2026 16:00:17.095] [main/INFO] [net.neoforged.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgeserver
-[2611월2026 16:00:17.182] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=union:/D:/정승원/게임/마인크래프트/서버/1.21.1%20vss%20modifying%20test/libraries/net/fabricmc/sponge-mixin/0.16.4+mixin.0.8.7/sponge-mixin-0.16.4+mixin.0.8.7.jar%2373!/ Service=ModLauncher Env=SERVER
-[2611월2026 16:00:17.946] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "server-1.21.1-20240808.144430-srg.jar" [locator: production server provider +net.neoforged:neoforge:21.1.267:server]
-[2611월2026 16:00:18.100] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "neoforge-21.1.267-universal.jar" [locator: PathBasedLocator[name=neoforge, paths=[libraries\net\neoforged\neoforge\21.1.267\neoforge-21.1.267-universal.jar]], reader: mod manifest]
-[2611월2026 16:00:18.116] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "lod-server-support-neoforge.jar" [locator: {mods folder locator at D:\정승원\게임\마인크래프트\서버\1.21.1 vss modifying test\mods}, reader: mod manifest]
-[2611월2026 16:00:18.423] [main/INFO] [net.neoforged.fml.loading.moddiscovery.locators.JarInJarDependencyLocator/]: Found 3 dependencies adding them to mods collection
-[2611월2026 16:00:18.424] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found gamelibrary file "mixinextras-neoforge-0.5.5.jar" [parent: neoforge-21.1.267-universal.jar, locator: jarinjar, reader: mod manifest]
-[2611월2026 16:00:18.424] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found library file "zstd-jni-1.5.7-3.jar" [parent: lod-server-support-neoforge.jar, locator: jarinjar]
-[2611월2026 16:00:18.424] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found library file "net.neoforged.neoforge-coremods-21.1.267.jar" [parent: neoforge-21.1.267-universal.jar, locator: jarinjar, reader: mod manifest]
-[2611월2026 16:00:18.427] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/]: 
-     Mod List:
-		Name Version (Mod Id)
+5404:
+2026-11-26 18:00:21
+Full thread dump OpenJDK 64-Bit Server VM (21.0.12.1+1-LTS mixed mode, sharing):
 
-		LOD Server Support 0.23.0 (lss)
-		Minecraft 1.21.1 (minecraft)
-		NeoForge 21.1.267 (neoforge)
-[2611월2026 16:00:19.138] [main/INFO] [mixin/]: Compatibility level set to JAVA_21
-[2611월2026 16:00:19.151] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeserver' with arguments []
-[2611월2026 16:00:22.017] [main/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.5).
-[2611월2026 16:00:35.764] [modloading-worker-0/INFO] [net.neoforged.neoforge.common.NeoForgeMod/NEOFORGE-MOD]: NeoForge mod loading, version 21.1.267, for MC 1.21.1
-[2611월2026 16:00:37.156] [main/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[2611월2026 16:00:37.696] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/D:/정승원/게임/마인크래프트/서버/1.21.1%20vss%20modifying%20test/libraries/net/minecraft/server/1.21.1-20240808.144430/server-1.21.1-20240808.144430-srg.jar%23118!/assets/.mcassetsroot' uses unexpected schema
-[2611월2026 16:00:37.698] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/D:/정승원/게임/마인크래프트/서버/1.21.1%20vss%20modifying%20test/libraries/net/minecraft/server/1.21.1-20240808.144430/server-1.21.1-20240808.144430-srg.jar%23118!/data/.mcassetsroot' uses unexpected schema
-[2611월2026 16:00:40.190] [main/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 1290 recipes
-[2611월2026 16:00:40.444] [main/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 1399 advancements
-[2611월2026 16:00:44.551] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting minecraft server version 1.21.1
-[2611월2026 16:00:44.556] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Loading properties
-[2611월2026 16:00:44.563] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Default game type: SURVIVAL
-[2611월2026 16:00:44.568] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
-[2611월2026 16:00:44.806] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting Minecraft server on *:25565
-[2611월2026 16:00:44.972] [Server thread/INFO] [net.minecraft.server.network.ServerConnectionListener/]: Using default channel type
-[2611월2026 16:00:45.163] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Preparing level "world"
-[2611월2026 16:00:47.935] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
-[2611월2026 16:00:48.977] [Worker-Main-10/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[2611월2026 16:00:48.986] [Worker-Main-10/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[2611월2026 16:00:49.014] [Worker-Main-10/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[2611월2026 16:00:49.551] [Worker-Main-9/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 24%
-[2611월2026 16:00:49.922] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 1909 ms
-[2611월2026 16:00:49.925] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Done (4.845s)! For help, type "help"
-[2611월2026 16:00:49.989] [Server thread/INFO] [net.neoforged.neoforge.server.permission.PermissionAPI/]: Successfully initialized permission handler neoforge:default_handler
-[2611월2026 16:01:07.451] [Server thread/INFO] [LSS/]: LOD-only durable archive ready: LOD-only archive: state=ready schema=2 queue=0/4096 visit_history=positive-only absence=unknown invalidations_pending=0 invalidation_jobs=0/0/0 invalidation_batches=0 archive_write_batches=0 invalidation_active=false invalidation_last_started_age_ms=-1 invalidation_last_completed_age_ms=-1 egress_invalidation_blocked=false egress_visit_publication_blocked=false archive_untrusted=false session_visits=0 session_visit_overflow=false session_invalidations=0 session_invalidation_overflow=false tracking_started_ms=1795596825561
-[2611월2026 16:01:07.453] [Server thread/INFO] [LSS/]: Starting LSS LOD request processing service
-[2611월2026 16:01:07.522] [Server thread/INFO] [LSS/]: Loaded 53315 timestamp cache entries from world\data\lss-timestamps.bin
-[2611월2026 16:01:07.564] [Server thread/INFO] [LSS/]: LOD store is off. Recommended: set storage.lod_store.enabled to true in lss-server-config.yaml and restart for faster LOD serving; the tradeoff is it can require additional disk space comparable to the world directory.
-[2611월2026 16:01:07.574] [Server thread/INFO] [LSS/]: Effective config: useNbtTranscode=true, diskReaderThreads=3, useCompressedColumns=true, useBackgroundReadSplit=true, useSelectiveNbtParse=true, maxConcurrentDiskReads=3
-[2611월2026 16:01:07.866] [Server thread/INFO] [LSS/]: Dirty content filter: seeded 49 already-loaded chunk(s)
-[2611월2026 16:01:30.434] [User Authenticator #1/INFO] [net.minecraft.server.network.ServerLoginPacketListenerImpl/]: UUID of player spaceZEOE is 292580fb-4402-4262-b7d4-8151cdf8e48c
-[2611월2026 16:01:31.811] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: spaceZEOE[/[::1]:6399] logged in with entity id 6 at (9928.5, 187.24311878216866, -1911.5)
-[2611월2026 16:01:31.938] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: spaceZEOE joined the game
-[2611월2026 16:01:32.688] [Server thread/INFO] [LSS/]: LSS handshake received from spaceZEOE (protocol v20, capabilities=15)
-[2611월2026 16:01:32.708] [Server thread/INFO] [LSS/]: Player spaceZEOE registered for LSS LOD request processing (caps=15)
-[2611월2026 16:01:39.600] [User Authenticator #2/INFO] [net.minecraft.server.network.ServerLoginPacketListenerImpl/]: UUID of player WDzizon is ea04c93a-d122-4b7b-baee-1c53d5ae535e
-[2611월2026 16:01:41.389] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: WDzizon[/[::1]:6407] logged in with entity id 64 at (7357.126766572816, 466.1728140102765, -1344.3199201433658)
-[2611월2026 16:01:41.424] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: WDzizon joined the game
-[2611월2026 16:01:43.167] [Server thread/INFO] [LSS/]: LSS handshake received from WDzizon (protocol v20, capabilities=15)
-[2611월2026 16:01:43.224] [Server thread/INFO] [LSS/]: Player WDzizon registered for LSS LOD request processing (caps=15)
-[2611월2026 16:02:29.861] [LSS Disk Reader #1/WARN] [LSS/]: Disk read timed out (>10s) at 593, -169 — triaged as not-found (counted disk.errors; self-heals by re-declaration on gen-enabled servers)
-[2611월2026 16:03:36.500] [LSS Disk Reader #3/WARN] [LSS/]: Disk read timed out (>10s) at 656, -168 — triaged as not-found (counted disk.errors; self-heals by re-declaration on gen-enabled servers) (+11 more since last report)
-[2611월2026 16:04:38.543] [LSS Disk Reader #1/WARN] [LSS/]: Disk read timed out (>10s) at 670, -74 — triaged as not-found (counted disk.errors; self-heals by re-declaration on gen-enabled servers) (+15 more since last report)
-[2611월2026 16:04:41.231] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [spaceZEOE: Teleported spaceZEOE to 11976.500000, 187.243119, -1911.500000]
-[2611월2026 16:04:41.231] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 7965ms or 159 ticks behind
-[2611월2026 16:05:38.628] [LSS Disk Reader #1/WARN] [LSS/]: Disk read timed out (>10s) at 360, -181 — triaged as not-found (counted disk.errors; self-heals by re-declaration on gen-enabled servers) (+4 more since last report)
-[2611월2026 16:06:30.602] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: === LSS LOD Diagnostics ===
-[2611월2026 16:06:30.603] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Config: enabled=true, lodDist=512, bw/player=25.0 MB/s, bw/global=75.0 MB/s
-[2611월2026 16:06:30.603] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Throughput: sent=2743 (98.2 MB), rate=8 sections/s (311.3 KB/s), uptime=5m 23s
-[2611월2026 16:06:30.603] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Sources (total): in_mem=1037, disk=375, up_to_date=11796, gen=2489, re_resolved=0, grace_skipped=70
-[2611월2026 16:06:30.604] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Sources (tick): sent=0, disk=0/0, utd=0, gen=0, in_mem=0, skipped=3, bytes=0 B, qpeak=0/1024
-[2611월2026 16:06:30.604] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: DiskReader: submitted=8760, completed=8757, not_found=8344, all_air=0, errors=38, saturated=0, header_hits=0, avg_read=72.3ms, pending=0, read_timeouts=38, read_gate=3/3, gate_parked=0, gate_stops=0, gated=0, auxiliary_permit_skipped=5303, auxiliary_lookup_timeouts=62, read_path=bg-split, raw_serves=5788, sel=on, sel_fallbacks=0, direct_v20=375, memo_hits=121748, store=off
-[2611월2026 16:06:30.604] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generation: submitted=1331, completed=1331, active=0, timeouts=0, removed=0, order_gated=107721, inversions=105
-[2611월2026 16:06:30.604] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dialects: v20=2, v19=0, v18=0, v16=0, started=2/0/0/0, ended=0/0/0/0 in 5m
-[2611월2026 16:06:30.604] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Xray: active=off, masked_sections=0
-[2611월2026 16:06:30.604] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Yield: armed=true, ticks_total=0, bytes_withheld=0 B
-[2611월2026 16:06:30.604] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: FarPlayers: subs=2, rosters=2, updates=0, entries=0, suppressed=0, bytes=8
-[2611월2026 16:06:30.605] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Summary: reqs=2, frames=2, tiles known=193 never_clean=1 no_region=2256, range_filtered=0, bytes=2777, refresh_ms_max=20929, stamps=11061/238
-[2611월2026 16:06:30.605] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dirty: marked=1609, suppressed=2590, seeded_load=1299, entries=3196
-[2611월2026 16:06:30.605] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Bandwidth: 222.7 KB/s / 75.0 MB/s global (98.2 MB total, 17.3 MB wire, cols zstd=2743 raw=0)
-[2611월2026 16:06:30.605] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]:   WDzizon: sq=0/1024, psync=0, pgen=0, sent=605 (24.2 MB), rate=2/s, obuf=0 B/28.4 KB, pingf=1.00, yielded=0, paced=3
-[2611월2026 16:06:30.606] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]:   spaceZEOE: sq=0/1024, psync=99, pgen=0, sent=2138 (74.0 MB), rate=7/s, obuf=0 B/35.6 KB, pingf=1.00, yielded=0, paced=19
-[2611월2026 16:06:30.616] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: LOD-only preservation: inspected=1331 candidates_at_generation=0 snapshot_candidates_at_generation=638 protected_area=435 player_watched_before_generation=0 uncertain_player_access=638 structure_starts=3 structure_references=255 uncertain=0 watch_index=count=939,supported=true,overflow=false,archive=ready,visit_write_failed=false,history=positive-only,scope=session-only structure_inspection_failed=false deletion=DISABLED | LOD-only archive: state=ready schema=2 queue=0/4096 visit_history=positive-only absence=unknown invalidations_pending=0 invalidation_jobs=1609/1609/0 invalidation_batches=246 archive_write_batches=615 invalidation_active=false invalidation_last_started_age_ms=1940 invalidation_last_completed_age_ms=1718 egress_invalidation_blocked=false egress_visit_publication_blocked=false archive_untrusted=false session_visits=939 session_visit_overflow=false session_invalidations=986 session_invalidation_overflow=false tracking_started_ms=1795596825561 durable_visit_write_failed=false | LOD-only snapshot writes: attempts=638 committed=361 protected_noop=277 failures=0
-[2611월2026 16:06:30.626] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: LOD-only archive reads: requests=3457 started=3457 hits=0 misses=3457 failures=0 queue_rejected=0 shutdown_rejected=0 hit_bytes=0 may_send_denied=0 egress_permits=0 permit_releases=0 | archive_lookup_reasons: requests=3457 selected_rows=0 global_blocked=19 session_visit_blocked=14 session_invalidation_blocked=285 row_missing=3138 row_invalidated=1 durable_visited_row=0 unexpected_filtered=0 post_select_blocked=0 | archive_lookup_dimensions: [minecraft:overworld{requests=3457,selected=0,missing=3138,invalidated=1,durable_visited=0,global_blocked=19,session_visit_blocked=14,session_invalidation_blocked=285,post_select_blocked=0}] | archive_coordinate_samples: lookups=[minecraft:overworld@765,-104, minecraft:overworld@758,-103, minecraft:overworld@750,-103, minecraft:overworld@744,-103, minecraft:overworld@741,-103, minecraft:overworld@742,-103, minecraft:overworld@738,-103, minecraft:overworld@739,-103] row_missing=[minecraft:overworld@765,-104, minecraft:overworld@758,-103, minecraft:overworld@750,-103, minecraft:overworld@744,-103, minecraft:overworld@741,-103, minecraft:overworld@742,-103, minecraft:overworld@739,-103, minecraft:overworld@738,-103] snapshots_committed=[minecraft:overworld@762,-118, minecraft:overworld@762,-116, minecraft:overworld@762,-112, minecraft:overworld@762,-109, minecraft:overworld@762,-110, minecraft:overworld@762,-111, minecraft:overworld@762,-107, minecraft:overworld@762,-106]
-[2611월2026 16:06:30.931] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: LOD-only archive rows: total=9092 valid=3546 invalidated=5546 valid_unvisited=3546 valid_with_visit_marker=0 durable_visited_total=5637 | archive_row_dimensions: [minecraft:overworld{total=9092,valid=3546,invalidated=5546,valid_unvisited=3546,valid_with_visit_marker=0,durable_visited_total=5637}] | valid_unvisited_samples=[minecraft:overworld@762,-106, minecraft:overworld@762,-107, minecraft:overworld@762,-111, minecraft:overworld@762,-110, minecraft:overworld@762,-109, minecraft:overworld@762,-112, minecraft:overworld@762,-116, minecraft:overworld@762,-118]
-[2611월2026 16:07:23.810] [LSS Disk Reader #2/WARN] [LSS/]: Disk read timed out (>10s) at 415, -165 — triaged as not-found (counted disk.errors; self-heals by re-declaration on gen-enabled servers) (+4 more since last report)
-[2611월2026 16:09:04.316] [LSS Disk Reader #2/WARN] [LSS/]: Disk read timed out (>10s) at 729, -127 — triaged as not-found (counted disk.errors; self-heals by re-declaration on gen-enabled servers) (+9 more since last report)
-[2611월2026 16:09:08.089] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: WDzizon lost connection: Disconnected
-[2611월2026 16:09:08.092] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: WDzizon left the game
-[2611월2026 16:09:09.926] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: spaceZEOE lost connection: Disconnected
-[2611월2026 16:09:09.935] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: spaceZEOE left the game
-[2611월2026 16:09:14.818] [User Authenticator #3/INFO] [net.minecraft.server.network.ServerLoginPacketListenerImpl/]: UUID of player WDzizon is ea04c93a-d122-4b7b-baee-1c53d5ae535e
-[2611월2026 16:09:15.834] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: WDzizon[/[::1]:6528] logged in with entity id 2207 at (7357.126766572816, 466.1728140102765, -1344.3199201433658)
-[2611월2026 16:09:15.848] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: WDzizon joined the game
-[2611월2026 16:09:15.957] [Server thread/INFO] [LSS/]: LSS handshake received from WDzizon (protocol v20, capabilities=15)
-[2611월2026 16:09:15.959] [Server thread/INFO] [LSS/]: Player WDzizon registered for LSS LOD request processing (caps=15)
-[2611월2026 16:09:18.601] [User Authenticator #4/INFO] [net.minecraft.server.network.ServerLoginPacketListenerImpl/]: UUID of player spaceZEOE is 292580fb-4402-4262-b7d4-8151cdf8e48c
-[2611월2026 16:09:19.573] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: spaceZEOE[/[::1]:6536] logged in with entity id 2326 at (11976.5, 170.13724322429005, -1911.5)
-[2611월2026 16:09:19.599] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: spaceZEOE joined the game
-[2611월2026 16:09:20.034] [Server thread/INFO] [LSS/]: LSS handshake received from spaceZEOE (protocol v20, capabilities=15)
-[2611월2026 16:09:20.168] [Server thread/INFO] [LSS/]: Player spaceZEOE registered for LSS LOD request processing (caps=15)
-[2611월2026 16:09:32.979] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: LOD-only archive probe started: it checks one persisted eligible row through the real read adapter and final send-permit guard; no packet is sent and no world chunk is changed.
-[2611월2026 16:09:33.160] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: LOD-only archive probe: lookup=HIT dimension=minecraft:overworld chunk_x=728 chunk_z=-140 payload_bytes=28647 timestamp=1795676946 final_permit=GRANTED_AND_RELEASED (no packet sent)
-[2611월2026 16:09:50.327] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: spaceZEOE has the following entity data: [11976.5d, 170.13724322429005d, -1911.5d]
-[2611월2026 16:10:09.249] [LSS Disk Reader #1/WARN] [LSS/]: Disk read timed out (>10s) at 358, -192 — triaged as not-found (counted disk.errors; self-heals by re-declaration on gen-enabled servers) (+13 more since last report)
-[2611월2026 16:11:09.952] [LSS Disk Reader #1/WARN] [LSS/]: Disk read timed out (>10s) at 447, -166 — triaged as not-found (counted disk.errors; self-heals by re-declaration on gen-enabled servers) (+7 more since last report)
-[2611월2026 16:12:22.720] [LSS Disk Reader #2/WARN] [LSS/]: Disk read timed out (>10s) at 768, -95 — triaged as not-found (counted disk.errors; self-heals by re-declaration on gen-enabled servers) (+6 more since last report)
-[2611월2026 16:12:24.582] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [spaceZEOE: Teleported spaceZEOE to 11656.500000, 170.000000, -2503.500000]
-[2611월2026 16:12:24.583] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 4167ms or 83 ticks behind
-[2611월2026 16:13:42.828] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: === LSS LOD Diagnostics ===
-[2611월2026 16:13:42.828] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Config: enabled=true, lodDist=512, bw/player=25.0 MB/s, bw/global=75.0 MB/s
-[2611월2026 16:13:42.828] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Throughput: sent=7436 (269.5 MB), rate=10 sections/s (365.5 KB/s), uptime=12m 35s
-[2611월2026 16:13:42.830] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Sources (total): in_mem=1847, disk=1738, up_to_date=17818, gen=7892, re_resolved=5, grace_skipped=235
-[2611월2026 16:13:42.830] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Sources (tick): sent=0, disk=0/0, utd=0, gen=0, in_mem=0, skipped=81, bytes=0 B, qpeak=0/1024
-[2611월2026 16:13:42.832] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: DiskReader: submitted=25015, completed=25012, not_found=23185, all_air=0, errors=89, saturated=0, header_hits=0, avg_read=70.5ms, pending=0, read_timeouts=89, read_gate=3/3, gate_parked=0, gate_stops=0, gated=0, auxiliary_permit_skipped=14152, auxiliary_lookup_timeouts=136, read_path=bg-split, raw_serves=15911, sel=on, sel_fallbacks=0, direct_v20=1738, memo_hits=306568, store=off
-[2611월2026 16:13:42.836] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generation: submitted=3922, completed=3851, active=40, timeouts=0, removed=31, order_gated=287649, inversions=335
-[2611월2026 16:13:42.837] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dialects: v20=2, v19=0, v18=0, v16=0, started=4/0/0/0, ended=2/0/0/0 in 12m
-[2611월2026 16:13:42.842] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Xray: active=off, masked_sections=0
-[2611월2026 16:13:42.843] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Yield: armed=true, ticks_total=0, bytes_withheld=0 B
-[2611월2026 16:13:42.849] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: FarPlayers: subs=2, rosters=4, updates=0, entries=0, suppressed=0, bytes=16
-[2611월2026 16:13:42.856] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Summary: reqs=4, frames=4, tiles known=409 never_clean=7 no_region=4484, range_filtered=0, bytes=5609, refresh_ms_max=20929, stamps=16173/392
-[2611월2026 16:13:42.858] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dirty: marked=4673, suppressed=6465, seeded_load=2549, entries=6323
-[2611월2026 16:13:42.860] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Bandwidth: 822.5 KB/s / 75.0 MB/s global (269.5 MB total, 47.3 MB wire, cols zstd=7436 raw=0)
-[2611월2026 16:13:42.860] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]:   WDzizon: sq=0/1024, psync=58, pgen=0, sent=541 (20.4 MB), rate=1/s, obuf=102 B/60.4 KB, pingf=1.00, yielded=0, paced=0
-[2611월2026 16:13:42.861] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]:   spaceZEOE: sq=0/1024, psync=41, pgen=40, sent=2649 (92.8 MB), rate=4/s, obuf=0 B/36.0 KB, pingf=1.00, yielded=0, paced=25
-[2611월2026 16:13:42.862] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: LOD-only preservation: inspected=3851 candidates_at_generation=0 snapshot_candidates_at_generation=1592 protected_area=1292 player_watched_before_generation=0 uncertain_player_access=1592 structure_starts=18 structure_references=949 uncertain=0 watch_index=count=1252,supported=true,overflow=false,archive=ready,visit_write_failed=false,history=positive-only,scope=session-only structure_inspection_failed=false deletion=DISABLED | LOD-only archive: state=ready schema=2 queue=0/4096 visit_history=positive-only absence=unknown invalidations_pending=0 invalidation_jobs=4674/4674/0 invalidation_batches=779 archive_write_batches=1514 invalidation_active=false invalidation_last_started_age_ms=767 invalidation_last_completed_age_ms=766 egress_invalidation_blocked=false egress_visit_publication_blocked=false archive_untrusted=false session_visits=1252 session_visit_overflow=false session_invalidations=2923 session_invalidation_overflow=false tracking_started_ms=1795596825561 durable_visit_write_failed=false | LOD-only snapshot writes: attempts=1592 committed=799 protected_noop=793 failures=0
-[2611월2026 16:13:42.865] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: LOD-only archive reads: requests=10864 started=10864 hits=1 misses=10863 failures=0 queue_rejected=0 shutdown_rejected=0 hit_bytes=28647 may_send_denied=0 egress_permits=1 permit_releases=1 | archive_lookup_reasons: requests=10864 selected_rows=1 global_blocked=58 session_visit_blocked=66 session_invalidation_blocked=1362 row_missing=9376 row_invalidated=1 durable_visited_row=0 unexpected_filtered=0 post_select_blocked=0 | archive_lookup_dimensions: [minecraft:overworld{requests=10864,selected=1,missing=9376,invalidated=1,durable_visited=0,global_blocked=58,session_visit_blocked=66,session_invalidation_blocked=1362,post_select_blocked=0}] | archive_coordinate_samples: lookups=[minecraft:overworld@715,-144, minecraft:overworld@715,-153, minecraft:overworld@715,-158, minecraft:overworld@418,-169, minecraft:overworld@427,-169, minecraft:overworld@430,-169, minecraft:overworld@728,-172, minecraft:overworld@729,-172] row_missing=[minecraft:overworld@434,-175, minecraft:overworld@437,-175, minecraft:overworld@439,-175, minecraft:overworld@442,-175, minecraft:overworld@444,-175, minecraft:overworld@418,-169, minecraft:overworld@427,-169, minecraft:overworld@430,-169] snapshots_committed=[minecraft:overworld@719,-144, minecraft:overworld@718,-144, minecraft:overworld@721,-144, minecraft:overworld@722,-144, minecraft:overworld@723,-144, minecraft:overworld@720,-144, minecraft:overworld@741,-157, minecraft:overworld@741,-158]
-[2611월2026 16:13:43.156] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: LOD-only archive rows: total=9530 valid=3719 invalidated=5811 valid_unvisited=3719 valid_with_visit_marker=0 durable_visited_total=5950 | archive_row_dimensions: [minecraft:overworld{total=9530,valid=3719,invalidated=5811,valid_unvisited=3719,valid_with_visit_marker=0,durable_visited_total=5950}] | valid_unvisited_samples=[minecraft:overworld@741,-158, minecraft:overworld@741,-157, minecraft:overworld@720,-144, minecraft:overworld@723,-144, minecraft:overworld@722,-144, minecraft:overworld@721,-144, minecraft:overworld@718,-144, minecraft:overworld@719,-144]
-[2611월2026 16:14:43.957] [LSS Disk Reader #2/WARN] [LSS/]: Disk read timed out (>10s) at 744, -172 — triaged as not-found (counted disk.errors; self-heals by re-declaration on gen-enabled servers) (+11 more since last report)
-[2611월2026 16:16:20.331] [LSS Disk Reader #3/WARN] [LSS/]: Disk read timed out (>10s) at 731, -176 — triaged as not-found (counted disk.errors; self-heals by re-declaration on gen-enabled servers) (+5 more since last report)
-[2611월2026 16:16:59.065] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [WDzizon: Teleported spaceZEOE to 11656.500000, 170.000000, -2471.500000]
-[2611월2026 16:17:50.365] [LSS Disk Reader #3/WARN] [LSS/]: Disk read timed out (>10s) at 751, -173 — triaged as not-found (counted disk.errors; self-heals by re-declaration on gen-enabled servers) (+5 more since last report)
-[2611월2026 16:19:04.432] [LSS Disk Reader #3/WARN] [LSS/]: Disk read timed out (>10s) at 719, -179 — triaged as not-found (counted disk.errors; self-heals by re-declaration on gen-enabled servers) (+8 more since last report)
-[2611월2026 16:20:24.122] [LSS Disk Reader #2/WARN] [LSS/]: Disk read timed out (>10s) at 473, -173 — triaged as not-found (counted disk.errors; self-heals by re-declaration on gen-enabled servers) (+9 more since last report)
-[2611월2026 16:20:39.298] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: === LSS LOD Diagnostics ===
-[2611월2026 16:20:39.298] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Config: enabled=true, lodDist=512, bw/player=25.0 MB/s, bw/global=75.0 MB/s
-[2611월2026 16:20:39.301] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Throughput: sent=10751 (380.0 MB), rate=9 sections/s (332.3 KB/s), uptime=19m 31s
-[2611월2026 16:20:39.305] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Sources (total): in_mem=2015, disk=2372, up_to_date=17818, gen=12848, re_resolved=5, grace_skipped=380
-[2611월2026 16:20:39.306] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Sources (tick): sent=0, disk=38/38, utd=0, gen=0, in_mem=0, skipped=61, bytes=0 B, qpeak=0/1024
-[2611월2026 16:20:39.306] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: DiskReader: submitted=40193, completed=40193, not_found=37695, all_air=0, errors=126, saturated=0, header_hits=0, avg_read=72.1ms, pending=99, read_timeouts=126, read_gate=0/3, gate_parked=0, gate_stops=0, gated=0, auxiliary_permit_skipped=22030, auxiliary_lookup_timeouts=222, read_path=bg-split, raw_serves=27795, sel=on, sel_fallbacks=0, direct_v20=2372, memo_hits=523750, store=off
-[2611월2026 16:20:39.306] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generation: submitted=6430, completed=6364, active=35, timeouts=0, removed=31, order_gated=504794, inversions=642
-[2611월2026 16:20:39.313] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dialects: v20=2, v19=0, v18=0, v16=0, started=4/0/0/0, ended=2/0/0/0 in 19m
-[2611월2026 16:20:39.316] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Xray: active=off, masked_sections=0
-[2611월2026 16:20:39.316] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Yield: armed=true, ticks_total=0, bytes_withheld=0 B
-[2611월2026 16:20:39.317] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: FarPlayers: subs=2, rosters=4, updates=0, entries=0, suppressed=0, bytes=16
-[2611월2026 16:20:39.318] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Summary: reqs=4, frames=4, tiles known=409 never_clean=7 no_region=4484, range_filtered=0, bytes=5609, refresh_ms_max=20929, stamps=16173/392
-[2611월2026 16:20:39.321] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dirty: marked=5820, suppressed=9074, seeded_load=2567, entries=8836
-[2611월2026 16:20:39.322] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Bandwidth: 498.8 KB/s / 75.0 MB/s global (380.0 MB total, 66.3 MB wire, cols zstd=10751 raw=0)
-[2611월2026 16:20:39.323] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]:   WDzizon: sq=0/1024, psync=99, pgen=6, sent=1798 (63.1 MB), rate=2/s, obuf=0 B/60.4 KB, pingf=1.00, yielded=0, paced=2
-[2611월2026 16:20:39.324] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]:   spaceZEOE: sq=0/1024, psync=0, pgen=40, sent=4707 (160.7 MB), rate=4/s, obuf=0 B/36.0 KB, pingf=1.00, yielded=0, paced=28
-[2611월2026 16:20:39.325] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: LOD-only preservation: inspected=6364 candidates_at_generation=0 snapshot_candidates_at_generation=2884 protected_area=2199 player_watched_before_generation=0 uncertain_player_access=2884 structure_starts=29 structure_references=1252 uncertain=0 watch_index=count=1290,supported=true,overflow=false,archive=ready,visit_write_failed=false,history=positive-only,scope=session-only structure_inspection_failed=false deletion=DISABLED | LOD-only archive: state=ready schema=2 queue=0/4096 visit_history=positive-only absence=unknown invalidations_pending=0 invalidation_jobs=5829/5829/0 invalidation_batches=1235 archive_write_batches=1971 invalidation_active=false invalidation_last_started_age_ms=2851 invalidation_last_completed_age_ms=2779 egress_invalidation_blocked=false egress_visit_publication_blocked=false archive_untrusted=false session_visits=1290 session_visit_overflow=false session_invalidations=3510 session_invalidation_overflow=false tracking_started_ms=1795596825561 durable_visit_write_failed=false | LOD-only snapshot writes: attempts=2882 committed=1443 protected_noop=1439 failures=0
-[2611월2026 16:20:39.328] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: LOD-only archive reads: requests=18164 started=18164 hits=1 misses=18163 failures=0 queue_rejected=0 shutdown_rejected=0 hit_bytes=28647 may_send_denied=0 egress_permits=1 permit_releases=1 | archive_lookup_reasons: requests=18164 selected_rows=1 global_blocked=79 session_visit_blocked=66 session_invalidation_blocked=1895 row_missing=16122 row_invalidated=1 durable_visited_row=0 unexpected_filtered=0 post_select_blocked=0 | archive_lookup_dimensions: [minecraft:overworld{requests=18164,selected=1,missing=16122,invalidated=1,durable_visited=0,global_blocked=79,session_visit_blocked=66,session_invalidation_blocked=1895,post_select_blocked=0}] | archive_coordinate_samples: lookups=[minecraft:overworld@386,-189, minecraft:overworld@388,-189, minecraft:overworld@389,-189, minecraft:overworld@391,-189, minecraft:overworld@393,-189, minecraft:overworld@394,-189, minecraft:overworld@396,-189, minecraft:overworld@398,-189] row_missing=[minecraft:overworld@386,-189, minecraft:overworld@388,-189, minecraft:overworld@389,-189, minecraft:overworld@391,-189, minecraft:overworld@393,-189, minecraft:overworld@394,-189, minecraft:overworld@396,-189, minecraft:overworld@398,-189] snapshots_committed=[minecraft:overworld@753,-165, minecraft:overworld@703,-177, minecraft:overworld@703,-178, minecraft:overworld@703,-179, minecraft:overworld@703,-173, minecraft:overworld@703,-174, minecraft:overworld@703,-175, minecraft:overworld@703,-176]
-[2611월2026 16:20:40.088] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: LOD-only archive rows: total=10174 valid=4286 invalidated=5888 valid_unvisited=4286 valid_with_visit_marker=0 durable_visited_total=5988 | archive_row_dimensions: [minecraft:overworld{total=10174,valid=4286,invalidated=5888,valid_unvisited=4286,valid_with_visit_marker=0,durable_visited_total=5988}] | valid_unvisited_samples=[minecraft:overworld@703,-176, minecraft:overworld@703,-175, minecraft:overworld@703,-174, minecraft:overworld@703,-173, minecraft:overworld@703,-179, minecraft:overworld@703,-178, minecraft:overworld@703,-177, minecraft:overworld@753,-165]
-[2611월2026 16:20:44.591] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: === LSS LOD Diagnostics ===
-[2611월2026 16:20:44.591] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Config: enabled=true, lodDist=512, bw/player=25.0 MB/s, bw/global=75.0 MB/s
-[2611월2026 16:20:44.591] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Throughput: sent=10816 (382.0 MB), rate=9 sections/s (332.3 KB/s), uptime=19m 37s
-[2611월2026 16:20:44.592] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Sources (total): in_mem=2015, disk=2394, up_to_date=17818, gen=13020, re_resolved=6, grace_skipped=386
-[2611월2026 16:20:44.593] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Sources (tick): sent=0, disk=2/2, utd=0, gen=0, in_mem=0, skipped=0, bytes=0 B, qpeak=0/1024
-[2611월2026 16:20:44.598] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: DiskReader: submitted=41031, completed=41028, not_found=38508, all_air=0, errors=126, saturated=0, header_hits=0, avg_read=70.8ms, pending=0, read_timeouts=126, read_gate=3/3, gate_parked=0, gate_stops=0, gated=0, auxiliary_permit_skipped=22847, auxiliary_lookup_timeouts=240, read_path=bg-split, raw_serves=28630, sel=on, sel_fallbacks=0, direct_v20=2394, memo_hits=528460, store=off
-[2611월2026 16:20:44.600] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generation: submitted=6477, completed=6407, active=39, timeouts=0, removed=31, order_gated=509800, inversions=642
-[2611월2026 16:20:44.601] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dialects: v20=2, v19=0, v18=0, v16=0, started=4/0/0/0, ended=2/0/0/0 in 19m
-[2611월2026 16:20:44.602] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Xray: active=off, masked_sections=0
-[2611월2026 16:20:44.603] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Yield: armed=true, ticks_total=0, bytes_withheld=0 B
-[2611월2026 16:20:44.603] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: FarPlayers: subs=2, rosters=4, updates=0, entries=0, suppressed=0, bytes=16
-[2611월2026 16:20:44.604] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Summary: reqs=4, frames=4, tiles known=409 never_clean=7 no_region=4484, range_filtered=0, bytes=5609, refresh_ms_max=20929, stamps=16173/392
-[2611월2026 16:20:44.606] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dirty: marked=5821, suppressed=9078, seeded_load=2567, entries=8879
-[2611월2026 16:20:44.606] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Bandwidth: 285.9 KB/s / 75.0 MB/s global (382.0 MB total, 66.6 MB wire, cols zstd=10816 raw=0)
-[2611월2026 16:20:44.607] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]:   WDzizon: sq=0/1024, psync=40, pgen=9, sent=1812 (63.5 MB), rate=2/s, obuf=0 B/60.4 KB, pingf=1.00, yielded=0, paced=2
-[2611월2026 16:20:44.607] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]:   spaceZEOE: sq=0/1024, psync=59, pgen=30, sent=4758 (162.2 MB), rate=4/s, obuf=0 B/36.0 KB, pingf=1.00, yielded=0, paced=28
-[2611월2026 16:20:44.610] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: LOD-only preservation: inspected=6407 candidates_at_generation=0 snapshot_candidates_at_generation=2925 protected_area=2201 player_watched_before_generation=0 uncertain_player_access=2925 structure_starts=29 structure_references=1252 uncertain=0 watch_index=count=1290,supported=true,overflow=false,archive=ready,visit_write_failed=false,history=positive-only,scope=session-only structure_inspection_failed=false deletion=DISABLED | LOD-only archive: state=ready schema=2 queue=0/4096 visit_history=positive-only absence=unknown invalidations_pending=0 invalidation_jobs=5830/5830/0 invalidation_batches=1236 archive_write_batches=1972 invalidation_active=false invalidation_last_started_age_ms=4036 invalidation_last_completed_age_ms=3883 egress_invalidation_blocked=false egress_visit_publication_blocked=false archive_untrusted=false session_visits=1290 session_visit_overflow=false session_invalidations=3510 session_invalidation_overflow=false tracking_started_ms=1795596825561 durable_visit_write_failed=false | LOD-only snapshot writes: attempts=2923 committed=1484 protected_noop=1439 failures=0
-[2611월2026 16:20:44.614] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: LOD-only archive reads: requests=18185 started=18185 hits=1 misses=18184 failures=0 queue_rejected=0 shutdown_rejected=0 hit_bytes=28647 may_send_denied=0 egress_permits=1 permit_releases=1 | archive_lookup_reasons: requests=18185 selected_rows=1 global_blocked=79 session_visit_blocked=66 session_invalidation_blocked=1896 row_missing=16142 row_invalidated=1 durable_visited_row=0 unexpected_filtered=0 post_select_blocked=0 | archive_lookup_dimensions: [minecraft:overworld{requests=18185,selected=1,missing=16142,invalidated=1,durable_visited=0,global_blocked=79,session_visit_blocked=66,session_invalidation_blocked=1896,post_select_blocked=0}] | archive_coordinate_samples: lookups=[minecraft:overworld@475,-173, minecraft:overworld@748,-181, minecraft:overworld@750,-181, minecraft:overworld@413,-183, minecraft:overworld@414,-183, minecraft:overworld@751,-181, minecraft:overworld@754,-181, minecraft:overworld@754,-180] row_missing=[minecraft:overworld@436,-187, minecraft:overworld@748,-181, minecraft:overworld@750,-181, minecraft:overworld@413,-183, minecraft:overworld@414,-183, minecraft:overworld@751,-181, minecraft:overworld@754,-181, minecraft:overworld@754,-180] snapshots_committed=[minecraft:overworld@720,-181, minecraft:overworld@721,-181, minecraft:overworld@717,-181, minecraft:overworld@718,-181, minecraft:overworld@719,-181, minecraft:overworld@754,-152, minecraft:overworld@754,-153, minecraft:overworld@748,-181]
-[2611월2026 16:20:45.071] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: LOD-only archive rows: total=10215 valid=4327 invalidated=5888 valid_unvisited=4327 valid_with_visit_marker=0 durable_visited_total=5988 | archive_row_dimensions: [minecraft:overworld{total=10215,valid=4327,invalidated=5888,valid_unvisited=4327,valid_with_visit_marker=0,durable_visited_total=5988}] | valid_unvisited_samples=[minecraft:overworld@748,-181, minecraft:overworld@754,-153, minecraft:overworld@754,-152, minecraft:overworld@719,-181, minecraft:overworld@718,-181, minecraft:overworld@717,-181, minecraft:overworld@721,-181, minecraft:overworld@720,-181]
-[2611월2026 16:21:25.252] [LSS Disk Reader #2/WARN] [LSS/]: Disk read timed out (>10s) at 429, -182 — triaged as not-found (counted disk.errors; self-heals by re-declaration on gen-enabled servers) (+8 more since last report)
-[2611월2026 16:22:31.387] [LSS Disk Reader #1/WARN] [LSS/]: Disk read timed out (>10s) at 708, -128 — triaged as not-found (counted disk.errors; self-heals by re-declaration on gen-enabled servers) (+11 more since last report)
-[2611월2026 16:23:57.283] [LSS Disk Reader #1/WARN] [LSS/]: Disk read timed out (>10s) at 444, -182 — triaged as not-found (counted disk.errors; self-heals by re-declaration on gen-enabled servers) (+11 more since last report)
-[2611월2026 16:24:02.880] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: LOD-only archive probe started: it checks one persisted eligible row through the real read adapter and final send-permit guard; no packet is sent and no world chunk is changed.
-[2611월2026 16:24:03.192] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: LOD-only archive probe: stopped because the global invalidation/archive guard became active
-[2611월2026 16:24:59.612] [LSS Disk Reader #3/WARN] [LSS/]: Disk read timed out (>10s) at 451, -179 — triaged as not-found (counted disk.errors; self-heals by re-declaration on gen-enabled servers) (+9 more since last report)
-[2611월2026 16:26:09.866] [LSS Disk Reader #3/WARN] [LSS/]: Disk read timed out (>10s) at 455, -181 — triaged as not-found (counted disk.errors; self-heals by re-declaration on gen-enabled servers) (+11 more since last report)
-[2611월2026 16:27:29.738] [LSS Disk Reader #3/WARN] [LSS/]: Disk read timed out (>10s) at 695, -137 — triaged as not-found (counted disk.errors; self-heals by re-declaration on gen-enabled servers) (+8 more since last report)
-[2611월2026 16:27:56.021] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: === LSS LOD Diagnostics ===
-[2611월2026 16:27:56.022] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Config: enabled=true, lodDist=512, bw/player=25.0 MB/s, bw/global=75.0 MB/s
-[2611월2026 16:27:56.023] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Throughput: sent=13648 (473.3 MB), rate=8 sections/s (301.4 KB/s), uptime=26m 48s
-[2611월2026 16:27:56.025] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Sources (total): in_mem=2449, disk=2861, up_to_date=17819, gen=16793, re_resolved=6, grace_skipped=521
-[2611월2026 16:27:56.026] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Sources (tick): sent=1, disk=0/0, utd=0, gen=0, in_mem=0, skipped=0, bytes=35.3 KB, qpeak=0/1024
-[2611월2026 16:27:56.026] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: DiskReader: submitted=54564, completed=54561, not_found=51513, all_air=0, errors=187, saturated=0, header_hits=0, avg_read=74.4ms, pending=0, read_timeouts=187, read_gate=3/3, gate_parked=0, gate_stops=0, gated=0, auxiliary_permit_skipped=28617, auxiliary_lookup_timeouts=324, read_path=bg-split, raw_serves=42163, sel=on, sel_fallbacks=0, direct_v20=2861, memo_hits=748771, store=off
-[2611월2026 16:27:56.028] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generation: submitted=8409, completed=8338, active=40, timeouts=0, removed=31, order_gated=724816, inversions=842
-[2611월2026 16:27:56.029] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dialects: v20=2, v19=0, v18=0, v16=0, started=4/0/0/0, ended=2/0/0/0 in 26m
-[2611월2026 16:27:56.031] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Xray: active=off, masked_sections=0
-[2611월2026 16:27:56.031] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Yield: armed=true, ticks_total=0, bytes_withheld=0 B
-[2611월2026 16:27:56.033] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: FarPlayers: subs=2, rosters=4, updates=0, entries=0, suppressed=0, bytes=16
-[2611월2026 16:27:56.034] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Summary: reqs=4, frames=4, tiles known=409 never_clean=7 no_region=4484, range_filtered=0, bytes=5609, refresh_ms_max=20929, stamps=16173/392
-[2611월2026 16:27:56.034] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dirty: marked=6796, suppressed=11726, seeded_load=2863, entries=11106
-[2611월2026 16:27:56.035] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Bandwidth: 302.3 KB/s / 75.0 MB/s global (473.3 MB total, 81.8 MB wire, cols zstd=13648 raw=0)
-[2611월2026 16:27:56.036] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]:   WDzizon: sq=0/1024, psync=0, pgen=5, sent=2829 (97.4 MB), rate=2/s, obuf=1.3 KB/60.4 KB, pingf=1.00, yielded=0, paced=8
-[2611월2026 16:27:56.038] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]:   spaceZEOE: sq=0/1024, psync=21, pgen=35, sent=6573 (219.7 MB), rate=4/s, obuf=312 B/36.0 KB, pingf=1.00, yielded=0, paced=28
-[2611월2026 16:27:56.039] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: LOD-only preservation: inspected=8338 candidates_at_generation=0 snapshot_candidates_at_generation=4015 protected_area=2564 player_watched_before_generation=0 uncertain_player_access=4015 structure_starts=36 structure_references=1723 uncertain=0 watch_index=count=1476,supported=true,overflow=false,archive=ready,visit_write_failed=false,history=positive-only,scope=session-only structure_inspection_failed=false deletion=DISABLED | LOD-only archive: state=ready schema=2 queue=0/4096 visit_history=positive-only absence=unknown invalidations_pending=0 invalidation_jobs=6805/6805/0 invalidation_batches=1596 archive_write_batches=2342 invalidation_active=false invalidation_last_started_age_ms=9308 invalidation_last_completed_age_ms=9073 egress_invalidation_blocked=false egress_visit_publication_blocked=false archive_untrusted=false session_visits=1476 session_visit_overflow=false session_invalidations=4053 session_invalidation_overflow=false tracking_started_ms=1795596825561 durable_visit_write_failed=false | LOD-only snapshot writes: attempts=4013 committed=2064 protected_noop=1949 failures=0
-[2611월2026 16:27:56.042] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: LOD-only archive reads: requests=25948 started=25948 hits=1 misses=25947 failures=0 queue_rejected=0 shutdown_rejected=0 hit_bytes=28647 may_send_denied=0 egress_permits=1 permit_releases=1 | archive_lookup_reasons: requests=25948 selected_rows=1 global_blocked=110 session_visit_blocked=179 session_invalidation_blocked=2185 row_missing=23472 row_invalidated=1 durable_visited_row=0 unexpected_filtered=0 post_select_blocked=0 | archive_lookup_dimensions: [minecraft:overworld{requests=25948,selected=1,missing=23472,invalidated=1,durable_visited=0,global_blocked=110,session_visit_blocked=179,session_invalidation_blocked=2185,post_select_blocked=0}] | archive_coordinate_samples: lookups=[minecraft:overworld@458,-190, minecraft:overworld@479,-191, minecraft:overworld@451,-192, minecraft:overworld@452,-192, minecraft:overworld@699,-120, minecraft:overworld@698,-120, minecraft:overworld@693,-121, minecraft:overworld@693,-122] row_missing=[minecraft:overworld@458,-190, minecraft:overworld@479,-191, minecraft:overworld@451,-192, minecraft:overworld@452,-192, minecraft:overworld@699,-120, minecraft:overworld@698,-120, minecraft:overworld@693,-121, minecraft:overworld@693,-122] snapshots_committed=[minecraft:overworld@710,-189, minecraft:overworld@711,-189, minecraft:overworld@712,-189, minecraft:overworld@713,-189, minecraft:overworld@714,-189, minecraft:overworld@715,-189, minecraft:overworld@741,-189, minecraft:overworld@740,-189]
-[2611월2026 16:27:56.674] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: LOD-only archive rows: total=10795 valid=4881 invalidated=5914 valid_unvisited=4881 valid_with_visit_marker=0 durable_visited_total=6116 | archive_row_dimensions: [minecraft:overworld{total=10795,valid=4881,invalidated=5914,valid_unvisited=4881,valid_with_visit_marker=0,durable_visited_total=6116}] | valid_unvisited_samples=[minecraft:overworld@740,-189, minecraft:overworld@741,-189, minecraft:overworld@715,-189, minecraft:overworld@714,-189, minecraft:overworld@713,-189, minecraft:overworld@712,-189, minecraft:overworld@711,-189, minecraft:overworld@710,-189]
-[2611월2026 16:28:50.191] [LSS Disk Reader #1/WARN] [LSS/]: Disk read timed out (>10s) at 496, -161 — triaged as not-found (counted disk.errors; self-heals by re-declaration on gen-enabled servers) (+12 more since last report)
-[2611월2026 16:29:53.424] [LSS Disk Reader #3/WARN] [LSS/]: Disk read timed out (>10s) at 748, -191 — triaged as not-found (counted disk.errors; self-heals by re-declaration on gen-enabled servers) (+11 more since last report)
-[2611월2026 16:29:57.728] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: LOD-only archive probe started: it checks one persisted eligible row through the real read adapter and final send-permit guard; no packet is sent and no world chunk is changed.
-[2611월2026 16:29:57.965] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: LOD-only archive probe: lookup=HIT dimension=minecraft:overworld chunk_x=746 chunk_z=-191 payload_bytes=31845 timestamp=1795678193 final_permit=GRANTED_AND_RELEASED (no packet sent)
-[2611월2026 16:31:13.209] [LSS Disk Reader #2/WARN] [LSS/]: Disk read timed out (>10s) at 716, -192 — triaged as not-found (counted disk.errors; self-heals by re-declaration on gen-enabled servers) (+13 more since last report)
-[2611월2026 16:31:42.184] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Teleported spaceZEOE to 11944.500000, 170.000000, -2775.500000
-[2611월2026 16:31:42.189] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: spaceZEOE moved too quickly! 288.0,0.0,-304.0
-[2611월2026 16:31:42.192] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: spaceZEOE moved too quickly! 288.0,0.0,-304.0
-[2611월2026 16:31:42.214] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: spaceZEOE moved too quickly! 288.0,0.0,-304.0
-[2611월2026 16:32:26.272] [LSS Disk Reader #2/WARN] [LSS/]: Disk read timed out (>10s) at 768, -175 — triaged as not-found (counted disk.errors; self-heals by re-declaration on gen-enabled servers) (+10 more since last report)
-[2611월2026 16:33:31.643] [LSS Disk Reader #2/WARN] [LSS/]: Disk read timed out (>10s) at 768, -187 — triaged as not-found (counted disk.errors; self-heals by re-declaration on gen-enabled servers) (+6 more since last report)
-[2611월2026 16:33:44.579] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: === LSS LOD Diagnostics ===
-[2611월2026 16:33:44.580] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Config: enabled=true, lodDist=512, bw/player=25.0 MB/s, bw/global=75.0 MB/s
-[2611월2026 16:33:44.580] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Throughput: sent=16262 (557.6 MB), rate=8 sections/s (291.8 KB/s), uptime=32m 37s
-[2611월2026 16:33:44.580] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Sources (total): in_mem=2777, disk=3424, up_to_date=17820, gen=19839, re_resolved=6, grace_skipped=700
-[2611월2026 16:33:44.580] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Sources (tick): sent=0, disk=0/0, utd=0, gen=0, in_mem=0, skipped=0, bytes=0 B, qpeak=0/1024
-[2611월2026 16:33:44.581] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: DiskReader: submitted=65357, completed=65354, not_found=61686, all_air=0, errors=244, saturated=0, header_hits=1, avg_read=76.7ms, pending=0, read_timeouts=244, read_gate=3/3, gate_parked=0, gate_stops=0, gated=0, auxiliary_permit_skipped=32768, auxiliary_lookup_timeouts=371, read_path=bg-split, raw_serves=52956, sel=on, sel_fallbacks=0, direct_v20=3424, memo_hits=933399, store=off
-[2611월2026 16:33:44.581] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generation: submitted=10092, completed=10061, active=0, timeouts=0, removed=31, order_gated=909144, inversions=1013
-[2611월2026 16:33:44.581] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dialects: v20=2, v19=0, v18=0, v16=0, started=4/0/0/0, ended=2/0/0/0 in 32m
-[2611월2026 16:33:44.582] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Xray: active=off, masked_sections=0
-[2611월2026 16:33:44.582] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Yield: armed=true, ticks_total=0, bytes_withheld=0 B
-[2611월2026 16:33:44.583] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: FarPlayers: subs=2, rosters=4, updates=0, entries=0, suppressed=0, bytes=16
-[2611월2026 16:33:44.583] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Summary: reqs=4, frames=4, tiles known=409 never_clean=7 no_region=4484, range_filtered=0, bytes=5609, refresh_ms_max=20929, stamps=16174/393
-[2611월2026 16:33:44.584] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dirty: marked=8726, suppressed=14098, seeded_load=3183, entries=12823
-[2611월2026 16:33:44.584] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Bandwidth: 486.1 KB/s / 75.0 MB/s global (557.6 MB total, 96.1 MB wire, cols zstd=16262 raw=0)
-[2611월2026 16:33:44.584] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]:   WDzizon: sq=0/1024, psync=40, pgen=0, sent=3541 (119.1 MB), rate=2/s, obuf=0 B/60.4 KB, pingf=1.00, yielded=0, paced=8
-[2611월2026 16:33:44.584] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]:   spaceZEOE: sq=0/1024, psync=59, pgen=0, sent=8475 (282.3 MB), rate=4/s, obuf=640 B/61.2 KB, pingf=1.00, yielded=0, paced=35
-[2611월2026 16:33:44.584] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: LOD-only preservation: inspected=10061 candidates_at_generation=0 snapshot_candidates_at_generation=4875 protected_area=2724 player_watched_before_generation=5 uncertain_player_access=4875 structure_starts=53 structure_references=2404 uncertain=0 watch_index=count=1789,supported=true,overflow=false,archive=ready,visit_write_failed=false,history=positive-only,scope=session-only structure_inspection_failed=false deletion=DISABLED | LOD-only archive: state=ready schema=2 queue=0/4096 visit_history=positive-only absence=unknown invalidations_pending=0 invalidation_jobs=8740/8740/0 invalidation_batches=2013 archive_write_batches=2770 invalidation_active=false invalidation_last_started_age_ms=361 invalidation_last_completed_age_ms=121 egress_invalidation_blocked=false egress_visit_publication_blocked=false archive_untrusted=false session_visits=1789 session_visit_overflow=false session_invalidations=5106 session_invalidation_overflow=false tracking_started_ms=1795596825561 durable_visit_write_failed=false | LOD-only snapshot writes: attempts=4873 committed=2502 protected_noop=2371 failures=0
-[2611월2026 16:33:44.585] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: LOD-only archive reads: requests=32591 started=32591 hits=2 misses=32589 failures=0 queue_rejected=0 shutdown_rejected=0 hit_bytes=60492 may_send_denied=0 egress_permits=2 permit_releases=2 | archive_lookup_reasons: requests=32591 selected_rows=2 global_blocked=126 session_visit_blocked=416 session_invalidation_blocked=2470 row_missing=29576 row_invalidated=1 durable_visited_row=0 unexpected_filtered=0 post_select_blocked=0 | archive_lookup_dimensions: [minecraft:overworld{requests=32591,selected=2,missing=29576,invalidated=1,durable_visited=0,global_blocked=126,session_visit_blocked=416,session_invalidation_blocked=2470,post_select_blocked=0}] | archive_coordinate_samples: lookups=[minecraft:overworld@510,-178, minecraft:overworld@480,-179, minecraft:overworld@481,-179, minecraft:overworld@771,-175, minecraft:overworld@771,-174, minecraft:overworld@771,-172, minecraft:overworld@771,-171, minecraft:overworld@771,-170] row_missing=[minecraft:overworld@510,-178, minecraft:overworld@480,-179, minecraft:overworld@481,-179, minecraft:overworld@771,-175, minecraft:overworld@771,-174, minecraft:overworld@771,-172, minecraft:overworld@771,-171, minecraft:overworld@771,-170] snapshots_committed=[minecraft:overworld@768,-166, minecraft:overworld@768,-165, minecraft:overworld@751,-197, minecraft:overworld@743,-197, minecraft:overworld@736,-197, minecraft:overworld@725,-197, minecraft:overworld@726,-197, minecraft:overworld@727,-197]
-[2611월2026 16:33:44.929] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: LOD-only archive rows: total=11233 valid=4863 invalidated=6370 valid_unvisited=4863 valid_with_visit_marker=0 durable_visited_total=6429 | archive_row_dimensions: [minecraft:overworld{total=11233,valid=4863,invalidated=6370,valid_unvisited=4863,valid_with_visit_marker=0,durable_visited_total=6429}] | valid_unvisited_samples=[minecraft:overworld@727,-197, minecraft:overworld@726,-197, minecraft:overworld@725,-197, minecraft:overworld@736,-197, minecraft:overworld@743,-197, minecraft:overworld@751,-197, minecraft:overworld@768,-165, minecraft:overworld@768,-166]
-[2611월2026 16:34:37.873] [LSS Disk Reader #3/WARN] [LSS/]: Disk read timed out (>10s) at 489, -179 — triaged as not-found (counted disk.errors; self-heals by re-declaration on gen-enabled servers) (+9 more since last report)
-[2611월2026 16:35:43.965] [LSS Disk Reader #3/WARN] [LSS/]: Disk read timed out (>10s) at 774, -150 — triaged as not-found (counted disk.errors; self-heals by re-declaration on gen-enabled servers) (+7 more since last report)
-[2611월2026 16:37:02.065] [LSS Disk Reader #3/WARN] [LSS/]: Disk read timed out (>10s) at 737, -202 — triaged as not-found (counted disk.errors; self-heals by re-declaration on gen-enabled servers) (+10 more since last report)
-[2611월2026 16:38:14.685] [LSS Disk Reader #3/WARN] [LSS/]: Disk read timed out (>10s) at 486, -183 — triaged as not-found (counted disk.errors; self-heals by re-declaration on gen-enabled servers) (+8 more since last report)
-[2611월2026 16:38:41.175] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: spaceZEOE has the following entity data: [11944.5d, 170.0d, -2775.5d]
-[2611월2026 16:39:24.106] [LSS Disk Reader #2/WARN] [LSS/]: Disk read timed out (>10s) at 520, -163 — triaged as not-found (counted disk.errors; self-heals by re-declaration on gen-enabled servers) (+10 more since last report)
-[2611월2026 16:40:43.149] [LSS Disk Reader #2/WARN] [LSS/]: Disk read timed out (>10s) at 732, -206 — triaged as not-found (counted disk.errors; self-heals by re-declaration on gen-enabled servers) (+11 more since last report)
-[2611월2026 16:41:39.078] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: WDzizon has the following entity data: [7430.230057303203d, 303.53983699008677d, -1244.1541531559092d]
-[2611월2026 16:41:43.810] [LSS Disk Reader #3/WARN] [LSS/]: Disk read timed out (>10s) at 779, -184 — triaged as not-found (counted disk.errors; self-heals by re-declaration on gen-enabled servers) (+9 more since last report)
-[2611월2026 16:42:50.008] [LSS Disk Reader #3/WARN] [LSS/]: Disk read timed out (>10s) at 517, -171 — triaged as not-found (counted disk.errors; self-heals by re-declaration on gen-enabled servers) (+6 more since last report)
-[2611월2026 16:43:58.252] [LSS Disk Reader #2/WARN] [LSS/]: Disk read timed out (>10s) at 542, -171 — triaged as not-found (counted disk.errors; self-heals by re-declaration on gen-enabled servers) (+8 more since last report)
-[2611월2026 16:44:11.319] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Teleported WDzizon to 11944.500000, 170.000000, -2895.500000
-[2611월2026 16:45:20.197] [LSS Disk Reader #3/WARN] [LSS/]: Disk read timed out (>10s) at 757, -214 — triaged as not-found (counted disk.errors; self-heals by re-declaration on gen-enabled servers) (+15 more since last report)
-[2611월2026 16:45:25.458] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: === LSS LOD Diagnostics ===
-[2611월2026 16:45:25.459] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Config: enabled=true, lodDist=512, bw/player=25.0 MB/s, bw/global=75.0 MB/s
-[2611월2026 16:45:25.461] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Throughput: sent=25248 (850.4 MB), rate=10 sections/s (327.7 KB/s), uptime=44m 17s
-[2611월2026 16:45:25.462] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Sources (total): in_mem=3891, disk=7734, up_to_date=17820, gen=26144, re_resolved=6, grace_skipped=1137
-[2611월2026 16:45:25.464] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Sources (tick): sent=21, disk=99/98, utd=0, gen=25, in_mem=0, skipped=0, bytes=671.7 KB, qpeak=0/1024
-[2611월2026 16:45:25.465] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: DiskReader: submitted=88989, completed=88988, not_found=80909, all_air=0, errors=345, saturated=0, header_hits=1, avg_read=78.1ms, pending=4, read_timeouts=345, read_gate=1/3, gate_parked=0, gate_stops=0, gated=0, auxiliary_permit_skipped=42608, auxiliary_lookup_timeouts=544, read_path=bg-split, raw_serves=76591, sel=on, sel_fallbacks=0, direct_v20=7734, memo_hits=1200879, store=off
-[2611월2026 16:45:25.466] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generation: submitted=13152, completed=13081, active=40, timeouts=0, removed=31, order_gated=1174658, inversions=1274
-[2611월2026 16:45:25.467] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dialects: v20=2, v19=0, v18=0, v16=0, started=4/0/0/0, ended=2/0/0/0 in 44m
-[2611월2026 16:45:25.468] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Xray: active=off, masked_sections=0
-[2611월2026 16:45:25.469] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Yield: armed=true, ticks_total=0, bytes_withheld=0 B
-[2611월2026 16:45:25.471] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: FarPlayers: subs=2, rosters=6, updates=17, entries=17, suppressed=279, bytes=904
-[2611월2026 16:45:25.471] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Summary: reqs=4, frames=4, tiles known=409 never_clean=7 no_region=4484, range_filtered=0, bytes=5609, refresh_ms_max=20929, stamps=16174/393
-[2611월2026 16:45:25.472] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dirty: marked=10545, suppressed=16935, seeded_load=3333, entries=15842
-[2611월2026 16:45:25.473] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Bandwidth: 4.3 MB/s / 75.0 MB/s global (850.4 MB total, 145.1 MB wire, cols zstd=25327 raw=0)
-[2611월2026 16:45:25.473] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]:   WDzizon: sq=0/1024, psync=92, pgen=9, sent=9310 (304.4 MB), rate=4/s, obuf=0 B/60.4 KB, pingf=1.00, yielded=0, paced=73
-[2611월2026 16:45:25.476] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]:   spaceZEOE: sq=0/1024, psync=0, pgen=32, sent=11692 (389.7 MB), rate=4/s, obuf=0 B/61.2 KB, pingf=1.00, yielded=0, paced=44
-[2611월2026 16:45:25.477] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: LOD-only preservation: inspected=13081 candidates_at_generation=0 snapshot_candidates_at_generation=6882 protected_area=2931 player_watched_before_generation=5 uncertain_player_access=6882 structure_starts=81 structure_references=3182 uncertain=0 watch_index=count=1922,supported=true,overflow=false,archive=ready,visit_write_failed=false,history=positive-only,scope=session-only structure_inspection_failed=false deletion=DISABLED | LOD-only archive: state=ready schema=2 queue=0/4096 visit_history=positive-only absence=unknown invalidations_pending=0 invalidation_jobs=10564/10564/0 invalidation_batches=3003 archive_write_batches=3771 invalidation_active=false invalidation_last_started_age_ms=3905 invalidation_last_completed_age_ms=3675 egress_invalidation_blocked=false egress_visit_publication_blocked=false archive_untrusted=false session_visits=1922 session_visit_overflow=false session_invalidations=5656 session_invalidation_overflow=false tracking_started_ms=1795596825561 durable_visit_write_failed=false | LOD-only snapshot writes: attempts=6907 committed=3411 protected_noop=3496 failures=0
-[2611월2026 16:45:25.482] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: LOD-only archive reads: requests=46970 started=46970 hits=593 misses=46376 failures=0 queue_rejected=0 shutdown_rejected=0 hit_bytes=20019476 may_send_denied=18 egress_permits=540 permit_releases=540 | archive_lookup_reasons: requests=46970 selected_rows=593 global_blocked=194 session_visit_blocked=661 session_invalidation_blocked=3749 row_missing=41771 row_invalidated=1 durable_visited_row=0 unexpected_filtered=0 post_select_blocked=0 | archive_lookup_dimensions: [minecraft:overworld{requests=46970,selected=593,missing=41771,invalidated=1,durable_visited=0,global_blocked=194,session_visit_blocked=661,session_invalidation_blocked=3749,post_select_blocked=0}] | archive_coordinate_samples: lookups=[minecraft:overworld@782,-146, minecraft:overworld@782,-145, minecraft:overworld@781,-145, minecraft:overworld@780,-145, minecraft:overworld@779,-145, minecraft:overworld@778,-145, minecraft:overworld@776,-145, minecraft:overworld@775,-145] row_missing=[minecraft:overworld@782,-198, minecraft:overworld@782,-197, minecraft:overworld@782,-195, minecraft:overworld@782,-194, minecraft:overworld@782,-193, minecraft:overworld@782,-192, minecraft:overworld@782,-191, minecraft:overworld@776,-145] snapshots_committed=[minecraft:overworld@784,-209, minecraft:overworld@778,-212, minecraft:overworld@783,-212, minecraft:overworld@777,-212, minecraft:overworld@784,-162, minecraft:overworld@784,-161, minecraft:overworld@784,-160, minecraft:overworld@784,-177]
-[2611월2026 16:45:26.878] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: LOD-only archive rows: total=12139 valid=5675 invalidated=6464 valid_unvisited=5675 valid_with_visit_marker=0 durable_visited_total=6562 | archive_row_dimensions: [minecraft:overworld{total=12139,valid=5675,invalidated=6464,valid_unvisited=5675,valid_with_visit_marker=0,durable_visited_total=6562}] | valid_unvisited_samples=[minecraft:overworld@784,-177, minecraft:overworld@784,-160, minecraft:overworld@784,-161, minecraft:overworld@784,-162, minecraft:overworld@777,-212, minecraft:overworld@783,-212, minecraft:overworld@778,-212, minecraft:overworld@784,-209]
-[2611월2026 16:46:24.122] [LSS Disk Reader #3/WARN] [LSS/]: Disk read timed out (>10s) at 758, -214 — triaged as not-found (counted disk.errors; self-heals by re-declaration on gen-enabled servers) (+6 more since last report)
-[2611월2026 16:47:37.784] [LSS Disk Reader #3/WARN] [LSS/]: Disk read timed out (>10s) at 717, -216 — triaged as not-found (counted disk.errors; self-heals by re-declaration on gen-enabled servers) (+8 more since last report)
-[2611월2026 16:48:21.669] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping the server
-[2611월2026 16:48:21.672] [Server thread/INFO] [LSS/]: Preparing LSS LOD generation tickets for final world save
-[2611월2026 16:48:21.673] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
-[2611월2026 16:48:21.674] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
-[2611월2026 16:48:22.055] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: WDzizon lost connection: Server closed
-[2611월2026 16:48:22.055] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: WDzizon left the game
-[2611월2026 16:48:22.463] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+Threads class SMR info:
+_java_thread_list=0x000001a08ca21c30, length=40, elements={
+0x000001a0860044b0, 0x000001a0860052d0, 0x000001a0860092b0, 0x000001a086009f90,
+0x000001a086014a10, 0x000001a08601b120, 0x000001a08601d0a0, 0x000001a08601e150,
+0x000001a0860189c0, 0x000001a08601b7b0, 0x000001a086c69b40, 0x000001a0887646e0,
+0x000001a088762610, 0x000001a088765a90, 0x000001a088768880, 0x000001a0887695a0,
+0x000001a0864c83b0, 0x000001a0864c6970, 0x000001a0864c8a40, 0x000001a0864c7000,
+0x000001a0864c7690, 0x000001a0864c4f30, 0x000001a0864c9760, 0x000001a0864c7d20,
+0x000001a0864c2e60, 0x000001a0864c62e0, 0x000001a0864c4210, 0x000001a0865900b0,
+0x000001a08658f390, 0x000001a086592180, 0x000001a08658dfe0, 0x000001a086593bc0,
+0x000001a086591af0, 0x000001a08658fa20, 0x000001a086590dd0, 0x000001a086594250,
+0x000001a08c80e6d0, 0x000001a0864ca480, 0x000001a08cdaf9c0, 0x000001a08cdacbd0
+}
+
+"Reference Handler" #9 [19692] daemon prio=10 os_prio=2 cpu=93.75ms elapsed=7209.28s tid=0x000001a0860044b0 nid=19692 waiting on condition  [0x000000570a5ff000]
+   java.lang.Thread.State: RUNNABLE
+	at java.lang.ref.Reference.waitForReferencePendingList(java.base@21.0.12.1/Native Method)
+	at java.lang.ref.Reference.processPendingReferences(java.base@21.0.12.1/Reference.java:246)
+	at java.lang.ref.Reference$ReferenceHandler.run(java.base@21.0.12.1/Reference.java:208)
+
+   Locked ownable synchronizers:
+	- None
+
+"Finalizer" #10 [18704] daemon prio=8 os_prio=1 cpu=0.00ms elapsed=7209.28s tid=0x000001a0860052d0 nid=18704 in Object.wait()  [0x000000570a6fe000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait0(java.base@21.0.12.1/Native Method)
+	- waiting on <0x00000007ffb81038> (a java.lang.ref.NativeReferenceQueue$Lock)
+	at java.lang.Object.wait(java.base@21.0.12.1/Object.java:366)
+	at java.lang.Object.wait(java.base@21.0.12.1/Object.java:339)
+	at java.lang.ref.NativeReferenceQueue.await(java.base@21.0.12.1/NativeReferenceQueue.java:48)
+	at java.lang.ref.ReferenceQueue.remove0(java.base@21.0.12.1/ReferenceQueue.java:158)
+	at java.lang.ref.NativeReferenceQueue.remove(java.base@21.0.12.1/NativeReferenceQueue.java:89)
+	- locked <0x00000007ffb81038> (a java.lang.ref.NativeReferenceQueue$Lock)
+	at java.lang.ref.Finalizer$FinalizerThread.run(java.base@21.0.12.1/Finalizer.java:173)
+
+   Locked ownable synchronizers:
+	- None
+
+"Signal Dispatcher" #11 [19824] daemon prio=9 os_prio=2 cpu=0.00ms elapsed=7209.28s tid=0x000001a0860092b0 nid=19824 waiting on condition  [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"Attach Listener" #12 [18424] daemon prio=5 os_prio=2 cpu=0.00ms elapsed=7209.28s tid=0x000001a086009f90 nid=18424 waiting on condition  [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"Service Thread" #13 [21640] daemon prio=9 os_prio=0 cpu=93.75ms elapsed=7209.28s tid=0x000001a086014a10 nid=21640 runnable  [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"Monitor Deflation Thread" #14 [6288] daemon prio=9 os_prio=0 cpu=78.12ms elapsed=7209.28s tid=0x000001a08601b120 nid=6288 runnable  [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"C2 CompilerThread0" #15 [19120] daemon prio=9 os_prio=2 cpu=132750.00ms elapsed=7209.28s tid=0x000001a08601d0a0 nid=19120 waiting on condition  [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+   No compile task
+
+   Locked ownable synchronizers:
+	- None
+
+"C1 CompilerThread0" #18 [12368] daemon prio=9 os_prio=2 cpu=13640.62ms elapsed=7209.28s tid=0x000001a08601e150 nid=12368 waiting on condition  [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+   No compile task
+
+   Locked ownable synchronizers:
+	- None
+
+"Common-Cleaner" #19 [18732] daemon prio=8 os_prio=1 cpu=0.00ms elapsed=7209.26s tid=0x000001a0860189c0 nid=18732 waiting on condition  [0x000000570adff000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at jdk.internal.misc.Unsafe.park(java.base@21.0.12.1/Native Method)
+	- parking to wait for  <0x0000000601400078> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(java.base@21.0.12.1/LockSupport.java:269)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(java.base@21.0.12.1/AbstractQueuedSynchronizer.java:1886)
+	at java.lang.ref.ReferenceQueue.await(java.base@21.0.12.1/ReferenceQueue.java:71)
+	at java.lang.ref.ReferenceQueue.remove0(java.base@21.0.12.1/ReferenceQueue.java:143)
+	at java.lang.ref.ReferenceQueue.remove(java.base@21.0.12.1/ReferenceQueue.java:218)
+	at jdk.internal.ref.CleanerImpl.run(java.base@21.0.12.1/CleanerImpl.java:140)
+	at java.lang.Thread.runWith(java.base@21.0.12.1/Thread.java:1596)
+	at java.lang.Thread.run(java.base@21.0.12.1/Thread.java:1583)
+	at jdk.internal.misc.InnocuousThread.run(java.base@21.0.12.1/InnocuousThread.java:186)
+
+   Locked ownable synchronizers:
+	- None
+
+"Notification Thread" #20 [3908] daemon prio=9 os_prio=0 cpu=0.00ms elapsed=7209.06s tid=0x000001a08601b7b0 nid=3908 runnable  [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"JNA Cleaner" #50 [11056] daemon prio=5 os_prio=0 cpu=0.00ms elapsed=7202.04s tid=0x000001a086c69b40 nid=11056 waiting on condition  [0x000000570cafe000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at jdk.internal.misc.Unsafe.park(java.base@21.0.12.1/Native Method)
+	- parking to wait for  <0x00000007ff42e588> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(java.base@21.0.12.1/LockSupport.java:269)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(java.base@21.0.12.1/AbstractQueuedSynchronizer.java:1886)
+	at java.lang.ref.ReferenceQueue.await(java.base@21.0.12.1/ReferenceQueue.java:71)
+	at java.lang.ref.ReferenceQueue.remove0(java.base@21.0.12.1/ReferenceQueue.java:143)
+	at java.lang.ref.ReferenceQueue.remove(java.base@21.0.12.1/ReferenceQueue.java:218)
+	at com.sun.jna.internal.Cleaner$CleanerThread.run(com.sun.jna@5.14.0/Cleaner.java:154)
+
+   Locked ownable synchronizers:
+	- None
+
+"Timer hack thread" #51 [21884] daemon prio=5 os_prio=0 cpu=0.00ms elapsed=7186.91s tid=0x000001a0887646e0 nid=21884 waiting on condition  [0x000000570ceff000]
+   java.lang.Thread.State: TIMED_WAITING (sleeping)
+	at java.lang.Thread.sleep0(java.base@21.0.12.1/Native Method)
+	at java.lang.Thread.sleep(java.base@21.0.12.1/Thread.java:509)
+	at net.minecraft.Util$7.run(minecraft@1.21.1/Util.java:759)
+
+   Locked ownable synchronizers:
+	- None
+
+"modloading-sync-worker" #54 [17868] daemon prio=5 os_prio=0 cpu=328.12ms elapsed=7186.02s tid=0x000001a088762610 nid=17868 waiting on condition  [0x000000570b9fe000]
+   java.lang.Thread.State: WAITING (parking)
+	at jdk.internal.misc.Unsafe.park(java.base@21.0.12.1/Native Method)
+	- parking to wait for  <0x0000000609569418> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(java.base@21.0.12.1/LockSupport.java:371)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(java.base@21.0.12.1/AbstractQueuedSynchronizer.java:519)
+	at java.util.concurrent.ForkJoinPool.unmanagedBlock(java.base@21.0.12.1/ForkJoinPool.java:3780)
+	at java.util.concurrent.ForkJoinPool.managedBlock(java.base@21.0.12.1/ForkJoinPool.java:3725)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(java.base@21.0.12.1/AbstractQueuedSynchronizer.java:1746)
+	at java.util.concurrent.LinkedBlockingQueue.take(java.base@21.0.12.1/LinkedBlockingQueue.java:435)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(java.base@21.0.12.1/ThreadPoolExecutor.java:1070)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(java.base@21.0.12.1/ThreadPoolExecutor.java:1130)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(java.base@21.0.12.1/ThreadPoolExecutor.java:642)
+	at java.lang.Thread.runWith(java.base@21.0.12.1/Thread.java:1596)
+	at java.lang.Thread.run(java.base@21.0.12.1/Thread.java:1583)
+
+   Locked ownable synchronizers:
+	- None
+
+"FileSystemWatchService" #55 [14148] daemon prio=5 os_prio=0 cpu=0.00ms elapsed=7185.55s tid=0x000001a088765a90 nid=14148 runnable  [0x000000570cfff000]
+   java.lang.Thread.State: RUNNABLE
+	at sun.nio.fs.WindowsNativeDispatcher.GetQueuedCompletionStatus0(java.base@21.0.12.1/Native Method)
+	at sun.nio.fs.WindowsNativeDispatcher.GetQueuedCompletionStatus(java.base@21.0.12.1/WindowsNativeDispatcher.java:1075)
+	at sun.nio.fs.WindowsWatchService$Poller.run(java.base@21.0.12.1/WindowsWatchService.java:587)
+	at java.lang.Thread.runWith(java.base@21.0.12.1/Thread.java:1596)
+	at java.lang.Thread.run(java.base@21.0.12.1/Thread.java:1583)
+
+   Locked ownable synchronizers:
+	- None
+
+"config-file-watcher-0-0" #56 [4440] daemon prio=5 os_prio=0 cpu=93.75ms elapsed=7185.55s tid=0x000001a088768880 nid=4440 runnable  [0x000000570d0ff000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at jdk.internal.misc.Unsafe.park(java.base@21.0.12.1/Native Method)
+	- parking to wait for  <0x00000006095a1678> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(java.base@21.0.12.1/LockSupport.java:269)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(java.base@21.0.12.1/AbstractQueuedSynchronizer.java:1797)
+	at java.util.concurrent.LinkedBlockingDeque.pollFirst(java.base@21.0.12.1/LinkedBlockingDeque.java:515)
+	at java.util.concurrent.LinkedBlockingDeque.poll(java.base@21.0.12.1/LinkedBlockingDeque.java:677)
+	at sun.nio.fs.AbstractWatchService.poll(java.base@21.0.12.1/AbstractWatchService.java:108)
+	at com.electronwill.nightconfig.core.file.FileWatcher$FsWatcher.run(com.electronwill.nightconfig.core@3.8.3/FileWatcher.java:531)
+	at java.lang.Thread.runWith(java.base@21.0.12.1/Thread.java:1596)
+	at java.lang.Thread.run(java.base@21.0.12.1/Thread.java:1583)
+
+   Locked ownable synchronizers:
+	- None
+
+"Yggdrasil Key Fetcher" #60 [14536] daemon prio=5 os_prio=0 cpu=312.50ms elapsed=7184.92s tid=0x000001a0887695a0 nid=14536 waiting on condition  [0x000000570d4fe000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at jdk.internal.misc.Unsafe.park(java.base@21.0.12.1/Native Method)
+	- parking to wait for  <0x00000006094f90b0> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(java.base@21.0.12.1/LockSupport.java:269)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(java.base@21.0.12.1/AbstractQueuedSynchronizer.java:1797)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(java.base@21.0.12.1/ScheduledThreadPoolExecutor.java:1182)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(java.base@21.0.12.1/ScheduledThreadPoolExecutor.java:899)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(java.base@21.0.12.1/ThreadPoolExecutor.java:1070)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(java.base@21.0.12.1/ThreadPoolExecutor.java:1130)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(java.base@21.0.12.1/ThreadPoolExecutor.java:642)
+	at java.lang.Thread.runWith(java.base@21.0.12.1/Thread.java:1596)
+	at java.lang.Thread.run(java.base@21.0.12.1/Thread.java:1583)
+
+   Locked ownable synchronizers:
+	- None
+
+"Java2D Disposer" #75 [13872] daemon prio=10 os_prio=2 cpu=0.00ms elapsed=7180.19s tid=0x000001a0864c83b0 nid=13872 waiting on condition  [0x000000570aeff000]
+   java.lang.Thread.State: WAITING (parking)
+	at jdk.internal.misc.Unsafe.park(java.base@21.0.12.1/Native Method)
+	- parking to wait for  <0x000000060beb7b58> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(java.base@21.0.12.1/LockSupport.java:371)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(java.base@21.0.12.1/AbstractQueuedSynchronizer.java:519)
+	at java.util.concurrent.ForkJoinPool.unmanagedBlock(java.base@21.0.12.1/ForkJoinPool.java:3780)
+	at java.util.concurrent.ForkJoinPool.managedBlock(java.base@21.0.12.1/ForkJoinPool.java:3725)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(java.base@21.0.12.1/AbstractQueuedSynchronizer.java:1746)
+	at java.lang.ref.ReferenceQueue.await(java.base@21.0.12.1/ReferenceQueue.java:67)
+	at java.lang.ref.ReferenceQueue.remove0(java.base@21.0.12.1/ReferenceQueue.java:158)
+	at java.lang.ref.ReferenceQueue.remove(java.base@21.0.12.1/ReferenceQueue.java:234)
+	at sun.java2d.Disposer.run(java.desktop@21.0.12.1/Disposer.java:145)
+	at java.lang.Thread.runWith(java.base@21.0.12.1/Thread.java:1596)
+	at java.lang.Thread.run(java.base@21.0.12.1/Thread.java:1583)
+
+   Locked ownable synchronizers:
+	- None
+
+"AWT-Windows" #77 [1416] daemon prio=6 os_prio=0 cpu=4187.50ms elapsed=7180.19s tid=0x000001a0864c6970 nid=1416 runnable  [0x000000570e0ff000]
+   java.lang.Thread.State: RUNNABLE
+	at sun.awt.windows.WToolkit.eventLoop(java.desktop@21.0.12.1/Native Method)
+	at sun.awt.windows.WToolkit.run(java.desktop@21.0.12.1/WToolkit.java:360)
+	at java.lang.Thread.runWith(java.base@21.0.12.1/Thread.java:1596)
+	at java.lang.Thread.run(java.base@21.0.12.1/Thread.java:1583)
+
+   Locked ownable synchronizers:
+	- None
+
+"AWT-Shutdown" #80 [25336] prio=5 os_prio=0 cpu=0.00ms elapsed=7177.87s tid=0x000001a0864c8a40 nid=25336 in Object.wait()  [0x000000570e3ff000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait0(java.base@21.0.12.1/Native Method)
+	- waiting on <0x000000060bf17428> (a java.lang.Object)
+	at java.lang.Object.wait(java.base@21.0.12.1/Object.java:366)
+	at java.lang.Object.wait(java.base@21.0.12.1/Object.java:339)
+	at sun.awt.AWTAutoShutdown.run(java.desktop@21.0.12.1/AWTAutoShutdown.java:291)
+	- locked <0x000000060bf17428> (a java.lang.Object)
+	at java.lang.Thread.runWith(java.base@21.0.12.1/Thread.java:1596)
+	at java.lang.Thread.run(java.base@21.0.12.1/Thread.java:1583)
+
+   Locked ownable synchronizers:
+	- None
+
+"AWT-EventQueue-0" #79 [5532] prio=6 os_prio=0 cpu=3578.12ms elapsed=7177.87s tid=0x000001a0864c7000 nid=5532 waiting on condition  [0x000000570e4ff000]
+   java.lang.Thread.State: WAITING (parking)
+	at jdk.internal.misc.Unsafe.park(java.base@21.0.12.1/Native Method)
+	- parking to wait for  <0x000000060bf470a8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(java.base@21.0.12.1/LockSupport.java:371)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(java.base@21.0.12.1/AbstractQueuedSynchronizer.java:519)
+	at java.util.concurrent.ForkJoinPool.unmanagedBlock(java.base@21.0.12.1/ForkJoinPool.java:3780)
+	at java.util.concurrent.ForkJoinPool.managedBlock(java.base@21.0.12.1/ForkJoinPool.java:3725)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(java.base@21.0.12.1/AbstractQueuedSynchronizer.java:1746)
+	at java.awt.EventQueue.getNextEvent(java.desktop@21.0.12.1/EventQueue.java:565)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(java.desktop@21.0.12.1/EventDispatchThread.java:190)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(java.desktop@21.0.12.1/EventDispatchThread.java:124)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(java.desktop@21.0.12.1/EventDispatchThread.java:113)
+	at java.awt.EventDispatchThread.pumpEvents(java.desktop@21.0.12.1/EventDispatchThread.java:109)
+	at java.awt.EventDispatchThread.pumpEvents(java.desktop@21.0.12.1/EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.run(java.desktop@21.0.12.1/EventDispatchThread.java:90)
+
+   Locked ownable synchronizers:
+	- None
+
+"TimerQueue" #82 [6240] daemon prio=5 os_prio=0 cpu=296.88ms elapsed=7177.84s tid=0x000001a0864c7690 nid=6240 waiting on condition  [0x000000570e5ff000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at jdk.internal.misc.Unsafe.park(java.base@21.0.12.1/Native Method)
+	- parking to wait for  <0x000000060bf76d18> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(java.base@21.0.12.1/LockSupport.java:269)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(java.base@21.0.12.1/AbstractQueuedSynchronizer.java:1797)
+	at java.util.concurrent.DelayQueue.take(java.base@21.0.12.1/DelayQueue.java:254)
+	at javax.swing.TimerQueue.run(java.desktop@21.0.12.1/TimerQueue.java:165)
+	at java.lang.Thread.runWith(java.base@21.0.12.1/Thread.java:1596)
+	at java.lang.Thread.run(java.base@21.0.12.1/Thread.java:1583)
+
+   Locked ownable synchronizers:
+	- <0x0000000615330ed8> (a java.util.concurrent.locks.ReentrantLock$NonfairSync)
+
+"Thread-0" #81 [14900] daemon prio=5 os_prio=0 cpu=46.88ms elapsed=7177.65s tid=0x000001a0864c4f30 nid=14900 waiting on condition  [0x000000570e6fe000]
+   java.lang.Thread.State: WAITING (parking)
+	at jdk.internal.misc.Unsafe.park(java.base@21.0.12.1/Native Method)
+	- parking to wait for  <0x00000007ff45ae48> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(java.base@21.0.12.1/LockSupport.java:371)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(java.base@21.0.12.1/AbstractQueuedSynchronizer.java:519)
+	at java.util.concurrent.ForkJoinPool.unmanagedBlock(java.base@21.0.12.1/ForkJoinPool.java:3780)
+	at java.util.concurrent.ForkJoinPool.managedBlock(java.base@21.0.12.1/ForkJoinPool.java:3725)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(java.base@21.0.12.1/AbstractQueuedSynchronizer.java:1746)
+	at java.util.concurrent.LinkedBlockingQueue.take(java.base@21.0.12.1/LinkedBlockingQueue.java:435)
+	at com.mojang.logging.LogQueues.getNextLogEvent(logging@1.2.7/LogQueues.java:41)
+	at net.minecraft.server.gui.MinecraftServerGui.lambda$buildChatPanel$1(minecraft@1.21.1/MinecraftServerGui.java:131)
+	at net.minecraft.server.gui.MinecraftServerGui$$Lambda/0x000001a042ee1690.run(minecraft@1.21.1/Unknown Source)
+	at java.lang.Thread.runWith(java.base@21.0.12.1/Thread.java:1596)
+	at java.lang.Thread.run(java.base@21.0.12.1/Thread.java:1583)
+
+   Locked ownable synchronizers:
+	- None
+
+"Server thread" #74 [1216] prio=8 os_prio=1 cpu=5313078.12ms elapsed=7177.65s tid=0x000001a0864c9760 nid=1216 runnable  [0x000000570e7fe000]
+   java.lang.Thread.State: RUNNABLE
+	at net.minecraft.server.level.ChunkMap$$Lambda/0x000001a04332e988.execute(minecraft@1.21.1/Unknown Source)
+	at java.util.concurrent.CompletableFuture.uniRunNow(java.base@21.0.12.1/CompletableFuture.java:817)
+	at java.util.concurrent.CompletableFuture.uniRunStage(java.base@21.0.12.1/CompletableFuture.java:803)
+	at java.util.concurrent.CompletableFuture.thenRunAsync(java.base@21.0.12.1/CompletableFuture.java:2236)
+	at net.minecraft.server.level.ChunkMap.scheduleUnload(minecraft@1.21.1/ChunkMap.java:506)
+	at net.minecraft.server.level.ChunkMap.lambda$scheduleUnload$12(minecraft@1.21.1/ChunkMap.java:508)
+	at net.minecraft.server.level.ChunkMap$$Lambda/0x000001a04332e758.run(minecraft@1.21.1/Unknown Source)
+	at java.util.concurrent.CompletableFuture$UniRun.tryFire(java.base@21.0.12.1/CompletableFuture.java:787)
+	at java.util.concurrent.CompletableFuture$Completion.run(java.base@21.0.12.1/CompletableFuture.java:482)
+	at net.minecraft.server.level.ChunkMap.processUnloads(minecraft@1.21.1/ChunkMap.java:492)
+	at net.minecraft.server.level.ChunkMap.tick(minecraft@1.21.1/ChunkMap.java:448)
+	at net.minecraft.server.level.ServerChunkCache.tick(minecraft@1.21.1/ServerChunkCache.java:326)
+	at net.minecraft.server.MinecraftServer.stopServer(minecraft@1.21.1/MinecraftServer.java:616)
+	at net.minecraft.server.dedicated.DedicatedServer.stopServer(minecraft@1.21.1/DedicatedServer.java:567)
+	at net.minecraft.server.MinecraftServer.runServer(minecraft@1.21.1/MinecraftServer.java:742)
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(minecraft@1.21.1/MinecraftServer.java:267)
+	at net.minecraft.server.MinecraftServer$$Lambda/0x000001a042ede190.run(minecraft@1.21.1/Unknown Source)
+	at java.lang.Thread.runWith(java.base@21.0.12.1/Thread.java:1596)
+	at java.lang.Thread.run(java.base@21.0.12.1/Thread.java:1583)
+
+   Locked ownable synchronizers:
+	- None
+
+"DestroyJavaVM" #85 [22004] prio=5 os_prio=0 cpu=16421.88ms elapsed=7177.65s tid=0x000001a0864c7d20 nid=22004 waiting on condition  [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"Server console handler" #86 [22064] daemon prio=8 os_prio=1 cpu=31.25ms elapsed=7177.65s tid=0x000001a0864c2e60 nid=22064 runnable  [0x000000570e8fe000]
+   java.lang.Thread.State: RUNNABLE
+	at java.io.FileInputStream.readBytes(java.base@21.0.12.1/Native Method)
+	at java.io.FileInputStream.read(java.base@21.0.12.1/FileInputStream.java:287)
+	at java.io.BufferedInputStream.read1(java.base@21.0.12.1/BufferedInputStream.java:345)
+	at java.io.BufferedInputStream.implRead(java.base@21.0.12.1/BufferedInputStream.java:420)
+	at java.io.BufferedInputStream.read(java.base@21.0.12.1/BufferedInputStream.java:399)
+	at sun.nio.cs.StreamDecoder.readBytes(java.base@21.0.12.1/StreamDecoder.java:350)
+	at sun.nio.cs.StreamDecoder.implRead(java.base@21.0.12.1/StreamDecoder.java:393)
+	at sun.nio.cs.StreamDecoder.lockedRead(java.base@21.0.12.1/StreamDecoder.java:217)
+	at sun.nio.cs.StreamDecoder.read(java.base@21.0.12.1/StreamDecoder.java:171)
+	at java.io.InputStreamReader.read(java.base@21.0.12.1/InputStreamReader.java:188)
+	at java.io.BufferedReader.fill(java.base@21.0.12.1/BufferedReader.java:160)
+	at java.io.BufferedReader.implReadLine(java.base@21.0.12.1/BufferedReader.java:370)
+	at java.io.BufferedReader.readLine(java.base@21.0.12.1/BufferedReader.java:347)
+	at java.io.BufferedReader.readLine(java.base@21.0.12.1/BufferedReader.java:436)
+	at net.minecraft.server.dedicated.DedicatedServer$1.run(minecraft@1.21.1/DedicatedServer.java:113)
+
+   Locked ownable synchronizers:
+	- <0x0000000602e9f578> (a java.util.concurrent.locks.ReentrantLock$NonfairSync)
+	- <0x00000006152baeb8> (a java.util.concurrent.locks.ReentrantLock$NonfairSync)
+	- <0x00000006152bef10> (a java.util.concurrent.locks.ReentrantLock$NonfairSync)
+
+"D3D Screen Updater" #87 [17812] daemon prio=7 os_prio=1 cpu=1140.62ms elapsed=7177.64s tid=0x000001a0864c62e0 nid=17812 in Object.wait()  [0x000000570e9ff000]
+   java.lang.Thread.State: TIMED_WAITING (on object monitor)
+	at java.lang.Object.wait0(java.base@21.0.12.1/Native Method)
+	- waiting on <no object reference available>
+	at java.lang.Object.wait(java.base@21.0.12.1/Object.java:366)
+	at sun.java2d.d3d.D3DScreenUpdateManager.run(java.desktop@21.0.12.1/D3DScreenUpdateManager.java:425)
+	- locked <0x000000060bf17550> (a java.lang.Object)
+	at java.lang.Thread.runWith(java.base@21.0.12.1/Thread.java:1596)
+	at java.lang.Thread.run(java.base@21.0.12.1/Thread.java:1583)
+
+   Locked ownable synchronizers:
+	- None
+
+"Netty Server IO #0" #88 [27608] daemon prio=8 os_prio=1 cpu=15.62ms elapsed=7177.15s tid=0x000001a0864c4210 nid=27608 runnable  [0x000000570c9fe000]
+   java.lang.Thread.State: RUNNABLE
+	at sun.nio.ch.WEPoll.wait(java.base@21.0.12.1/Native Method)
+	at sun.nio.ch.WEPollSelectorImpl.doSelect(java.base@21.0.12.1/WEPollSelectorImpl.java:114)
+	at sun.nio.ch.SelectorImpl.lockAndDoSelect(java.base@21.0.12.1/SelectorImpl.java:130)
+	- locked <0x000000060beb7d08> (a io.netty.channel.nio.SelectedSelectionKeySet)
+	- locked <0x000000060beb7ca8> (a sun.nio.ch.WEPollSelectorImpl)
+	at sun.nio.ch.SelectorImpl.select(java.base@21.0.12.1/SelectorImpl.java:147)
+	at io.netty.channel.nio.SelectedSelectionKeySetSelector.select(io.netty.transport@4.1.97.Final/SelectedSelectionKeySetSelector.java:68)
+	at io.netty.channel.nio.NioEventLoop.select(io.netty.transport@4.1.97.Final/NioEventLoop.java:879)
+	at io.netty.channel.nio.NioEventLoop.run(io.netty.transport@4.1.97.Final/NioEventLoop.java:526)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(io.netty.common@4.1.97.Final/SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(io.netty.common@4.1.97.Final/ThreadExecutorMap.java:74)
+	at java.lang.Thread.runWith(java.base@21.0.12.1/Thread.java:1596)
+	at java.lang.Thread.run(java.base@21.0.12.1/Thread.java:1583)
+
+   Locked ownable synchronizers:
+	- None
+
+"LanServerPinger #1" #94 [13268] daemon prio=8 os_prio=1 cpu=46.88ms elapsed=7172.24s tid=0x000001a0865900b0 nid=13268 waiting on condition  [0x000000570f1ff000]
+   java.lang.Thread.State: TIMED_WAITING (sleeping)
+	at java.lang.Thread.sleep0(java.base@21.0.12.1/Native Method)
+	at java.lang.Thread.sleep(java.base@21.0.12.1/Thread.java:509)
+	at net.minecraft.client.server.LanServerPinger.run(minecraft@1.21.1/LanServerPinger.java:52)
+
+   Locked ownable synchronizers:
+	- None
+
+"LSS LOD-only Archive SQLite" #95 [15640] daemon prio=2 os_prio=-2 cpu=22390.62ms elapsed=7172.05s tid=0x000001a08658f390 nid=15640 waiting on condition  [0x000000570f2fe000]
+   java.lang.Thread.State: WAITING (parking)
+	at jdk.internal.misc.Unsafe.park(java.base@21.0.12.1/Native Method)
+	- parking to wait for  <0x000000060bfa71c8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(java.base@21.0.12.1/LockSupport.java:371)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(java.base@21.0.12.1/AbstractQueuedSynchronizer.java:519)
+	at java.util.concurrent.ForkJoinPool.unmanagedBlock(java.base@21.0.12.1/ForkJoinPool.java:3780)
+	at java.util.concurrent.ForkJoinPool.managedBlock(java.base@21.0.12.1/ForkJoinPool.java:3725)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(java.base@21.0.12.1/AbstractQueuedSynchronizer.java:1746)
+	at java.util.concurrent.ArrayBlockingQueue.take(java.base@21.0.12.1/ArrayBlockingQueue.java:420)
+	at dev.vox.lss.common.lodonly.LodOnlyArchiveStore.writerLoop(lss@0.23.0/LodOnlyArchiveStore.java:412)
+	at dev.vox.lss.common.lodonly.LodOnlyArchiveStore.lambda$new$0(lss@0.23.0/LodOnlyArchiveStore.java:346)
+	at dev.vox.lss.common.lodonly.LodOnlyArchiveStore$$Lambda/0x000001a0430d5ab8.run(lss@0.23.0/Unknown Source)
+	at java.lang.Thread.runWith(java.base@21.0.12.1/Thread.java:1596)
+	at java.lang.Thread.run(java.base@21.0.12.1/Thread.java:1583)
+
+   Locked ownable synchronizers:
+	- None
+
+"LSS Processing Thread" #96 [584] daemon prio=4 os_prio=-1 cpu=8046.88ms elapsed=7154.62s tid=0x000001a086592180 nid=584 in Object.wait()  [0x000000570d3ff000]
+   java.lang.Thread.State: TIMED_WAITING (on object monitor)
+	at java.lang.Object.wait0(java.base@21.0.12.1/Native Method)
+	- waiting on <no object reference available>
+	at java.lang.Object.wait(java.base@21.0.12.1/Object.java:366)
+	at dev.vox.lss.common.processing.OffThreadProcessor.processingLoop(lss@0.23.0/OffThreadProcessor.java:789)
+	- locked <0x000000060cae3510> (a java.lang.Object)
+	at dev.vox.lss.common.processing.OffThreadProcessor.lambda$new$4(lss@0.23.0/OffThreadProcessor.java:345)
+	at dev.vox.lss.common.processing.OffThreadProcessor$$Lambda/0x000001a043119008.run(lss@0.23.0/Unknown Source)
+	at java.lang.Thread.runWith(java.base@21.0.12.1/Thread.java:1596)
+	at java.lang.Thread.run(java.base@21.0.12.1/Thread.java:1583)
+
+   Locked ownable synchronizers:
+	- None
+
+"Netty Server IO #1" #98 [6380] daemon prio=8 os_prio=1 cpu=6718.75ms elapsed=7132.42s tid=0x000001a08658dfe0 nid=6380 runnable  [0x000000570c4fe000]
+   java.lang.Thread.State: RUNNABLE
+	at sun.nio.ch.WEPoll.wait(java.base@21.0.12.1/Native Method)
+	at sun.nio.ch.WEPollSelectorImpl.doSelect(java.base@21.0.12.1/WEPollSelectorImpl.java:114)
+	at sun.nio.ch.SelectorImpl.lockAndDoSelect(java.base@21.0.12.1/SelectorImpl.java:130)
+	- locked <0x000000060b0f1ad8> (a io.netty.channel.nio.SelectedSelectionKeySet)
+	- locked <0x000000060b0f2b00> (a sun.nio.ch.WEPollSelectorImpl)
+	at sun.nio.ch.SelectorImpl.select(java.base@21.0.12.1/SelectorImpl.java:147)
+	at io.netty.channel.nio.SelectedSelectionKeySetSelector.select(io.netty.transport@4.1.97.Final/SelectedSelectionKeySetSelector.java:68)
+	at io.netty.channel.nio.NioEventLoop.select(io.netty.transport@4.1.97.Final/NioEventLoop.java:879)
+	at io.netty.channel.nio.NioEventLoop.run(io.netty.transport@4.1.97.Final/NioEventLoop.java:526)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(io.netty.common@4.1.97.Final/SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(io.netty.common@4.1.97.Final/ThreadExecutorMap.java:74)
+	at java.lang.Thread.runWith(java.base@21.0.12.1/Thread.java:1596)
+	at java.lang.Thread.run(java.base@21.0.12.1/Thread.java:1583)
+
+   Locked ownable synchronizers:
+	- None
+
+"LSS Region Summary Sweeper" #97 [16916] daemon prio=1 os_prio=-2 cpu=343.75ms elapsed=7127.98s tid=0x000001a086593bc0 nid=16916 in Object.wait()  [0x000000570f3ff000]
+   java.lang.Thread.State: TIMED_WAITING (on object monitor)
+	at java.lang.Object.wait0(java.base@21.0.12.1/Native Method)
+	- waiting on <no object reference available>
+	at java.lang.Object.wait(java.base@21.0.12.1/Object.java:366)
+	at dev.vox.lss.common.region.RegionSummaryService.sweeperLoop(lss@0.23.0/RegionSummaryService.java:384)
+	- locked <0x00000006053c73b8> (a java.lang.Object)
+	at dev.vox.lss.common.region.RegionSummaryService$$Lambda/0x000001a04311b1a0.run(lss@0.23.0/Unknown Source)
+	at java.lang.Thread.runWith(java.base@21.0.12.1/Thread.java:1596)
+	at java.lang.Thread.run(java.base@21.0.12.1/Thread.java:1583)
+
+   Locked ownable synchronizers:
+	- None
+
+"Netty Server IO #2" #102 [3368] daemon prio=8 os_prio=1 cpu=3187.50ms elapsed=7124.81s tid=0x000001a086591af0 nid=3368 runnable  [0x000000570c7fe000]
+   java.lang.Thread.State: RUNNABLE
+	at sun.nio.ch.WEPoll.wait(java.base@21.0.12.1/Native Method)
+	at sun.nio.ch.WEPollSelectorImpl.doSelect(java.base@21.0.12.1/WEPollSelectorImpl.java:114)
+	at sun.nio.ch.SelectorImpl.lockAndDoSelect(java.base@21.0.12.1/SelectorImpl.java:130)
+	- locked <0x000000060b08e368> (a io.netty.channel.nio.SelectedSelectionKeySet)
+	- locked <0x000000060b08f390> (a sun.nio.ch.WEPollSelectorImpl)
+	at sun.nio.ch.SelectorImpl.select(java.base@21.0.12.1/SelectorImpl.java:147)
+	at io.netty.channel.nio.SelectedSelectionKeySetSelector.select(io.netty.transport@4.1.97.Final/SelectedSelectionKeySetSelector.java:68)
+	at io.netty.channel.nio.NioEventLoop.select(io.netty.transport@4.1.97.Final/NioEventLoop.java:879)
+	at io.netty.channel.nio.NioEventLoop.run(io.netty.transport@4.1.97.Final/NioEventLoop.java:526)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(io.netty.common@4.1.97.Final/SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(io.netty.common@4.1.97.Final/ThreadExecutorMap.java:74)
+	at java.lang.Thread.runWith(java.base@21.0.12.1/Thread.java:1596)
+	at java.lang.Thread.run(java.base@21.0.12.1/Thread.java:1583)
+
+   Locked ownable synchronizers:
+	- None
+
+"LSS Disk Reader #1" #106 [26344] daemon prio=1 os_prio=-2 cpu=8312.50ms elapsed=7094.82s tid=0x000001a08658fa20 nid=26344 waiting on condition  [0x0000005709afe000]
+   java.lang.Thread.State: WAITING (parking)
+	at jdk.internal.misc.Unsafe.park(java.base@21.0.12.1/Native Method)
+	- parking to wait for  <0x00000006053c6178> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(java.base@21.0.12.1/LockSupport.java:371)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(java.base@21.0.12.1/AbstractQueuedSynchronizer.java:519)
+	at java.util.concurrent.ForkJoinPool.unmanagedBlock(java.base@21.0.12.1/ForkJoinPool.java:3780)
+	at java.util.concurrent.ForkJoinPool.managedBlock(java.base@21.0.12.1/ForkJoinPool.java:3725)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(java.base@21.0.12.1/AbstractQueuedSynchronizer.java:1746)
+	at java.util.concurrent.ArrayBlockingQueue.take(java.base@21.0.12.1/ArrayBlockingQueue.java:420)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(java.base@21.0.12.1/ThreadPoolExecutor.java:1070)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(java.base@21.0.12.1/ThreadPoolExecutor.java:1130)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(java.base@21.0.12.1/ThreadPoolExecutor.java:642)
+	at java.lang.Thread.runWith(java.base@21.0.12.1/Thread.java:1596)
+	at java.lang.Thread.run(java.base@21.0.12.1/Thread.java:1583)
+
+   Locked ownable synchronizers:
+	- None
+
+"LSS Disk Reader #2" #107 [24368] daemon prio=1 os_prio=-2 cpu=8640.62ms elapsed=7094.82s tid=0x000001a086590dd0 nid=24368 waiting on condition  [0x0000005709bff000]
+   java.lang.Thread.State: WAITING (parking)
+	at jdk.internal.misc.Unsafe.park(java.base@21.0.12.1/Native Method)
+	- parking to wait for  <0x00000006053c6178> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(java.base@21.0.12.1/LockSupport.java:371)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(java.base@21.0.12.1/AbstractQueuedSynchronizer.java:519)
+	at java.util.concurrent.ForkJoinPool.unmanagedBlock(java.base@21.0.12.1/ForkJoinPool.java:3780)
+	at java.util.concurrent.ForkJoinPool.managedBlock(java.base@21.0.12.1/ForkJoinPool.java:3725)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(java.base@21.0.12.1/AbstractQueuedSynchronizer.java:1746)
+	at java.util.concurrent.ArrayBlockingQueue.take(java.base@21.0.12.1/ArrayBlockingQueue.java:420)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(java.base@21.0.12.1/ThreadPoolExecutor.java:1070)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(java.base@21.0.12.1/ThreadPoolExecutor.java:1130)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(java.base@21.0.12.1/ThreadPoolExecutor.java:642)
+	at java.lang.Thread.runWith(java.base@21.0.12.1/Thread.java:1596)
+	at java.lang.Thread.run(java.base@21.0.12.1/Thread.java:1583)
+
+   Locked ownable synchronizers:
+	- None
+
+"LSS Disk Reader #3" #108 [28360] daemon prio=1 os_prio=-2 cpu=8500.00ms elapsed=7094.81s tid=0x000001a086594250 nid=28360 waiting on condition  [0x0000005709cfe000]
+   java.lang.Thread.State: WAITING (parking)
+	at jdk.internal.misc.Unsafe.park(java.base@21.0.12.1/Native Method)
+	- parking to wait for  <0x00000006053c6178> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(java.base@21.0.12.1/LockSupport.java:371)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(java.base@21.0.12.1/AbstractQueuedSynchronizer.java:519)
+	at java.util.concurrent.ForkJoinPool.unmanagedBlock(java.base@21.0.12.1/ForkJoinPool.java:3780)
+	at java.util.concurrent.ForkJoinPool.managedBlock(java.base@21.0.12.1/ForkJoinPool.java:3725)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(java.base@21.0.12.1/AbstractQueuedSynchronizer.java:1746)
+	at java.util.concurrent.ArrayBlockingQueue.take(java.base@21.0.12.1/ArrayBlockingQueue.java:420)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(java.base@21.0.12.1/ThreadPoolExecutor.java:1070)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(java.base@21.0.12.1/ThreadPoolExecutor.java:1130)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(java.base@21.0.12.1/ThreadPoolExecutor.java:642)
+	at java.lang.Thread.runWith(java.base@21.0.12.1/Thread.java:1596)
+	at java.lang.Thread.run(java.base@21.0.12.1/Thread.java:1583)
+
+   Locked ownable synchronizers:
+	- None
+
+"LSS-TimestampSave" #111 [13720] daemon prio=4 os_prio=-1 cpu=1484.38ms elapsed=7072.37s tid=0x000001a08c80e6d0 nid=13720 waiting on condition  [0x000000570c1ff000]
+   java.lang.Thread.State: WAITING (parking)
+	at jdk.internal.misc.Unsafe.park(java.base@21.0.12.1/Native Method)
+	- parking to wait for  <0x000000060cc0c7f8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(java.base@21.0.12.1/LockSupport.java:371)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(java.base@21.0.12.1/AbstractQueuedSynchronizer.java:519)
+	at java.util.concurrent.ForkJoinPool.unmanagedBlock(java.base@21.0.12.1/ForkJoinPool.java:3780)
+	at java.util.concurrent.ForkJoinPool.managedBlock(java.base@21.0.12.1/ForkJoinPool.java:3725)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(java.base@21.0.12.1/AbstractQueuedSynchronizer.java:1746)
+	at java.util.concurrent.LinkedBlockingQueue.take(java.base@21.0.12.1/LinkedBlockingQueue.java:435)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(java.base@21.0.12.1/ThreadPoolExecutor.java:1070)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(java.base@21.0.12.1/ThreadPoolExecutor.java:1130)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(java.base@21.0.12.1/ThreadPoolExecutor.java:642)
+	at java.lang.Thread.runWith(java.base@21.0.12.1/Thread.java:1596)
+	at java.lang.Thread.run(java.base@21.0.12.1/Thread.java:1583)
+
+   Locked ownable synchronizers:
+	- None
+
+"Netty Server IO #3" #113 [2676] daemon prio=8 os_prio=1 cpu=18703.12ms elapsed=6667.92s tid=0x000001a0864ca480 nid=2676 runnable  [0x000000570bdfe000]
+   java.lang.Thread.State: RUNNABLE
+	at sun.nio.ch.WEPoll.wait(java.base@21.0.12.1/Native Method)
+	at sun.nio.ch.WEPollSelectorImpl.doSelect(java.base@21.0.12.1/WEPollSelectorImpl.java:114)
+	at sun.nio.ch.SelectorImpl.lockAndDoSelect(java.base@21.0.12.1/SelectorImpl.java:130)
+	- locked <0x000000060b08a530> (a io.netty.channel.nio.SelectedSelectionKeySet)
+	- locked <0x000000060b08b558> (a sun.nio.ch.WEPollSelectorImpl)
+	at sun.nio.ch.SelectorImpl.select(java.base@21.0.12.1/SelectorImpl.java:147)
+	at io.netty.channel.nio.SelectedSelectionKeySetSelector.select(io.netty.transport@4.1.97.Final/SelectedSelectionKeySetSelector.java:68)
+	at io.netty.channel.nio.NioEventLoop.select(io.netty.transport@4.1.97.Final/NioEventLoop.java:879)
+	at io.netty.channel.nio.NioEventLoop.run(io.netty.transport@4.1.97.Final/NioEventLoop.java:526)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(io.netty.common@4.1.97.Final/SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(io.netty.common@4.1.97.Final/ThreadExecutorMap.java:74)
+	at java.lang.Thread.runWith(java.base@21.0.12.1/Thread.java:1596)
+	at java.lang.Thread.run(java.base@21.0.12.1/Thread.java:1583)
+
+   Locked ownable synchronizers:
+	- None
+
+"Netty Server IO #4" #117 [14976] daemon prio=8 os_prio=1 cpu=17671.88ms elapsed=6664.61s tid=0x000001a08cdaf9c0 nid=14976 runnable  [0x000000570befe000]
+   java.lang.Thread.State: RUNNABLE
+	at sun.nio.ch.WEPoll.wait(java.base@21.0.12.1/Native Method)
+	at sun.nio.ch.WEPollSelectorImpl.doSelect(java.base@21.0.12.1/WEPollSelectorImpl.java:114)
+	at sun.nio.ch.SelectorImpl.lockAndDoSelect(java.base@21.0.12.1/SelectorImpl.java:130)
+	- locked <0x000000060b0866f8> (a io.netty.channel.nio.SelectedSelectionKeySet)
+	- locked <0x000000060b087720> (a sun.nio.ch.WEPollSelectorImpl)
+	at sun.nio.ch.SelectorImpl.select(java.base@21.0.12.1/SelectorImpl.java:147)
+	at io.netty.channel.nio.SelectedSelectionKeySetSelector.select(io.netty.transport@4.1.97.Final/SelectedSelectionKeySetSelector.java:68)
+	at io.netty.channel.nio.NioEventLoop.select(io.netty.transport@4.1.97.Final/NioEventLoop.java:879)
+	at io.netty.channel.nio.NioEventLoop.run(io.netty.transport@4.1.97.Final/NioEventLoop.java:526)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(io.netty.common@4.1.97.Final/SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(io.netty.common@4.1.97.Final/ThreadExecutorMap.java:74)
+	at java.lang.Thread.runWith(java.base@21.0.12.1/Thread.java:1596)
+	at java.lang.Thread.run(java.base@21.0.12.1/Thread.java:1583)
+
+   Locked ownable synchronizers:
+	- None
+
+"CompletableFutureDelayScheduler" #120 [20996] daemon prio=8 os_prio=1 cpu=0.00ms elapsed=6649.22s tid=0x000001a08cdacbd0 nid=20996 waiting on condition  [0x000000570c0ff000]
+   java.lang.Thread.State: WAITING (parking)
+	at jdk.internal.misc.Unsafe.park(java.base@21.0.12.1/Native Method)
+	- parking to wait for  <0x000000060e0099f0> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(java.base@21.0.12.1/LockSupport.java:371)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(java.base@21.0.12.1/AbstractQueuedSynchronizer.java:519)
+	at java.util.concurrent.ForkJoinPool.unmanagedBlock(java.base@21.0.12.1/ForkJoinPool.java:3780)
+	at java.util.concurrent.ForkJoinPool.managedBlock(java.base@21.0.12.1/ForkJoinPool.java:3725)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(java.base@21.0.12.1/AbstractQueuedSynchronizer.java:1746)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(java.base@21.0.12.1/ScheduledThreadPoolExecutor.java:1170)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(java.base@21.0.12.1/ScheduledThreadPoolExecutor.java:899)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(java.base@21.0.12.1/ThreadPoolExecutor.java:1070)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(java.base@21.0.12.1/ThreadPoolExecutor.java:1130)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(java.base@21.0.12.1/ThreadPoolExecutor.java:642)
+	at java.lang.Thread.runWith(java.base@21.0.12.1/Thread.java:1596)
+	at java.lang.Thread.run(java.base@21.0.12.1/Thread.java:1583)
+
+   Locked ownable synchronizers:
+	- None
+
+"G1 Conc#2" os_prio=2 cpu=123687.50ms elapsed=7203.62s tid=0x000001a0872717c0 nid=14104 runnable  
+
+"G1 Conc#1" os_prio=2 cpu=125250.00ms elapsed=7203.62s tid=0x000001a087272a30 nid=17556 runnable  
+
+"GC Thread#9" os_prio=2 cpu=28359.38ms elapsed=7206.89s tid=0x000001a0863b6b70 nid=3400 runnable  
+
+"GC Thread#8" os_prio=2 cpu=27140.62ms elapsed=7206.89s tid=0x000001a0863b67c0 nid=15324 runnable  
+
+"GC Thread#7" os_prio=2 cpu=27031.25ms elapsed=7206.89s tid=0x000001a0864dddf0 nid=3440 runnable  
+
+"GC Thread#6" os_prio=2 cpu=27421.88ms elapsed=7206.89s tid=0x000001a0864dd630 nid=23372 runnable  
+
+"GC Thread#5" os_prio=2 cpu=27468.75ms elapsed=7206.89s tid=0x000001a0864dd280 nid=23964 runnable  
+
+"GC Thread#4" os_prio=2 cpu=28421.88ms elapsed=7206.89s tid=0x000001a0864dced0 nid=17808 runnable  
+
+"GC Thread#3" os_prio=2 cpu=28312.50ms elapsed=7206.89s tid=0x000001a086621990 nid=11672 runnable  
+
+"GC Thread#2" os_prio=2 cpu=27171.88ms elapsed=7206.89s tid=0x000001a0863e8ec0 nid=4492 runnable  
+
+"GC Thread#1" os_prio=2 cpu=26703.12ms elapsed=7206.89s tid=0x000001a0863e8b10 nid=23824 runnable  
+
+"VM Thread" os_prio=2 cpu=3250.00ms elapsed=7209.30s tid=0x000001a040482e50 nid=15648 runnable  
+
+"VM Periodic Task Thread" os_prio=2 cpu=484.38ms elapsed=7209.30s tid=0x000001a040475920 nid=18224 waiting on condition  
+
+"G1 Service" os_prio=2 cpu=609.38ms elapsed=7209.31s tid=0x000001a0403391a0 nid=9568 runnable  
+
+"G1 Refine#0" os_prio=2 cpu=2296.88ms elapsed=7209.31s tid=0x000001a040338620 nid=2152 runnable  
+
+"G1 Conc#0" os_prio=2 cpu=125656.25ms elapsed=7209.31s tid=0x000001a01c500900 nid=23164 runnable  
+
+"G1 Main Marker" os_prio=2 cpu=140.62ms elapsed=7209.31s tid=0x000001a01c4fdc30 nid=21568 runnable  
+
+"GC Thread#0" os_prio=2 cpu=27890.62ms elapsed=7209.31s tid=0x000001a01c4eccc0 nid=7928 runnable  
+
+JNI global refs: 135, weak refs: 212
+
