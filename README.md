@@ -171,3 +171,52 @@ java.util.concurrent.TimeoutException: null
 BUILD SUCCESSFUL in 44s
 16 actionable tasks: 4 executed, 12 up-to-date
 Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.5.1/userguide/configuration_cache_enabling.html
+               wdzizon@DESKTOP-LS6DH9N:~/lod-server-support-lod-only$ cd ~/lod-server-support-lod-only &&
+> git pull --ff-only origin feat/lod-only-preservation-1.21.1 &&
+> ./gradlew :neoforge:test :neoforge:compileGametestJava :neoforge:runGameTestServer
+remote: Enumerating objects: 98, done.
+remote: Counting objects: 100% (98/98), done.
+remote: Compressing objects: 100% (46/46), done.
+remote: Total 70 (delta 23), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (70/70), 15.10 KiB | 351.00 KiB/s, done.
+From https://github.com/WDzizon/lod-server-support-lod-only
+ * branch                feat/lod-only-preservation-1.21.1 -> FETCH_HEAD
+   54071c72a..ce49823b4  feat/lod-only-preservation-1.21.1 -> origin/feat/lod-only-preservation-1.21.1
+Updating 54071c72a..ce49823b4
+Fast-forward
+ docs/planning/lod-only-preservation-plan.md                                                 |  68 +++++++++++++++++++++++++++++
+ neoforge/src/gametest/java/dev/vox/lss/neoforge/gametest/LSSNeoGameTests.java               | 232 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++------------
+ neoforge/src/main/java/dev/vox/lss/mixin/IOWorkerChunkIoGateMixin.java                      |  63 +++++++++++++++++++++++++++
+ neoforge/src/main/java/dev/vox/lss/networking/server/NeoForgeChunkIoGate.java               | 325 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ neoforge/src/main/java/dev/vox/lss/networking/server/NeoForgeChunkRecordRemovalAdapter.java | 120 +++++++++++++++++++++++++++++++++++++--------------
+ neoforge/src/main/resources/lss.neoforge.mixins.json                                        |   1 +
+ neoforge/src/test/java/dev/vox/lss/neoforge/NeoForgeIOWorkerNullStoreContractTest.java      |  55 +++++++++++++++++-------
+ 7 files changed, 788 insertions(+), 76 deletions(-)
+ create mode 100644 neoforge/src/main/java/dev/vox/lss/mixin/IOWorkerChunkIoGateMixin.java
+ create mode 100644 neoforge/src/main/java/dev/vox/lss/networking/server/NeoForgeChunkIoGate.java
+│·······│·······│·······│██▌····│██▌····│█████··│█████··│█████··│█████··│█████··│█████··
+> Configure project :fabric   > Evaluating se> root proje> :common > > :common > :fabric > :fabric                               > :fabric
+Fabric Loom: 1.17.13
+│██████│██████│████│█
+> Configure project :spongenge
+SpongePowered Plugin 'GRADLE' Toolset Version '2.3.0'
+Targeting Minecraft '1.21.1' on a 'SERVER' platform
+│▋······│████▎··│█████··│█████··│█████··│██████│████│████
+> Task :neoforge:test FAILED
+
+NeoForgeIOWorkerNullStoreContractTest > executableProbeUsesOnlyAnIsolatedTemporaryStorageDirectory() FAILED
+    org.opentest4j.AssertionFailedError at NeoForgeIOWorkerNullStoreContractTest.java:54
+
+54 tests completed, 1 failed
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':neoforge:test'.
+> There were failing tests. See the report at: file:///home/wdzizon/lod-server-support-lod-only/neoforge/build/reports/tests/test/index.html
+
+* Try:
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+
+BUILD FAILED in 7s
+10 actionable tasks: 4 executed, 6 up-to-date
