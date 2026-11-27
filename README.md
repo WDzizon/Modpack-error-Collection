@@ -1,45 +1,122 @@
-/lsslod diag
-[01:04:54] [Server thread/INFO] [minecraft/MinecraftServer]: === LSS LOD Diagnostics ===
-[01:04:54] [Server thread/INFO] [minecraft/MinecraftServer]: Config: enabled=true, lodDist=512, bw/player=25.0 MB/s, bw/global=75.0 MB/s
-[01:04:54] [Server thread/INFO] [minecraft/MinecraftServer]: Throughput: sent=0 (0 B), rate=0 sections/s (0 B/s), uptime=48s
-[01:04:54] [Server thread/INFO] [minecraft/MinecraftServer]: Sources (total): in_mem=0, disk=0, up_to_date=2055, gen=0, re_resolved=0, grace_skipped=0
-[01:04:54] [Server thread/INFO] [minecraft/MinecraftServer]: Sources (tick): sent=0, disk=0/0, utd=0, gen=0, in_mem=0, skipped=0, bytes=0 B, qpeak=0/1024
-[01:04:54] [Server thread/INFO] [minecraft/MinecraftServer]: DiskReader: submitted=0, completed=0, not_found=0, all_air=0, errors=0, saturated=0, header_hits=0, avg_read=0.0ms, pending=0, read_gate=0/3, gate_parked=0, gate_stops=0, gated=0, read_path=bg-split, raw_serves=0, sel=on, sel_fallbacks=0, direct_v20=0, memo_hits=0, store=off
-[01:04:54] [Server thread/INFO] [minecraft/MinecraftServer]: Generation: submitted=0, completed=0, active=0, timeouts=0, removed=0, order_gated=0, inversions=0
-[01:04:54] [Server thread/INFO] [minecraft/MinecraftServer]: Dialects: v20=2, v19=0, v18=0, v16=0, started=2/0/0/0, ended=0/0/0/0 in 0m
-[01:04:54] [Server thread/INFO] [minecraft/MinecraftServer]: Xray: active=off, masked_sections=0
-[01:04:54] [Server thread/INFO] [minecraft/MinecraftServer]: Yield: armed=true, ticks_total=0, bytes_withheld=0 B
-[01:04:54] [Server thread/INFO] [minecraft/MinecraftServer]: FarPlayers: subs=2, rosters=2, updates=0, entries=0, suppressed=0, bytes=8
-[01:04:54] [Server thread/INFO] [minecraft/MinecraftServer]: Summary: reqs=2, frames=2, tiles known=298 never_clean=0 no_region=2152, range_filtered=0, bytes=2894, refresh_ms_max=591, stamps=1423/102
-[01:04:54] [Server thread/INFO] [minecraft/MinecraftServer]: Dirty: marked=5, suppressed=1390, seeded_load=1299, entries=1299
-[01:04:54] [Server thread/INFO] [minecraft/MinecraftServer]: Bandwidth: 0 B/s / 75.0 MB/s global (8 B total, 0 B wire, cols zstd=0 raw=0)
-[01:04:54] [Server thread/INFO] [minecraft/MinecraftServer]:   WDzizon: sq=0/1024, psync=0, pgen=0, sent=0 (0 B), rate=0/s, obuf=210 B/17.2 KB, pingf=1.00, yielded=0, paced=0
-[01:04:54] [Server thread/INFO] [minecraft/MinecraftServer]:   spaceZEOE: sq=0/1024, psync=0, pgen=0, sent=0 (0 B), rate=0/s, obuf=1.7 KB/15.7 KB, pingf=1.00, yielded=0, paced=0
-[01:04:54] [Server thread/INFO] [minecraft/MinecraftServer]: LOD-only preservation: inspected=0 candidates_at_generation=0 snapshot_candidates_at_generation=0 protected_area=0 player_watched_before_generation=0 uncertain_player_access=0 structure_starts=0 structure_references=0 uncertain=0 watch_index=count=626,supported=true,overflow=false,archive=ready,visit_write_failed=false,history=positive-only,scope=session-only structure_inspection_failed=false deletion=DISABLED | LOD-only archive: state=ready schema=2 queue=0/4096 visit_history=positive-only absence=unknown invalidations_pending=0 invalidation_jobs=5/5/0 invalidation_batches=5 archive_write_batches=241 invalidation_active=false invalidation_last_started_age_ms=395 invalidation_last_completed_age_ms=341 egress_invalidation_blocked=false egress_visit_publication_blocked=false archive_untrusted=false session_visits=626 session_visit_overflow=false session_invalidations=5 session_invalidation_overflow=false tracking_started_ms=1795701305525 durable_visit_write_failed=false | LOD-only snapshot writes: attempts=0 committed=0 protected_noop=0 failures=0
-[01:04:54] [Server thread/INFO] [minecraft/MinecraftServer]: LOD-only archive reads: requests=0 started=0 hits=0 misses=0 failures=0 queue_rejected=0 shutdown_rejected=0 hit_bytes=0 may_send_denied=0 egress_permits=0 permit_releases=0 | archive_lookup_reasons: requests=0 selected_rows=0 global_blocked=0 session_visit_blocked=0 session_invalidation_blocked=0 row_missing=0 row_invalidated=0 durable_visited_row=0 unexpected_filtered=0 post_select_blocked=0 | archive_lookup_dimensions: [] | archive_coordinate_samples: lookups=[] row_missing=[] snapshots_committed=[]
-[01:04:54] [Server thread/INFO] [minecraft/MinecraftServer]: LOD-only archive rows: total=7559 valid=6740 invalidated=819 valid_unvisited=6740 valid_with_visit_marker=0 durable_visited_total=1390 | archive_row_dimensions: [minecraft:overworld{total=7559,valid=6740,invalidated=819,valid_unvisited=6740,valid_with_visit_marker=0,durable_visited_total=1390}] | valid_unvisited_samples=[minecraft:overworld@809,-244, minecraft:overworld@810,-244, minecraft:overworld@808,-244, minecraft:overworld@807,-244, minecraft:overworld@573,-290, minecraft:overworld@573,-285, minecraft:overworld@573,-289, minecraft:overworld@573,-288]
+[2711월2026 13:45:18.771] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeserver, --fml.neoForgeVersion, 21.1.267, --fml.fmlVersion, 4.0.45, --fml.mcVersion, 1.21.1, --fml.neoFormVersion, 20240808.144430]
+[2711월2026 13:45:18.777] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Eclipse Adoptium OpenJDK 64-Bit Server VM 21.0.12.1+1-LTS
+[2711월2026 13:45:18.781] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 11.0.5+main.901c6ea8 starting: java version 21.0.12.1 by Eclipse Adoptium; OS Windows 10 arch amd64 version 10.0
+[2711월2026 13:45:18.949] [main/INFO] [net.neoforged.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgeserver
+[2711월2026 13:45:19.038] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=union:/D:/정승원/게임/마인크래프트/서버/1.21.1%20vss%20modifying%20test/libraries/net/fabricmc/sponge-mixin/0.16.4+mixin.0.8.7/sponge-mixin-0.16.4+mixin.0.8.7.jar%2373!/ Service=ModLauncher Env=SERVER
+[2711월2026 13:45:19.677] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "server-1.21.1-20240808.144430-srg.jar" [locator: production server provider +net.neoforged:neoforge:21.1.267:server]
+[2711월2026 13:45:19.786] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "neoforge-21.1.267-universal.jar" [locator: PathBasedLocator[name=neoforge, paths=[libraries\net\neoforged\neoforge\21.1.267\neoforge-21.1.267-universal.jar]], reader: mod manifest]
+[2711월2026 13:45:19.803] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "lod-server-support-neoforge.jar" [locator: {mods folder locator at D:\정승원\게임\마인크래프트\서버\1.21.1 vss modifying test\mods}, reader: mod manifest]
+[2711월2026 13:45:20.078] [main/INFO] [net.neoforged.fml.loading.moddiscovery.locators.JarInJarDependencyLocator/]: Found 3 dependencies adding them to mods collection
+[2711월2026 13:45:20.079] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found gamelibrary file "mixinextras-neoforge-0.5.5.jar" [parent: neoforge-21.1.267-universal.jar, locator: jarinjar, reader: mod manifest]
+[2711월2026 13:45:20.079] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found library file "zstd-jni-1.5.7-3.jar" [parent: lod-server-support-neoforge.jar, locator: jarinjar]
+[2711월2026 13:45:20.079] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found library file "net.neoforged.neoforge-coremods-21.1.267.jar" [parent: neoforge-21.1.267-universal.jar, locator: jarinjar, reader: mod manifest]
+[2711월2026 13:45:20.081] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/]: 
+     Mod List:
+		Name Version (Mod Id)
 
-이게 첫번째 명령어 실행 결과이고
-
-/lsslod diag
-[01:06:15] [Server thread/INFO] [minecraft/MinecraftServer]: === LSS LOD Diagnostics ===
-[01:06:15] [Server thread/INFO] [minecraft/MinecraftServer]: Config: enabled=true, lodDist=512, bw/player=25.0 MB/s, bw/global=75.0 MB/s
-[01:06:15] [Server thread/INFO] [minecraft/MinecraftServer]: Throughput: sent=3672 (119.2 MB), rate=28 sections/s (946.4 KB/s), uptime=2m 9s
-[01:06:15] [Server thread/INFO] [minecraft/MinecraftServer]: Sources (total): in_mem=387, disk=2848, up_to_date=19682, gen=542, re_resolved=1359, grace_skipped=145
-[01:06:15] [Server thread/INFO] [minecraft/MinecraftServer]: Sources (tick): sent=0, disk=0/0, utd=0, gen=0, in_mem=0, skipped=0, bytes=0 B, qpeak=0/1024
-[01:06:15] [Server thread/INFO] [minecraft/MinecraftServer]: DiskReader: submitted=5012, completed=5009, not_found=2152, all_air=0, errors=9, saturated=0, header_hits=280, avg_read=31.5ms, pending=0, read_timeouts=9, read_gate=3/3, gate_parked=0, gate_stops=0, gated=0, auxiliary_permit_skipped=1408, auxiliary_lookup_timeouts=51, read_path=bg-split, raw_serves=5006, sel=on, sel_fallbacks=0, direct_v20=2848, memo_hits=24598, store=off
-[01:06:15] [Server thread/INFO] [minecraft/MinecraftServer]: Generation: submitted=395, completed=395, active=0, timeouts=0, removed=0, order_gated=11474, inversions=41
-[01:06:15] [Server thread/INFO] [minecraft/MinecraftServer]: Dialects: v20=2, v19=0, v18=0, v16=0, started=2/0/0/0, ended=0/0/0/0 in 2m
-[01:06:15] [Server thread/INFO] [minecraft/MinecraftServer]: Xray: active=off, masked_sections=0
-[01:06:15] [Server thread/INFO] [minecraft/MinecraftServer]: Yield: armed=true, ticks_total=0, bytes_withheld=0 B
-[01:06:15] [Server thread/INFO] [minecraft/MinecraftServer]: FarPlayers: subs=2, rosters=2, updates=0, entries=0, suppressed=0, bytes=8
-[01:06:15] [Server thread/INFO] [minecraft/MinecraftServer]: Summary: reqs=2, frames=2, tiles known=298 never_clean=0 no_region=2152, range_filtered=0, bytes=2894, refresh_ms_max=591, stamps=18510/247
-[01:06:15] [Server thread/INFO] [minecraft/MinecraftServer]: Dirty: marked=104, suppressed=1968, seeded_load=1305, entries=1694
-[01:06:15] [Server thread/INFO] [minecraft/MinecraftServer]: Bandwidth: 24.8 KB/s / 75.0 MB/s global (119.2 MB total, 19.9 MB wire, cols zstd=3672 raw=0)
-[01:06:15] [Server thread/INFO] [minecraft/MinecraftServer]:   WDzizon: sq=0/1024, psync=56, pgen=0, sent=519 (16.7 MB), rate=4/s, obuf=0 B/17.2 KB, pingf=1.00, yielded=0, paced=1
-[01:06:15] [Server thread/INFO] [minecraft/MinecraftServer]:   spaceZEOE: sq=0/1024, psync=43, pgen=0, sent=3153 (102.5 MB), rate=24/s, obuf=532 B/15.7 KB, pingf=1.00, yielded=0, paced=43
-[01:06:15] [Server thread/INFO] [minecraft/MinecraftServer]: LOD-only preservation: inspected=395 candidates_at_generation=0 snapshot_candidates_at_generation=285 protected_area=0 player_watched_before_generation=0 uncertain_player_access=285 structure_starts=0 structure_references=110 uncertain=0 watch_index=count=626,supported=true,overflow=false,archive=ready,visit_write_failed=false,history=positive-only,scope=session-only structure_inspection_failed=false deletion=DISABLED | LOD-only archive: state=ready schema=2 queue=0/4096 visit_history=positive-only absence=unknown invalidations_pending=0 invalidation_jobs=104/104/0 invalidation_batches=62 archive_write_batches=298 invalidation_active=false invalidation_last_started_age_ms=3962 invalidation_last_completed_age_ms=3682 egress_invalidation_blocked=false egress_visit_publication_blocked=false archive_untrusted=false session_visits=626 session_visit_overflow=false session_invalidations=80 session_invalidation_overflow=false tracking_started_ms=1795701305525 durable_visit_write_failed=false | LOD-only snapshot writes: attempts=285 committed=162 protected_noop=123 failures=0
-[01:06:15] [Server thread/INFO] [minecraft/MinecraftServer]: LOD-only archive reads: requests=3646 started=3646 hits=42 misses=3604 failures=0 queue_rejected=0 shutdown_rejected=0 hit_bytes=1289781 may_send_denied=0 egress_permits=42 permit_releases=42 | archive_lookup_reasons: requests=3646 selected_rows=42 global_blocked=15 session_visit_blocked=0 session_invalidation_blocked=8 row_missing=3578 row_invalidated=3 durable_visited_row=0 unexpected_filtered=0 post_select_blocked=0 | archive_lookup_dimensions: [minecraft:overworld{requests=3646,selected=42,missing=3578,invalidated=3,durable_visited=0,global_blocked=15,session_visit_blocked=0,session_invalidation_blocked=8,post_select_blocked=0}] | archive_coordinate_samples: lookups=[minecraft:overworld@775,-178, minecraft:overworld@775,-177, minecraft:overworld@775,-176, minecraft:overworld@775,-175, minecraft:overworld@775,-174, minecraft:overworld@775,-173, minecraft:overworld@775,-172, minecraft:overworld@775,-171] row_missing=[minecraft:overworld@775,-178, minecraft:overworld@775,-177, minecraft:overworld@775,-176, minecraft:overworld@775,-175, minecraft:overworld@775,-174, minecraft:overworld@775,-173, minecraft:overworld@775,-172, minecraft:overworld@775,-171] snapshots_committed=[minecraft:overworld@572,-274, minecraft:overworld@572,-275, minecraft:overworld@572,-280, minecraft:overworld@572,-281, minecraft:overworld@572,-283, minecraft:overworld@775,-176, minecraft:overworld@775,-175, minecraft:overworld@775,-174]
-[01:06:15] [Server thread/INFO] [minecraft/MinecraftServer]: LOD-only archive rows: total=7721 valid=6886 invalidated=835 valid_unvisited=6886 valid_with_visit_marker=0 durable_visited_total=1390 | archive_row_dimensions: [minecraft:overworld{total=7721,valid=6886,invalidated=835,valid_unvisited=6886,valid_with_visit_marker=0,durable_visited_total=1390}] | valid_unvisited_samples=[minecraft:overworld@775,-174, minecraft:overworld@775,-175, minecraft:overworld@775,-176, minecraft:overworld@572,-283, minecraft:overworld@572,-281, minecraft:overworld@572,-280, minecraft:overworld@572,-275, minecraft:overworld@572,-274]
-
-이게 두번째 명령어 결과야.
+		LOD Server Support 0.23.0 (lss)
+		Minecraft 1.21.1 (minecraft)
+		NeoForge 21.1.267 (neoforge)
+[2711월2026 13:45:20.807] [main/INFO] [mixin/]: Compatibility level set to JAVA_21
+[2711월2026 13:45:20.818] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeserver' with arguments []
+[2711월2026 13:45:22.908] [main/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.5).
+[2711월2026 13:45:28.679] [modloading-worker-0/INFO] [net.neoforged.neoforge.common.NeoForgeMod/NEOFORGE-MOD]: NeoForge mod loading, version 21.1.267, for MC 1.21.1
+[2711월2026 13:45:29.230] [main/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[2711월2026 13:45:29.442] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/D:/정승원/게임/마인크래프트/서버/1.21.1%20vss%20modifying%20test/libraries/net/minecraft/server/1.21.1-20240808.144430/server-1.21.1-20240808.144430-srg.jar%23118!/assets/.mcassetsroot' uses unexpected schema
+[2711월2026 13:45:29.443] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/D:/정승원/게임/마인크래프트/서버/1.21.1%20vss%20modifying%20test/libraries/net/minecraft/server/1.21.1-20240808.144430/server-1.21.1-20240808.144430-srg.jar%23118!/data/.mcassetsroot' uses unexpected schema
+[2711월2026 13:45:31.010] [main/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 1290 recipes
+[2711월2026 13:45:31.203] [main/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 1399 advancements
+[2711월2026 13:45:33.378] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting minecraft server version 1.21.1
+[2711월2026 13:45:33.379] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Loading properties
+[2711월2026 13:45:33.383] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Default game type: SURVIVAL
+[2711월2026 13:45:33.384] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[2711월2026 13:45:33.521] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting Minecraft server on *:25565
+[2711월2026 13:45:33.616] [Server thread/INFO] [net.minecraft.server.network.ServerConnectionListener/]: Using default channel type
+[2711월2026 13:45:33.726] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Preparing level "world-lss-shutdown-test-20261126"
+[2711월2026 13:45:33.844] [Server thread/FATAL] [mixin/]: Mixin apply for mod lss failed lss.neoforge.mixins.json:AccessorChunkMapLifecycle from mod lss -> net.minecraft.server.level.ChunkMap: org.spongepowered.asm.mixin.gen.throwables.InvalidAccessorException No candidates were found matching activeChunkWrites:Ljava/util/concurrent/atomic/AtomicInteger; in net/minecraft/server/level/ChunkMap for lss.neoforge.mixins.json:AccessorChunkMapLifecycle from mod lss->@Accessor[FIELD_GETTER]::lss$getActiveChunkWrites()Ljava/util/concurrent/atomic/AtomicInteger; [ACCESSOR Applicator Phase -> lss.neoforge.mixins.json:AccessorChunkMapLifecycle from mod lss -> Apply Accessors ->  -> Locate -> lss.neoforge.mixins.json:AccessorChunkMapLifecycle from mod lss->@Accessor[FIELD_GETTER]::lss$getActiveChunkWrites()Ljava/util/concurrent/atomic/AtomicInteger;]
+org.spongepowered.asm.mixin.gen.throwables.InvalidAccessorException: No candidates were found matching activeChunkWrites:Ljava/util/concurrent/atomic/AtomicInteger; in net/minecraft/server/level/ChunkMap for lss.neoforge.mixins.json:AccessorChunkMapLifecycle from mod lss->@Accessor[FIELD_GETTER]::lss$getActiveChunkWrites()Ljava/util/concurrent/atomic/AtomicInteger; [ACCESSOR Applicator Phase -> lss.neoforge.mixins.json:AccessorChunkMapLifecycle from mod lss -> Apply Accessors ->  -> Locate -> lss.neoforge.mixins.json:AccessorChunkMapLifecycle from mod lss->@Accessor[FIELD_GETTER]::lss$getActiveChunkWrites()Ljava/util/concurrent/atomic/AtomicInteger;]
+	at MC-BOOTSTRAP/org.spongepowered.mixin@0.16.4+mixin.0.8.7/org.spongepowered.asm.mixin.gen.AccessorInfo.findTarget(AccessorInfo.java:519) ~[sponge-mixin-0.16.4+mixin.0.8.7.jar%2373!/:0.16.4+mixin.0.8.7]
+	at MC-BOOTSTRAP/org.spongepowered.mixin@0.16.4+mixin.0.8.7/org.spongepowered.asm.mixin.gen.AccessorInfo.findTargetField(AccessorInfo.java:502) ~[sponge-mixin-0.16.4+mixin.0.8.7.jar%2373!/:0.16.4+mixin.0.8.7]
+	at MC-BOOTSTRAP/org.spongepowered.mixin@0.16.4+mixin.0.8.7/org.spongepowered.asm.mixin.gen.AccessorInfo.locate(AccessorInfo.java:476) ~[sponge-mixin-0.16.4+mixin.0.8.7.jar%2373!/:0.16.4+mixin.0.8.7]
+	at MC-BOOTSTRAP/org.spongepowered.mixin@0.16.4+mixin.0.8.7/org.spongepowered.asm.mixin.transformer.MixinTargetContext.generateAccessors(MixinTargetContext.java:1517) ~[sponge-mixin-0.16.4+mixin.0.8.7.jar%2373!/:0.16.4+mixin.0.8.7]
+	at MC-BOOTSTRAP/org.spongepowered.mixin@0.16.4+mixin.0.8.7/org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.applyAccessors(MixinApplicatorStandard.java:761) ~[sponge-mixin-0.16.4+mixin.0.8.7.jar%2373!/:0.16.4+mixin.0.8.7]
+	at MC-BOOTSTRAP/org.spongepowered.mixin@0.16.4+mixin.0.8.7/org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.applyMixin(MixinApplicatorStandard.java:320) ~[sponge-mixin-0.16.4+mixin.0.8.7.jar%2373!/:0.16.4+mixin.0.8.7]
+	at MC-BOOTSTRAP/org.spongepowered.mixin@0.16.4+mixin.0.8.7/org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.apply(MixinApplicatorStandard.java:246) ~[sponge-mixin-0.16.4+mixin.0.8.7.jar%2373!/:0.16.4+mixin.0.8.7]
+	at MC-BOOTSTRAP/org.spongepowered.mixin@0.16.4+mixin.0.8.7/org.spongepowered.asm.mixin.transformer.TargetClassContext.apply(TargetClassContext.java:437) ~[sponge-mixin-0.16.4+mixin.0.8.7.jar%2373!/:0.16.4+mixin.0.8.7]
+	at MC-BOOTSTRAP/org.spongepowered.mixin@0.16.4+mixin.0.8.7/org.spongepowered.asm.mixin.transformer.TargetClassContext.applyMixins(TargetClassContext.java:418) ~[sponge-mixin-0.16.4+mixin.0.8.7.jar%2373!/:0.16.4+mixin.0.8.7]
+	at MC-BOOTSTRAP/org.spongepowered.mixin@0.16.4+mixin.0.8.7/org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:352) ~[sponge-mixin-0.16.4+mixin.0.8.7.jar%2373!/:0.16.4+mixin.0.8.7]
+	at MC-BOOTSTRAP/org.spongepowered.mixin@0.16.4+mixin.0.8.7/org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClass(MixinTransformer.java:253) ~[sponge-mixin-0.16.4+mixin.0.8.7.jar%2373!/:0.16.4+mixin.0.8.7]
+	at MC-BOOTSTRAP/org.spongepowered.mixin@0.16.4+mixin.0.8.7/org.spongepowered.asm.service.modlauncher.MixinTransformationHandler.processClass(MixinTransformationHandler.java:131) ~[sponge-mixin-0.16.4+mixin.0.8.7.jar%2373!/:0.16.4+mixin.0.8.7]
+	at MC-BOOTSTRAP/org.spongepowered.mixin@0.16.4+mixin.0.8.7/org.spongepowered.asm.launch.MixinLaunchPluginLegacy.processClass(MixinLaunchPluginLegacy.java:131) ~[sponge-mixin-0.16.4+mixin.0.8.7.jar%2373!/:0.16.4+mixin.0.8.7]
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.serviceapi.ILaunchPluginService.processClassWithFlags(ILaunchPluginService.java:156) ~[modlauncher-11.0.5.jar%2364!/:11.0.5+main.901c6ea8]
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchPluginHandler.offerClassNodeToPlugins(LaunchPluginHandler.java:94) ~[modlauncher-11.0.5.jar%2364!/:?]
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.ClassTransformer.transform(ClassTransformer.java:120) ~[modlauncher-11.0.5.jar%2364!/:?]
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.TransformingClassLoader.maybeTransformClassBytes(TransformingClassLoader.java:57) ~[modlauncher-11.0.5.jar%2364!/:?]
+	at cpw.mods.securejarhandler/cpw.mods.cl.ModuleClassLoader.readerToClass(ModuleClassLoader.java:190) ~[securejarhandler-3.0.8.jar:?]
+	at cpw.mods.securejarhandler/cpw.mods.cl.ModuleClassLoader.lambda$findClass$20(ModuleClassLoader.java:298) ~[securejarhandler-3.0.8.jar:?]
+	at cpw.mods.securejarhandler/cpw.mods.cl.ModuleClassLoader.loadFromModule(ModuleClassLoader.java:311) ~[securejarhandler-3.0.8.jar:?]
+	at cpw.mods.securejarhandler/cpw.mods.cl.ModuleClassLoader.findClass(ModuleClassLoader.java:298) ~[securejarhandler-3.0.8.jar:?]
+	at cpw.mods.securejarhandler/cpw.mods.cl.ModuleClassLoader.loadClass(ModuleClassLoader.java:214) ~[securejarhandler-3.0.8.jar:?]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.level.ServerChunkCache.<init>(ServerChunkCache.java:88) ~[server-1.21.1-20240808.144430-srg.jar%23118!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.level.ServerLevel.<init>(ServerLevel.java:262) ~[server-1.21.1-20240808.144430-srg.jar%23118!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.createLevels(MinecraftServer.java:367) ~[server-1.21.1-20240808.144430-srg.jar%23118!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.loadLevel(MinecraftServer.java:337) ~[server-1.21.1-20240808.144430-srg.jar%23118!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:193) ~[server-1.21.1-20240808.144430-srg.jar%23118!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:670) ~[server-1.21.1-20240808.144430-srg.jar%23118!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:267) ~[server-1.21.1-20240808.144430-srg.jar%23118!/:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+[2711월2026 13:45:33.848] [Server thread/ERROR] [net.minecraft.server.MinecraftServer/]: Encountered an unexpected exception
+org.spongepowered.asm.mixin.transformer.throwables.MixinTransformerError: An unexpected critical error was encountered
+	at MC-BOOTSTRAP/org.spongepowered.mixin@0.16.4+mixin.0.8.7/org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:381) ~[sponge-mixin-0.16.4+mixin.0.8.7.jar%2373!/:0.16.4+mixin.0.8.7]
+	at MC-BOOTSTRAP/org.spongepowered.mixin@0.16.4+mixin.0.8.7/org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClass(MixinTransformer.java:253) ~[sponge-mixin-0.16.4+mixin.0.8.7.jar%2373!/:0.16.4+mixin.0.8.7]
+	at MC-BOOTSTRAP/org.spongepowered.mixin@0.16.4+mixin.0.8.7/org.spongepowered.asm.service.modlauncher.MixinTransformationHandler.processClass(MixinTransformationHandler.java:131) ~[sponge-mixin-0.16.4+mixin.0.8.7.jar%2373!/:0.16.4+mixin.0.8.7]
+	at MC-BOOTSTRAP/org.spongepowered.mixin@0.16.4+mixin.0.8.7/org.spongepowered.asm.launch.MixinLaunchPluginLegacy.processClass(MixinLaunchPluginLegacy.java:131) ~[sponge-mixin-0.16.4+mixin.0.8.7.jar%2373!/:0.16.4+mixin.0.8.7]
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.serviceapi.ILaunchPluginService.processClassWithFlags(ILaunchPluginService.java:156) ~[modlauncher-11.0.5.jar%2364!/:11.0.5+main.901c6ea8]
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchPluginHandler.offerClassNodeToPlugins(LaunchPluginHandler.java:94) ~[modlauncher-11.0.5.jar%2364!/:?]
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.ClassTransformer.transform(ClassTransformer.java:120) ~[modlauncher-11.0.5.jar%2364!/:?]
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.TransformingClassLoader.maybeTransformClassBytes(TransformingClassLoader.java:57) ~[modlauncher-11.0.5.jar%2364!/:?]
+	at cpw.mods.securejarhandler/cpw.mods.cl.ModuleClassLoader.readerToClass(ModuleClassLoader.java:190) ~[securejarhandler-3.0.8.jar:?]
+	at cpw.mods.securejarhandler/cpw.mods.cl.ModuleClassLoader.lambda$findClass$20(ModuleClassLoader.java:298) ~[securejarhandler-3.0.8.jar:?]
+	at cpw.mods.securejarhandler/cpw.mods.cl.ModuleClassLoader.loadFromModule(ModuleClassLoader.java:311) ~[securejarhandler-3.0.8.jar:?]
+	at cpw.mods.securejarhandler/cpw.mods.cl.ModuleClassLoader.findClass(ModuleClassLoader.java:298) ~[securejarhandler-3.0.8.jar:?]
+	at cpw.mods.securejarhandler/cpw.mods.cl.ModuleClassLoader.loadClass(ModuleClassLoader.java:214) ~[securejarhandler-3.0.8.jar:?]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.level.ServerChunkCache.<init>(ServerChunkCache.java:88) ~[server-1.21.1-20240808.144430-srg.jar%23118!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.level.ServerLevel.<init>(ServerLevel.java:262) ~[server-1.21.1-20240808.144430-srg.jar%23118!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.createLevels(MinecraftServer.java:367) ~[server-1.21.1-20240808.144430-srg.jar%23118!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.loadLevel(MinecraftServer.java:337) ~[server-1.21.1-20240808.144430-srg.jar%23118!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:193) ~[server-1.21.1-20240808.144430-srg.jar%23118!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:670) ~[server-1.21.1-20240808.144430-srg.jar%23118!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:267) ~[server-1.21.1-20240808.144430-srg.jar%23118!/:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: org.spongepowered.asm.mixin.throwables.MixinApplyError: Mixin [lss.neoforge.mixins.json:AccessorChunkMapLifecycle from mod lss] from phase [DEFAULT] in config [lss.neoforge.mixins.json] FAILED during APPLY
+	at MC-BOOTSTRAP/org.spongepowered.mixin@0.16.4+mixin.0.8.7/org.spongepowered.asm.mixin.transformer.MixinProcessor.handleMixinError(MixinProcessor.java:686) ~[sponge-mixin-0.16.4+mixin.0.8.7.jar%2373!/:0.16.4+mixin.0.8.7]
+	at MC-BOOTSTRAP/org.spongepowered.mixin@0.16.4+mixin.0.8.7/org.spongepowered.asm.mixin.transformer.MixinProcessor.handleMixinApplyError(MixinProcessor.java:637) ~[sponge-mixin-0.16.4+mixin.0.8.7.jar%2373!/:0.16.4+mixin.0.8.7]
+	at MC-BOOTSTRAP/org.spongepowered.mixin@0.16.4+mixin.0.8.7/org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:368) ~[sponge-mixin-0.16.4+mixin.0.8.7.jar%2373!/:0.16.4+mixin.0.8.7]
+	... 21 more
+Caused by: org.spongepowered.asm.mixin.gen.throwables.InvalidAccessorException: No candidates were found matching activeChunkWrites:Ljava/util/concurrent/atomic/AtomicInteger; in net/minecraft/server/level/ChunkMap for lss.neoforge.mixins.json:AccessorChunkMapLifecycle from mod lss->@Accessor[FIELD_GETTER]::lss$getActiveChunkWrites()Ljava/util/concurrent/atomic/AtomicInteger; [ACCESSOR Applicator Phase -> lss.neoforge.mixins.json:AccessorChunkMapLifecycle from mod lss -> Apply Accessors ->  -> Locate -> lss.neoforge.mixins.json:AccessorChunkMapLifecycle from mod lss->@Accessor[FIELD_GETTER]::lss$getActiveChunkWrites()Ljava/util/concurrent/atomic/AtomicInteger;]
+	at MC-BOOTSTRAP/org.spongepowered.mixin@0.16.4+mixin.0.8.7/org.spongepowered.asm.mixin.gen.AccessorInfo.findTarget(AccessorInfo.java:519) ~[sponge-mixin-0.16.4+mixin.0.8.7.jar%2373!/:0.16.4+mixin.0.8.7]
+	at MC-BOOTSTRAP/org.spongepowered.mixin@0.16.4+mixin.0.8.7/org.spongepowered.asm.mixin.gen.AccessorInfo.findTargetField(AccessorInfo.java:502) ~[sponge-mixin-0.16.4+mixin.0.8.7.jar%2373!/:0.16.4+mixin.0.8.7]
+	at MC-BOOTSTRAP/org.spongepowered.mixin@0.16.4+mixin.0.8.7/org.spongepowered.asm.mixin.gen.AccessorInfo.locate(AccessorInfo.java:476) ~[sponge-mixin-0.16.4+mixin.0.8.7.jar%2373!/:0.16.4+mixin.0.8.7]
+	at MC-BOOTSTRAP/org.spongepowered.mixin@0.16.4+mixin.0.8.7/org.spongepowered.asm.mixin.transformer.MixinTargetContext.generateAccessors(MixinTargetContext.java:1517) ~[sponge-mixin-0.16.4+mixin.0.8.7.jar%2373!/:0.16.4+mixin.0.8.7]
+	at MC-BOOTSTRAP/org.spongepowered.mixin@0.16.4+mixin.0.8.7/org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.applyAccessors(MixinApplicatorStandard.java:761) ~[sponge-mixin-0.16.4+mixin.0.8.7.jar%2373!/:0.16.4+mixin.0.8.7]
+	at MC-BOOTSTRAP/org.spongepowered.mixin@0.16.4+mixin.0.8.7/org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.applyMixin(MixinApplicatorStandard.java:320) ~[sponge-mixin-0.16.4+mixin.0.8.7.jar%2373!/:0.16.4+mixin.0.8.7]
+	at MC-BOOTSTRAP/org.spongepowered.mixin@0.16.4+mixin.0.8.7/org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.apply(MixinApplicatorStandard.java:246) ~[sponge-mixin-0.16.4+mixin.0.8.7.jar%2373!/:0.16.4+mixin.0.8.7]
+	at MC-BOOTSTRAP/org.spongepowered.mixin@0.16.4+mixin.0.8.7/org.spongepowered.asm.mixin.transformer.TargetClassContext.apply(TargetClassContext.java:437) ~[sponge-mixin-0.16.4+mixin.0.8.7.jar%2373!/:0.16.4+mixin.0.8.7]
+	at MC-BOOTSTRAP/org.spongepowered.mixin@0.16.4+mixin.0.8.7/org.spongepowered.asm.mixin.transformer.TargetClassContext.applyMixins(TargetClassContext.java:418) ~[sponge-mixin-0.16.4+mixin.0.8.7.jar%2373!/:0.16.4+mixin.0.8.7]
+	at MC-BOOTSTRAP/org.spongepowered.mixin@0.16.4+mixin.0.8.7/org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:352) ~[sponge-mixin-0.16.4+mixin.0.8.7.jar%2373!/:0.16.4+mixin.0.8.7]
+	... 21 more
+[2711월2026 13:45:33.941] [Server thread/FATAL] [net.neoforged.neoforge.common.NeoForgeMod/]: Preparing crash report with UUID 4ffb7217-9e20-4f5a-8162-13711dd921e6
+[2711월2026 13:45:33.942] [Server thread/ERROR] [net.minecraft.server.MinecraftServer/]: This crash report has been saved to: D:\정승원\게임\마인크래프트\서버\1.21.1 vss modifying test\crash-reports\crash-2026-11-27_13.45.33-server.txt
+[2711월2026 13:45:33.942] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[2711월2026 13:45:33.944] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[2711월2026 13:45:33.945] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[2711월2026 13:45:33.946] [Server thread/ERROR] [net.minecraft.server.MinecraftServer/]: Exception stopping the server
+java.lang.NullPointerException: Cannot invoke "net.minecraft.server.level.ServerLevel.getWorldBorder()" because "serverlevel2" is null
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.saveAllChunks(MinecraftServer.java:557) ~[server-1.21.1-20240808.144430-srg.jar%23118!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:622) ~[server-1.21.1-20240808.144430-srg.jar%23118!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.dedicated.DedicatedServer.stopServer(DedicatedServer.java:567) ~[server-1.21.1-20240808.144430-srg.jar%23118!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:742) ~[server-1.21.1-20240808.144430-srg.jar%23118!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:267) ~[server-1.21.1-20240808.144430-srg.jar%23118!/:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
